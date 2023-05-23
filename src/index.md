@@ -3,10 +3,9 @@
 ## I am a
 
 - Systems programmer, Software Engineering enthusiast,
-- Duke Kunshan University student, Data Science major,
-    Pseudo Computer Science major, Pseudo Applied Mathematics major,
+- Duke Kunshan University [pseudo triple major][dku] student,
 - Invested Rustacean, Pythonista, Polyglot programmer,
-- Open Source developer, Full-stack developer.
+- Open Source developer, Novice full-stack developer.
 
 ## Research interests
 
@@ -30,5 +29,6 @@ For instructions on navigation, please
 [see mdBook Documentation—Reading Books][mdbook_doc_reading_books].
 
 [CV_gh_pages]: https://sichanghe.github.io/curriculum_vitae/
+[dku]: ./education/index.md#duke-kunshan-university-dku-2020---
 [mdbook_doc_reading_books]: https://rust-lang.github.io/mdBook/guide/reading.html
 [resume]: https://github.com/SichangHe/resume
