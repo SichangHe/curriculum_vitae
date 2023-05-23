@@ -2,10 +2,15 @@
 
 ## I am a
 
+<div style="display: flex; flex-direction: row;">
+
 - Systems programmer, Software Engineering enthusiast,
 - Duke Kunshan University [pseudo triple major][dku] student,
 - Invested Rustacean, Pythonista, Polyglot programmer,
 - Open Source developer, Novice full-stack developer.
+
+<img height="123px" alt="Icon" src="favicon.svg" />
+</div>
 
 ## Research interests
 

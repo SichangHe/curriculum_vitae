@@ -20,12 +20,14 @@
     - Binary search tree in MIPS assembly and ring buffer in C.
     - Fifth place in PizzaCalc length optimization competition (68 lines).
 - MATH 303 (ODE and Dynamical Systems):
-    Read a review paper on differential equations with 99 references.
-    Failed the group presentation talking about the paper.
-    —Learned the necessity to start early in group works.
+    - Read a review paper on differential equations with 99 references.
+        Failed the group presentation talking about the paper.
+    - Learned the necessity to start early in group works.
 - COMPSCI 201 (Introduction to Programming and Data Structures):
-    Presented about prime finding and sort algorithms, flowchart, debugger.
-    Invited to be TA afterwards.
+    - First CS class.
+    - Presented about prime finding and sorting algorithms, flowchart,
+        and debugger.
+    - Invited to be TA afterwards.
 - STATS 201 (Probability, Random Variables and Stochastic Processes):
     [PageRank DKU website with Scrapy & Numpy][STATS210_final_proj].
 
