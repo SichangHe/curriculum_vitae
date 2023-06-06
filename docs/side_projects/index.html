@@ -151,6 +151,8 @@
 <h3 id="maintain--develop-mdbook-katex-202211---"><a class="header" href="#maintain--develop-mdbook-katex-202211---">Maintain &amp; develop <a href="https://github.com/lzanini/mdbook-katex">mdBook-KaTeX</a> (2022/11 - )</a></h3>
 <p>mdBook-KaTeX is a preprocessor for <a href="https://github.com/rust-lang/mdBook">mdBook</a> in <em>Rust</em>.
 It pre-renders LaTeX math expressions to HTML using KaTeX.</p>
+<p><img src="https://img.shields.io/crates/v/mdbook-katex" alt="mdBook-KaTeX version" />
+<img src="https://img.shields.io/crates/d/mdbook-katex" alt="mdBook-KaTeX downloads" /></p>
 <ul>
 <li>Took over <a href="https://github.com/lzanini/mdbook-katex/issues/37">maintainership by publishing a fork</a>
 when the project was unmaintained.</li>
@@ -187,7 +189,15 @@ alternative.</li>
 <h3 id="configuration-files"><a class="header" href="#configuration-files"><a href="https://github.com/SichangHe/.config">Configuration files</a></a></h3>
 <!-- TODO -->
 <h3 id="author--maintain-recursive_scraper-202206---"><a class="header" href="#author--maintain-recursive_scraper-202206---">Author &amp; maintain <a href="https://github.com/SichangHe/scraper">recursive_scraper</a> (2022/06 - )</a></h3>
-<!-- TODO -->
+<p>A web scraper in <em>Rust</em> that scrapes recursively, at constant frequency
+(requests per time), asynchronously.</p>
+<p><img src="https://img.shields.io/crates/v/recursive_scraper" alt="recursive_scraper version" />
+<img src="https://img.shields.io/crates/d/recursive_scraper" alt="recursive_scraper downloads" /></p>
+<ul>
+<li>Implemented without using mutexes or channels for maximum simplicity.
+Instead, used <a href="https://docs.rs/futures/latest/futures/stream/struct.FuturesUnordered.html"><code>FuturesUnordered</code></a> to queue
+self-contained tasks.</li>
+</ul>
 <h2 id="failed-projects"><a class="header" href="#failed-projects">Failed projects</a></h2>
 <h3 id="academic-forum"><a class="header" href="#academic-forum">Academic forum</a></h3>
 <!-- TODO -->
