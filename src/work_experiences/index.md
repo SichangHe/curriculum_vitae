@@ -14,7 +14,7 @@ It is lead by Professor Bing Luo.
     as ONNX, MNN, PyTorch Mobile, FedML, and TensorFlow Lite, and landed on the
     latter.
 - Developed separate demos to use HTTP, MQTT, and gRPC to communicate between
-    Android clients and Django servers.
+    Android clients and Python servers.
 - Proposed and lead the use of [Flower][flower], a federated learning framework
     in Python.
     - Contributed to Flower by Pull Requests.
@@ -24,6 +24,12 @@ It is lead by Professor Bing Luo.
         *Kotlin* for federated learning.
     - Developed a demo to use Django servers to spawn and manage Flower servers
         in separate background processes on demand.
+- Learned and practiced mobile development, federated learning, and back-end
+    development.
+    - Learned Android development.
+    - Learned to use the Kotlin programming language.
+    - Learned the ideas and practices of federated learning using FLower.
+    - Practiced back-end development using Django REST Framework.
 
 ### Independent network research project (2023/04 - )
 
@@ -39,8 +45,18 @@ Then, I match actual internet routes against them to find routing anomalies.
 - Developed an RPSL lexer in Python with [PyParsing][pyparsing] to produce
     abstract syntax tree (AST).
 - Further parsed the AST into efficient data structures in Rust.
-- Used Rust in Jupyter Notebook with [Evcxr][evcxr] to compare Border Gateway
+- Used *Rust* in Jupyter Notebook with [Evcxr][evcxr] to compare Border Gateway
     Protocol (BGP) routes against RPSL policies interactively.
+- Practiced string processing and programming deeply nested data structures
+    efficiently in Python and *Rust*.
+    - Practiced using detailed docstrings to make up for the lack of a strong
+        type system in Python.
+    - Practiced parallel programming in *Rust*.
+    - Experimented using Stdin and Stdout to dynamically pipe data between the
+        *Rust* parser and the Python lexer.
+    - Designed custom *Rust* types using a little category theory to provide
+        nice experience to generate match reports.
+        <!-- TODO: Explain better. -->
 
 ### RA for search engine research project (2021/12 - 2023/05)
 
@@ -60,6 +76,11 @@ It is supervised by Professor Jiang Long.
         Cleaned up noisy HTML tags using BeautifulSoup.
 - Quit the project after it slowed down dramatically and the project goal
     became vague under the quests for features.
+- Learned from the failure of the project.
+    - Learned how a well-defined and well-scoped goal is crucial for any project
+        at any time.
+    - Witnessed how hype and motivation of the members are essential for any
+        project.
 
 ### iGEM 2022 DKU team (2021/11 - 2022/10)
 
@@ -77,18 +98,40 @@ Our team won a silver medal in the International Genetically Engineered Machine
 - Pushed the team to fully adopt Git, GitLab, Visual Studio Code, and Markdown.
     The process was hard and we had very limited success.
     - [VS Code & Git introduction video for the team][vscode_git_intro].
-    - Learned that ordinary people are unlikely to exit their software comfort
-        zones and Git is too complicated for most non-technical teams.
 - Used protein modeling software to validate teammates' protein design:
     RoseTTAFold, Robetta, PyMOL.
+- Learned from working with non-technical Biology team members.
+    - Learned how strongly ordinary people resist to exit their software comfort
+        zones and learn new software.
+    - Realized that Git is too complicated for most non-technical teams.
+    - Understood that unicast is the only effective team communication.
+
+### TA for COMPSCI 201 (2021/11 - 2022/03)
+
+I accepted Professor Jiang Long's invitation to be a teaching assistant for
+COMPSCI 201—Introduction to Programming and Data Structures.
+
+- Hosted weekly Lab sessions and office hours.
+- Eased students' burden to set up the environment for the course.
+    - Helped simplify the Windows setup by switching from online virtual
+        machines to Windows Subsystem for Linux (WSL).
+    - Created text-based and [video tutorial on how to set up][cs201_setup].
+        COMPSCI 201 students have been given the video tutorial ever since,
+        and everyone I have asked said it was helpful.
+- Learned from teaching students new to programming.
+    - Learned that the fear for unfamiliar topics and fields is the biggest
+        obstacle for learning.
+    - Practiced approaching new concepts in easy ways such as comparing to
+        day-to-day life and using analogies.
+        Verified that this strategy is extremely effective.
 
 ### Other work at DKU
 
 <!-- TODO -->
-- TA for COMPSCI 201 (2021/11 - 2022/03)
 - Academic Resource Center tutor (2021/05 - 2022/05)
 - Intersections editor and translator (2021/06 - 2021/08)
 
+[cs201_setup]: https://www.youtube.com/watch?v=yiL-ULPBkvE
 [evcxr]: https://github.com/evcxr/evcxr
 [fedcampus]: https://github.com/FedCampus
 [flower]: https://flower.dev/
