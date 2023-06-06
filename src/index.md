@@ -9,7 +9,7 @@
 - Invested Rustacean, Pythonista, Polyglot programmer,
 - Open Source developer, Novice full-stack developer.
 
-<img height="123px" alt="Icon" src="favicon.svg" />
+<img height="123px" alt="Steven Hé (Sīchàng)'s avatar" src="favicon.svg" />
 </div>
 
 ## Research interests
