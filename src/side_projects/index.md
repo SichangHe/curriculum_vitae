@@ -4,7 +4,8 @@
 
 ### Maintain & develop [mdBook-KaTeX][mdbook-katex] (2022/11 - )
 
-mdBook-KaTeX is a KaTeX preprocessor for [mdBook][mdBook], written in *Rust*.
+mdBook-KaTeX is a preprocessor for [mdBook][mdBook] in *Rust*.
+It pre-renders LaTeX math expressions to HTML using KaTeX.
 
 - Took over [maintainership by publishing a fork][mdbook-katex2]
     when the project was unmaintained.
