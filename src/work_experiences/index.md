@@ -25,11 +25,28 @@ It is lead by Professor Bing Luo.
     - Developed a demo to use Django servers to spawn and manage Flower servers
         in separate background processes on demand.
 
+### Independent research on finding network routing anomalies (2023/04 - )
+
+[parse_rpsl_policy][parse_rpsl_policy] is a network project I am doing with
+Professor Italo Cunha.
+I parse Routing Policy Specification Language (RPSL) into efficient data
+structures in *Rust*.
+Then, I try matching actual internet routes against them to find routing
+anomalies.
+
+- Studied Internet Engineering Task Force (IETF) RFC 4012 and 2622 for RPSL
+    syntax and semantics.
+- Developed an RPSL lexer in Python with [PyParsing][pyparsing] to produce
+    abstract syntax tree (AST).
+- Further parsed the AST into efficient data structures in Rust.
+- Used Rust in Jupyter Notebook with [Evcxr][evcxr] to compare Border Gateway
+    Protocol (BGP) routes against RPSL policies interactively.
+
 ### RA for search engine research project (2021/12 - 2023/05)
 
 The *SSO* project aims to produce a search engine to search among DKU sites
 and intranet.
-It is lead by Professor Jiang Long,
+It is supervised by Professor Jiang Long.
 
 - Developed a web scraper in *Rust*.
     - Asynchronous and parallel web requests using Tokio and Reqwest.
@@ -47,11 +64,13 @@ It is lead by Professor Jiang Long,
 ### Other works at DKU
 
 <!-- TODO -->
-- Independent research on finding network routing anomalies (2023/04 - )
 - iGEM 2022 DKU team (2021/11 - 2022/10)
 - TA for COMPSCI 201 (2021/11 - 2022/03)
 - Academic Resource Center tutor (2021/05 - 2022/05)
 - Intersections editor and translator (2021/06 - 2021/08)
 
+[evcxr]: https://github.com/evcxr/evcxr
 [fedcampus]: https://github.com/FedCampus
 [flower]: https://flower.dev/
+[parse_rpsl_policy]: https://github.com/SichangHe/parse_rpsl_policy
+[pyparsing]: https://github.com/pyparsing/pyparsing/
