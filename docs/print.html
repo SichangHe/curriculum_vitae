@@ -156,7 +156,7 @@
 <li>Invested Rustacean, Pythonista, Polyglot programmer,</li>
 <li>Open Source developer, Novice full-stack developer.</li>
 </ul>
-<img height="123px" alt="Icon" src="favicon.svg" />
+<img height="123px" alt="Steven Hé (Sīchàng)'s avatar" src="favicon.svg" />
 </div>
 <h2 id="research-interests"><a class="header" href="#research-interests">Research interests</a></h2>
 <p>I enjoy building systems. Software Engineering is my main field of interest.
@@ -241,7 +241,40 @@ and debugger.</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="side-projects"><a class="header" href="#side-projects">Side Projects</a></h1>
 <h2 id="happy-projects"><a class="header" href="#happy-projects">Happy projects</a></h2>
 <h3 id="maintain--develop-mdbook-katex-202211---"><a class="header" href="#maintain--develop-mdbook-katex-202211---">Maintain &amp; develop <a href="https://github.com/lzanini/mdbook-katex">mdBook-KaTeX</a> (2022/11 - )</a></h3>
-<!-- TODO -->
+<p>mdBook-KaTeX is a KaTeX preprocessor for <a href="https://github.com/rust-lang/mdBook">mdBook</a>, written in <em>Rust</em>.</p>
+<ul>
+<li>Took over <a href="https://github.com/lzanini/mdbook-katex/issues/37">maintainership by publishing a fork</a>
+when the project was unmaintained.</li>
+<li>Resolved more than 18 GitHub issues opened by others by fixing the bugs.
+For example:
+<ul>
+<li>Fixed persisting Markdown rendering bugs.
+For example, KaTeX outputs newline characters, <a href="https://github.com/lzanini/mdbook-katex/issues/3">which broke Markdown
+rendering in tables and headers</a>.
+Fixed by replacing newline characters.</li>
+<li>Fixed several error handling bugs.
+For example, fixed crashing on placeholder chapters.</li>
+<li>Worked around Windows platform support from upstream and fixed GitHub CI.
+Use an alternative, working dependency by default.
+Use cross compilation in CIs to provide full-feature builds.</li>
+</ul>
+</li>
+<li>Improved speed by 10 times (on an M1 MacBook) by adopting parallelism and
+avoiding repeated rendering.</li>
+<li>Developed new features up to the point that mdBook-KaTeX is considered
+feature-complete. For example:
+<ul>
+<li>Adopted feature to preserve code blocks according to CommonMark
+specification.
+Accomplished by <a href="https://github.com/lzanini/mdbook-katex/pull/54">hand-writing a finite-state machine to scan through
+Markdown code</a>.</li>
+<li>Added a feature to include math expressions source.</li>
+<li>Added MathML option for accessibility.</li>
+</ul>
+</li>
+<li>Deprecated the problematic <code>static-css</code> feature gradually and provided an
+alternative.</li>
+</ul>
 <h3 id="configuration-files"><a class="header" href="#configuration-files"><a href="https://github.com/SichangHe/.config">Configuration files</a></a></h3>
 <!-- TODO -->
 <h3 id="author--maintain-recursive_scraper-202206---"><a class="header" href="#author--maintain-recursive_scraper-202206---">Author &amp; maintain <a href="https://github.com/SichangHe/scraper">recursive_scraper</a> (2022/06 - )</a></h3>
