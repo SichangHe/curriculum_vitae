@@ -7,6 +7,8 @@
 
     Note: Pseudo majors by completing major requirement courses.
 - One semester at Duke University, Durham. Full grade.
+- Started [my 30-thousand-word notes hosted on GitHub][notes] using
+    [mdBook][mdbook] and [mdBook-KaTeX][mdbook-katex].
 
 ### Significant courses at DKU
 
@@ -37,6 +39,9 @@
 - Biology competition team (2017 - 2019)
 
 [CS311]: https://github.com/SichangHe/CS311
+[notes]: https://sichanghe.github.io/notes/
+[mdBook]: https://github.com/rust-lang/mdBook
+[mdbook-katex]: https://github.com/lzanini/mdbook-katex
 [STATS210_final_proj]: https://github.com/SichangHe/STATS210_final_project
 [STATS401_final_proj]: https://github.com/SichangHe/STATS401_final_project
 [UDPRIP]: https://github.com/SichangHe/CS311/tree/main/udprip
