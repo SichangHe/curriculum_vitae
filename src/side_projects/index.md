@@ -7,6 +7,9 @@
 mdBook-KaTeX is a preprocessor for [mdBook][mdBook] in *Rust*.
 It pre-renders LaTeX math expressions to HTML using KaTeX.
 
+![mdBook-KaTeX version][mdbook-katex_version]
+![mdBook-KaTeX downloads][mdbook-katex_downloads]
+
 - Took over [maintainership by publishing a fork][mdbook-katex2]
     when the project was unmaintained.
 - Resolved more than 18 GitHub issues opened by others by fixing the bugs.
@@ -39,7 +42,15 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.
 
 ### Author & maintain [recursive_scraper][recursive_scraper] (2022/06 - )
 
-<!-- TODO -->
+A web scraper in *Rust* that scrapes recursively, at constant frequency
+(requests per time), asynchronously.
+
+![recursive_scraper version][scraper_version]
+![recursive_scraper downloads][scraper_downloads]
+
+- Implemented without using mutexes or channels for maximum simplicity.
+    Instead, used [`FuturesUnordered`][futures_unordered] to queue
+    self-contained tasks.
 
 ## Failed projects
 
@@ -48,9 +59,15 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.
 <!-- TODO -->
 
 [config]: https://github.com/SichangHe/.config
+[crates_scraper]: https://crates.io/crates/recursive_scraper
+[futures_unordered]: https://docs.rs/futures/latest/futures/stream/struct.FuturesUnordered.html
 [handle-codeblock]: https://github.com/lzanini/mdbook-katex/pull/54
 [katex-break-table]: https://github.com/lzanini/mdbook-katex/issues/3
 [mdBook]: https://github.com/rust-lang/mdBook
 [mdbook-katex]: https://github.com/lzanini/mdbook-katex
+[mdbook-katex_downloads]: https://img.shields.io/crates/d/mdbook-katex
+[mdbook-katex_version]: https://img.shields.io/crates/v/mdbook-katex
 [mdbook-katex2]: https://github.com/lzanini/mdbook-katex/issues/37
 [recursive_scraper]: https://github.com/SichangHe/scraper
+[scraper_downloads]: https://img.shields.io/crates/d/recursive_scraper
+[scraper_version]: https://img.shields.io/crates/v/recursive_scraper

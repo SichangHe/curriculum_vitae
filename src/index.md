@@ -7,7 +7,9 @@
 - Systems programmer, Software Engineering enthusiast,
 - Duke Kunshan University [pseudo triple major][dku] student,
 - Invested Rustacean, Pythonista, Polyglot programmer,
-- Open Source developer, Novice full-stack developer.
+- Open Source developer, Novice full-stack developer,
+- A calm, straightforward, helpful, open-minded, curious, independent,
+    and hardworking person.
 
 <img height="123px" alt="Steven Hé (Sīchàng)'s avatar" src="favicon.svg" />
 </div>

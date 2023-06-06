@@ -32,6 +32,9 @@
     - Invited to be TA afterwards.
 - STATS 201—Probability, Random Variables and Stochastic Processes:
     [PageRank DKU website with Scrapy & Numpy][STATS210_final_proj].
+- Three entry courses for Physics, Chemistry, Biology:
+    Learned the physical limitation to study natural science at DKU.
+    Determined to study the quantitative reasoning division.
 
 ## Zhixin High School (2017 - 2020)
 

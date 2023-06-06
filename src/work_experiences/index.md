@@ -2,6 +2,7 @@
 
 ## Work at DKU
 
+<!-- TODO: Go back to past resume version and merge content in. -->
 ### RA for Federated Learning research project (2023/03 - )
 
 The [*FedCampus*][fedcampus] project aims to develop a federated learning
@@ -132,8 +133,8 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 
 ### Other work at DKU
 
-<!-- TODO -->
 - Intersections editor and translator (2021/06 - 2021/08)
+    - Lead by Professor Austin Woerner.
 
 [crla]: https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf
 [cs201_setup]: https://www.youtube.com/watch?v=yiL-ULPBkvE
