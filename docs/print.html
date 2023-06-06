@@ -201,10 +201,26 @@ in separate background processes on demand.</li>
 </ul>
 </li>
 </ul>
+<h3 id="independent-research-on-finding-network-routing-anomalies-202304---"><a class="header" href="#independent-research-on-finding-network-routing-anomalies-202304---">Independent research on finding network routing anomalies (2023/04 - )</a></h3>
+<p><a href="https://github.com/SichangHe/parse_rpsl_policy">parse_rpsl_policy</a> is a network project I am doing with
+Professor Italo Cunha.
+I parse Routing Policy Specification Language (RPSL) into efficient data
+structures in <em>Rust</em>.
+Then, I try matching actual internet routes against them to find routing
+anomalies.</p>
+<ul>
+<li>Studied Internet Engineering Task Force (IETF) RFC 4012 and 2622 for RPSL
+syntax and semantics.</li>
+<li>Developed an RPSL lexer in Python with <a href="https://github.com/pyparsing/pyparsing/">PyParsing</a> to produce
+abstract syntax tree (AST).</li>
+<li>Further parsed the AST into efficient data structures in Rust.</li>
+<li>Used Rust in Jupyter Notebook with <a href="https://github.com/evcxr/evcxr">Evcxr</a> to compare Border Gateway
+Protocol (BGP) routes against RPSL policies interactively.</li>
+</ul>
 <h3 id="ra-for-search-engine-research-project-202112---202305"><a class="header" href="#ra-for-search-engine-research-project-202112---202305">RA for search engine research project (2021/12 - 2023/05)</a></h3>
 <p>The <em>SSO</em> project aims to produce a search engine to search among DKU sites
 and intranet.
-It is lead by Professor Jiang Long,</p>
+It is supervised by Professor Jiang Long.</p>
 <ul>
 <li>Developed a web scraper in <em>Rust</em>.
 <ul>
@@ -228,7 +244,6 @@ became vague under the quests for features.</li>
 <h3 id="other-works-at-dku"><a class="header" href="#other-works-at-dku">Other works at DKU</a></h3>
 <!-- TODO -->
 <ul>
-<li>Independent research on finding network routing anomalies (2023/04 - )</li>
 <li>iGEM 2022 DKU team (2021/11 - 2022/10)</li>
 <li>TA for COMPSCI 201 (2021/11 - 2022/03)</li>
 <li>Academic Resource Center tutor (2021/05 - 2022/05)</li>
