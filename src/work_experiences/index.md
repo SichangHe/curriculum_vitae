@@ -125,12 +125,17 @@ COMPSCI 201—Introduction to Programming and Data Structures.
         day-to-day life and using analogies.
         Verified that this strategy is extremely effective.
 
+### Academic Resource Center tutor (2021/05 - 2022/05)
+
+- Obtained a [CRLA certificate][crla] after tutoring for two semesters.
+- Tutored MATH 201—Multivariate Calculus, MATH 105—Calculus, and COMPSCI 201.
+
 ### Other work at DKU
 
 <!-- TODO -->
-- Academic Resource Center tutor (2021/05 - 2022/05)
 - Intersections editor and translator (2021/06 - 2021/08)
 
+[crla]: https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf
 [cs201_setup]: https://www.youtube.com/watch?v=yiL-ULPBkvE
 [evcxr]: https://github.com/evcxr/evcxr
 [fedcampus]: https://github.com/FedCampus
