@@ -60,12 +60,16 @@ A web scraper in *Rust* that scrapes recursively, at constant frequency
     - Over 1000 lines of Lua for my modal editor Neovim and my tiling window
         manager Yabai.
     - Configuration for Fish shell, Starship, and Alacritty.
-    - Support my hardcore terminal and keyboard workflow.
+    - Support my smooth terminal and keyboard workflow.
 - Learned new programming languages on [Exercism][exercism].
 - Explored various operating systems.
     - Installed Windows 10 & 11,
         several Linux distributions such as Arch Linux, and FreeBSD,
-    - Installed on hardware, on Parallels Desktop, and on QEMU/KVM.
+        on hardware, on Parallels Desktop, and on QEMU/KVM.
+    - Built a Hackintosh on a ThinkPad, but did not have Wi-Fi.
+        Switched to QEMU/KVM instead.
+- Explored various text editors such as IntelliJ and Doom Emacs.
+    Daily drove Visual Studio Code before switching to Neovim.
 
 ## Failed projects
 

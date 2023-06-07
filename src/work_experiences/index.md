@@ -66,18 +66,23 @@ and intranet.
 It is supervised by Professor Jiang Long.
 
 - Developed a web scraper in *Rust*.
-    - Asynchronous and parallel web requests using Tokio and Reqwest.
-    - Rich features including saving documents and scraping rings of web pages
-        outside of the whitelist.
+    - Sent asynchronous and parallel web requests using Tokio and Reqwest.
+    - Developed rich features including saving documents and scraping rings of
+        web pages outside of the whitelist.
         <!-- TODO: What is this? -->
-    - Had run daily, flawlessly since deployment.
+    - Made it stable so it ran daily, flawlessly since deployment.
+    - Fine-tuned the Regular Expression (regex) filter and blacklist for the
+        best set of web pages.
 - Helped the team with search engine front end and back end development.
     - Created a modern-looking search interface with Django, HTML, ECMAScript,
         and Tailwindcss.
+    - Learned to use Django's Object-Relational Mapping (ORM) to manipulate the
+        database.
     - Improved HTML processing code in Python.
         Cleaned up noisy HTML tags using BeautifulSoup.
-    - Handled large Git merge conflicts due to parallel development on the same
-        files.
+    - Practiced Git for version control and teamwork.
+        - Handled large Git merge conflicts due to parallel development on the
+            same files.
 - Became inactive in the project after it slowed down dramatically and the
     project goal became vague under the quests for features.
 - Learned from the downfall of the project.

@@ -4,8 +4,8 @@
 
 - Data Science major, Pseudo Computer Science major,
     Pseudo Applied Mathematics major.
-
-    Note: Pseudo majors by completing major requirement courses.
+    Here, Pseudo majors are counted by completing major requirement courses
+    because DKU is a Liberal Arts university.
 - One semester at Duke University, Durham. Full grade.
 - Started writing [my 30-thousand-word notes hosted on GitHub][notes] in 
     Markdown with LaTeX using [mdBook][mdbook] and [mdBook-KaTeX][mdbook-katex].
