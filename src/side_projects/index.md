@@ -20,19 +20,21 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.
         Fixed by replacing newline characters.
     - Fixed several error handling bugs.
         For example, fixed crashing on placeholder chapters.
-    - Worked around Windows platform support from upstream and fixed GitHub CI.
-        Use an alternative, working dependency by default.
-        Use cross compilation in CIs to provide full-feature builds.
+    - Worked around Windows platform support from upstream.
+        Discovered an alternative, working, but slightly compromised dependency
+        by communicating with upstream `katex_rs` developers.
+    - Fixed the GitHub CIs for MUSL Linux and Windows builds.
+        Use cross compilation to provide full-feature builds.
 - Improved speed by 10 times (on an M1 MacBook) by adopting parallelism and
     avoiding repeated rendering.
 - Developed new features up to the point that mdBook-KaTeX is considered
     feature-complete. For example:
-    - Adopted feature to preserve code blocks according to CommonMark
+    - Adopted feature to preserve fenced code blocks according to CommonMark
         specification.
-        Accomplished by [hand-writing a finite-state machine to scan through
-        Markdown code][handle-codeblock].
-    - Added a feature to include math expressions source.
-    - Added MathML option for accessibility.
+        Accomplished by hand-writing a finite-state machine to scan through
+        Markdown code.
+    - Added other features such as options to include math expressions source,
+        enable MathML for accessibility, and use custom delimiters.
 - Deprecated the problematic `static-css` feature gradually and provided an
     alternative.
 
@@ -44,7 +46,9 @@ A web scraper in *Rust* that scrapes recursively, at constant frequency
 [![recursive_scraper version][scraper_version]
 ![recursive_scraper downloads][scraper_downloads]][crates_scraper]
 
-- Implemented without using mutexes or channels for maximum simplicity.
+- Learned from the design mistakes in [the SSO scraper][ra_search_engine] and
+    chose elegant and maximally simple designs.
+- Implemented without using mutexes or channels.
     Instead, used [`FuturesUnordered`][futures_unordered] to queue
     self-contained tasks.
 
@@ -69,19 +73,27 @@ A web scraper in *Rust* that scrapes recursively, at constant frequency
 
 <!-- TODO -->
 
+### Forum using Ruby on Rails (2022/06 - 2022/08)
+
+[Forum][forum] using Ruby on Rails and Hotwire.
+
+- Deployed it on Heroku.
+- Developed features such as infinitely nested comments and MathJax support.
+
 [config]: https://github.com/SichangHe/.config
 [contribution_activity]: https://github.com/SichangHe#js-contribution-activity
 [crates_mdbook-katex]: https://crates.io/crates/mdbook-katex
 [crates_scraper]: https://crates.io/crates/recursive_scraper
 [exercism]: https://exercism.org/profiles/SichangHe
+[forum]: https://github.com/SichangHe/forum
 [futures_unordered]: https://docs.rs/futures/latest/futures/stream/struct.FuturesUnordered.html
-[handle-codeblock]: https://github.com/lzanini/mdbook-katex/pull/54
 [katex-break-table]: https://github.com/lzanini/mdbook-katex/issues/3
 [mdBook]: https://github.com/rust-lang/mdBook
 [mdbook-katex]: https://github.com/lzanini/mdbook-katex
 [mdbook-katex_downloads]: https://img.shields.io/crates/d/mdbook-katex
 [mdbook-katex_version]: https://img.shields.io/crates/v/mdbook-katex
 [mdbook-katex2]: https://github.com/lzanini/mdbook-katex/issues/37
+[ra_search_engine]: https://sichanghe.github.io/curriculum_vitae/work_experiences/index.html#ra-for-search-engine-research-project-202112---202305
 [recursive_scraper]: https://github.com/SichangHe/scraper
 [scraper_downloads]: https://img.shields.io/crates/d/recursive_scraper
 [scraper_version]: https://img.shields.io/crates/v/recursive_scraper

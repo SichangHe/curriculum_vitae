@@ -7,8 +7,8 @@
 
     Note: Pseudo majors by completing major requirement courses.
 - One semester at Duke University, Durham. Full grade.
-- Started [my 30-thousand-word notes hosted on GitHub][notes] using
-    [mdBook][mdbook] and [mdBook-KaTeX][mdbook-katex].
+- Started writing [my 30-thousand-word notes hosted on GitHub][notes] in 
+    Markdown with LaTeX using [mdBook][mdbook] and [mdBook-KaTeX][mdbook-katex].
 
 ### Significant courses at DKU
 
@@ -34,9 +34,21 @@
     [PageRank DKU website][STATS210_final_proj].
     - Scraped around 8000 webpages using Scrapy.
     - Calculated PageRank as a Markov chain using NumPy.
+    - Found weird problems in DKU website such as infinite recursive URLs and
+        motivated to learn web development.
+    - Unsatisfied with Scrapy and decided to build my own web scraper.
 - Three entry courses for Physics, Chemistry, Biology:
     Learned the physical limitation to study natural science at DKU.
     Determined to study the quantitative reasoning division.
+
+### DKU sports club (2020 -)
+
+- Badminton club active member.
+    - Acted as a judge for the game event held in Bacheng in 2021.
+- Running Club active member for both the old Toads Running club and the new
+    one in 2023.
+    - Chose the routine for the 5km city-wide Park Run with Haibei Zhang.
+- Cycling club and tennis club member.
 
 ## Zhixin High School (2017 - 2020)
 

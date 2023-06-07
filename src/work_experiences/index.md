@@ -70,16 +70,21 @@ It is supervised by Professor Jiang Long.
     - Rich features including saving documents and scraping rings of web pages
         outside of the whitelist.
         <!-- TODO: What is this? -->
+    - Had run daily, flawlessly since deployment.
 - Helped the team with search engine front end and back end development.
     - Created a modern-looking search interface with Django, HTML, ECMAScript,
         and Tailwindcss.
     - Improved HTML processing code in Python.
         Cleaned up noisy HTML tags using BeautifulSoup.
-- Quit the project after it slowed down dramatically and the project goal
-    became vague under the quests for features.
-- Learned from the failure of the project.
+    - Handled large Git merge conflicts due to parallel development on the same
+        files.
+- Became inactive in the project after it slowed down dramatically and the
+    project goal became vague under the quests for features.
+- Learned from the downfall of the project.
     - Learned how a well-defined and well-scoped goal is crucial for any project
         at any time.
+    - Experienced the importance of coding best practices for long-term
+        maintainability.
     - Witnessed how hype and motivation of the members are essential for any
         project.
 
@@ -98,7 +103,7 @@ Our team won a silver medal in the International Genetically Engineered Machine
         content.
 - Pushed the team to fully adopt Git, GitLab, Visual Studio Code, and Markdown.
     The process was hard and we had very limited success.
-    - [VS Code & Git introduction video for the team][vscode_git_intro].
+    - Filmed a [VS Code & Git introduction video for the team][vscode_git_intro].
 - Used protein modeling software to validate teammates' protein design:
     RoseTTAFold, Robetta, PyMOL.
 - Learned from working with non-technical Biology team members.
@@ -135,6 +140,10 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 
 - Intersections editor and translator (2021/06 - 2021/08)
     - Lead by Professor Austin Woerner.
+    - Worked as a Chinese editor and translator.
+        Co-translated three articles and reviewed a few.
+        These articles are published on Intersections' WeChat public account and
+        [its website][intersections].
     - Created a video tutorial: [using OneDrive and Microsoft Word for
         collaboration][onedrive_microsoft].
 
@@ -144,6 +153,7 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [fedcampus]: https://github.com/FedCampus
 [flower]: https://flower.dev/
 [igem_wiki]: https://github.com/SichangHe/igem-2022-dku-backup
+[intersections]: https://sites.duke.edu/intersections/
 [mdBook]: https://github.com/rust-lang/mdBook
 [mdbook-katex]: https://github.com/lzanini/mdbook-katex
 [onedrive_microsoft]: https://www.youtube.com/watch?v=mYPLp_gtHkM
