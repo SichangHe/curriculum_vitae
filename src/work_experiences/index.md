@@ -135,6 +135,8 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 
 - Intersections editor and translator (2021/06 - 2021/08)
     - Lead by Professor Austin Woerner.
+    - Created a video tutorial: [using OneDrive and Microsoft Word for
+        collaboration][onedrive_microsoft].
 
 [crla]: https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf
 [cs201_setup]: https://www.youtube.com/watch?v=yiL-ULPBkvE
@@ -144,6 +146,7 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [igem_wiki]: https://github.com/SichangHe/igem-2022-dku-backup
 [mdBook]: https://github.com/rust-lang/mdBook
 [mdbook-katex]: https://github.com/lzanini/mdbook-katex
+[onedrive_microsoft]: https://www.youtube.com/watch?v=mYPLp_gtHkM
 [parse_rpsl_policy]: https://github.com/SichangHe/parse_rpsl_policy
 [pyparsing]: https://github.com/pyparsing/pyparsing/
 [vscode_git_intro]: https://www.youtube.com/watch?v=C-sAGuWM2JM

@@ -7,8 +7,8 @@
 mdBook-KaTeX is a preprocessor for [mdBook][mdBook] in *Rust*.
 It pre-renders LaTeX math expressions to HTML using KaTeX.
 
-![mdBook-KaTeX version][mdbook-katex_version]
-![mdBook-KaTeX downloads][mdbook-katex_downloads]
+[![mdBook-KaTeX version][mdbook-katex_version]
+![mdBook-KaTeX downloads][mdbook-katex_downloads]][crates_mdbook-katex]
 
 - Took over [maintainership by publishing a fork][mdbook-katex2]
     when the project was unmaintained.
@@ -36,21 +36,32 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.
 - Deprecated the problematic `static-css` feature gradually and provided an
     alternative.
 
-### [Configuration files][config]
-
-<!-- TODO -->
-
 ### Author & maintain [recursive_scraper][recursive_scraper] (2022/06 - )
 
 A web scraper in *Rust* that scrapes recursively, at constant frequency
 (requests per time), asynchronously.
 
-![recursive_scraper version][scraper_version]
-![recursive_scraper downloads][scraper_downloads]
+[![recursive_scraper version][scraper_version]
+![recursive_scraper downloads][scraper_downloads]][crates_scraper]
 
 - Implemented without using mutexes or channels for maximum simplicity.
     Instead, used [`FuturesUnordered`][futures_unordered] to queue
     self-contained tasks.
+
+### Other happy projects
+
+- [Maintains and contributed to Open Source projects on
+    GitHub][contribution_activity].
+- [Configuration files][config].
+    - Over 1000 lines of Lua for my modal editor Neovim and my tiling window
+        manager Yabai.
+    - Configuration for Fish shell, Starship, and Alacritty.
+    - Support my hardcore terminal and keyboard workflow.
+- Learned new programming languages on [Exercism][exercism].
+- Explored various operating systems.
+    - Installed Windows 10 & 11,
+        several Linux distributions such as Arch Linux, and FreeBSD,
+    - Installed on hardware, on Parallels Desktop, and on QEMU/KVM.
 
 ## Failed projects
 
@@ -59,7 +70,10 @@ A web scraper in *Rust* that scrapes recursively, at constant frequency
 <!-- TODO -->
 
 [config]: https://github.com/SichangHe/.config
+[contribution_activity]: https://github.com/SichangHe#js-contribution-activity
+[crates_mdbook-katex]: https://crates.io/crates/mdbook-katex
 [crates_scraper]: https://crates.io/crates/recursive_scraper
+[exercism]: https://exercism.org/profiles/SichangHe
 [futures_unordered]: https://docs.rs/futures/latest/futures/stream/struct.FuturesUnordered.html
 [handle-codeblock]: https://github.com/lzanini/mdbook-katex/pull/54
 [katex-break-table]: https://github.com/lzanini/mdbook-katex/issues/3
