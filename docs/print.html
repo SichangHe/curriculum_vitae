@@ -253,6 +253,7 @@ It is supervised by Professor Jiang Long.</p>
 <li>Rich features including saving documents and scraping rings of web pages
 outside of the whitelist.<!-- TODO: What is this? -->
 </li>
+<li>Had run daily, flawlessly since deployment.</li>
 </ul>
 </li>
 <li>Helped the team with search engine front end and back end development.
@@ -261,14 +262,18 @@ outside of the whitelist.<!-- TODO: What is this? -->
 and Tailwindcss.</li>
 <li>Improved HTML processing code in Python.
 Cleaned up noisy HTML tags using BeautifulSoup.</li>
+<li>Handled large Git merge conflicts due to parallel development on the same
+files.</li>
 </ul>
 </li>
-<li>Quit the project after it slowed down dramatically and the project goal
-became vague under the quests for features.</li>
-<li>Learned from the failure of the project.
+<li>Became inactive in the project after it slowed down dramatically and the
+project goal became vague under the quests for features.</li>
+<li>Learned from the downfall of the project.
 <ul>
 <li>Learned how a well-defined and well-scoped goal is crucial for any project
 at any time.</li>
+<li>Experienced the importance of coding best practices for long-term
+maintainability.</li>
 <li>Witnessed how hype and motivation of the members are essential for any
 project.</li>
 </ul>
@@ -292,7 +297,7 @@ content.</li>
 <li>Pushed the team to fully adopt Git, GitLab, Visual Studio Code, and Markdown.
 The process was hard and we had very limited success.
 <ul>
-<li><a href="https://www.youtube.com/watch?v=C-sAGuWM2JM">VS Code &amp; Git introduction video for the team</a>.</li>
+<li>Filmed a <a href="https://www.youtube.com/watch?v=C-sAGuWM2JM">VS Code &amp; Git introduction video for the team</a>.</li>
 </ul>
 </li>
 <li>Used protein modeling software to validate teammates' protein design:
@@ -340,6 +345,10 @@ Verified that this strategy is extremely effective.</li>
 <li>Intersections editor and translator (2021/06 - 2021/08)
 <ul>
 <li>Lead by Professor Austin Woerner.</li>
+<li>Worked as a Chinese editor and translator.
+Co-translated three articles and reviewed a few.
+These articles are published on Intersections' WeChat public account and
+<a href="https://sites.duke.edu/intersections/">its website</a>.</li>
 <li>Created a video tutorial: <a href="https://www.youtube.com/watch?v=mYPLp_gtHkM">using OneDrive and Microsoft Word for
 collaboration</a>.</li>
 </ul>
@@ -357,8 +366,8 @@ Pseudo Applied Mathematics major.</p>
 <p>One semester at Duke University, Durham. Full grade.</p>
 </li>
 <li>
-<p>Started <a href="https://sichanghe.github.io/notes/">my 30-thousand-word notes hosted on GitHub</a> using
-<a href="https://github.com/rust-lang/mdBook">mdBook</a> and <a href="https://github.com/lzanini/mdbook-katex">mdBook-KaTeX</a>.</p>
+<p>Started writing <a href="https://sichanghe.github.io/notes/">my 30-thousand-word notes hosted on GitHub</a> in 
+Markdown with LaTeX using <a href="https://github.com/rust-lang/mdBook">mdBook</a> and <a href="https://github.com/lzanini/mdbook-katex">mdBook-KaTeX</a>.</p>
 </li>
 </ul>
 <h3 id="significant-courses-at-dku"><a class="header" href="#significant-courses-at-dku">Significant courses at DKU</a></h3>
@@ -398,11 +407,29 @@ and debugger.</li>
 <ul>
 <li>Scraped around 8000 webpages using Scrapy.</li>
 <li>Calculated PageRank as a Markov chain using NumPy.</li>
+<li>Found weird problems in DKU website such as infinite recursive URLs and
+motivated to learn web development.</li>
+<li>Unsatisfied with Scrapy and decided to build my own web scraper.</li>
 </ul>
 </li>
 <li>Three entry courses for Physics, Chemistry, Biology:
 Learned the physical limitation to study natural science at DKU.
 Determined to study the quantitative reasoning division.</li>
+</ul>
+<h3 id="dku-sports-club-2020--"><a class="header" href="#dku-sports-club-2020--">DKU sports club (2020 -)</a></h3>
+<ul>
+<li>Badminton club active member.
+<ul>
+<li>Acted as a judge for the game event held in Bacheng in 2021.</li>
+</ul>
+</li>
+<li>Running Club active member for both the old Toads Running club and the new
+one in 2023.
+<ul>
+<li>Chose the routine for the 5km city-wide Park Run with Haibei Zhang.</li>
+</ul>
+</li>
+<li>Cycling club and tennis club member.</li>
 </ul>
 <h2 id="zhixin-high-school-2017---2020"><a class="header" href="#zhixin-high-school-2017---2020">Zhixin High School (2017 - 2020)</a></h2>
 <ul>
@@ -428,9 +455,11 @@ rendering in tables and headers</a>.
 Fixed by replacing newline characters.</li>
 <li>Fixed several error handling bugs.
 For example, fixed crashing on placeholder chapters.</li>
-<li>Worked around Windows platform support from upstream and fixed GitHub CI.
-Use an alternative, working dependency by default.
-Use cross compilation in CIs to provide full-feature builds.</li>
+<li>Worked around Windows platform support from upstream.
+Discovered an alternative, working, but slightly compromised dependency
+by communicating with upstream <code>katex_rs</code> developers.</li>
+<li>Fixed the GitHub CIs for MUSL Linux and Windows builds.
+Use cross compilation to provide full-feature builds.</li>
 </ul>
 </li>
 <li>Improved speed by 10 times (on an M1 MacBook) by adopting parallelism and
@@ -438,12 +467,12 @@ avoiding repeated rendering.</li>
 <li>Developed new features up to the point that mdBook-KaTeX is considered
 feature-complete. For example:
 <ul>
-<li>Adopted feature to preserve code blocks according to CommonMark
+<li>Adopted feature to preserve fenced code blocks according to CommonMark
 specification.
-Accomplished by <a href="https://github.com/lzanini/mdbook-katex/pull/54">hand-writing a finite-state machine to scan through
-Markdown code</a>.</li>
-<li>Added a feature to include math expressions source.</li>
-<li>Added MathML option for accessibility.</li>
+Accomplished by hand-writing a finite-state machine to scan through
+Markdown code.</li>
+<li>Added other features such as options to include math expressions source,
+enable MathML for accessibility, and use custom delimiters.</li>
 </ul>
 </li>
 <li>Deprecated the problematic <code>static-css</code> feature gradually and provided an
@@ -455,7 +484,9 @@ alternative.</li>
 <p><a href="https://crates.io/crates/recursive_scraper"><img src="https://img.shields.io/crates/v/recursive_scraper" alt="recursive_scraper version" />
 <img src="https://img.shields.io/crates/d/recursive_scraper" alt="recursive_scraper downloads" /></a></p>
 <ul>
-<li>Implemented without using mutexes or channels for maximum simplicity.
+<li>Learned from the design mistakes in <a href="https://sichanghe.github.io/curriculum_vitae/work_experiences/index.html#ra-for-search-engine-research-project-202112---202305">the SSO scraper</a> and
+chose elegant and maximally simple designs.</li>
+<li>Implemented without using mutexes or channels.
 Instead, used <a href="https://docs.rs/futures/latest/futures/stream/struct.FuturesUnordered.html"><code>FuturesUnordered</code></a> to queue
 self-contained tasks.</li>
 </ul>
@@ -483,6 +514,12 @@ several Linux distributions such as Arch Linux, and FreeBSD,</li>
 <h2 id="failed-projects"><a class="header" href="#failed-projects">Failed projects</a></h2>
 <h3 id="academic-forum"><a class="header" href="#academic-forum">Academic forum</a></h3>
 <!-- TODO -->
+<h3 id="forum-using-ruby-on-rails-202206---202208"><a class="header" href="#forum-using-ruby-on-rails-202206---202208">Forum using Ruby on Rails (2022/06 - 2022/08)</a></h3>
+<p><a href="https://github.com/SichangHe/forum">Forum</a> using Ruby on Rails and Hotwire.</p>
+<ul>
+<li>Deployed it on Heroku.</li>
+<li>Developed features such as infinitely nested comments and MathJax support.</li>
+</ul>
 
                     </main>
 
