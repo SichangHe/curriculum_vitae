@@ -2,54 +2,80 @@
 
 ## Work at DKU
 
-<!-- TODO: Go back to past resume version and merge content in. -->
 ### RA for Federated Learning research project (2023/03 - )
 
-The [*FedCampus*][fedcampus] project aims to develop a federated learning
-platform for mobile devices and use it to conduct experiments on DKU campus.
-For example, one of the applications is to monitor students' health information
-without directly collecting it.
+The [*FedCampus*][fedcampus] team project aims to develop a federated machine
+learning (FL) platform for mobile devices.
+It also aims to use this platform to conduct privacy-related experiments on DKU
+campus.
 It is lead by Professor Bing Luo.
 
+As one of the example applications, we would monitor students' health
+information without directly collecting it.
+We would do on-device training with their health data,
+then upload and aggregate the model parameters on our server.
+
+#### Work summary for FedCampus
+
+My job is to build the infrastructure to enable a FL deployment workflow.
+In this workflow, the platform users would be able to, easily,
+deploy machine learning models they designed for FL.
+
+- Proposed and lead the adoption of [Flower][flower], an FL framework in Python.
+    - Developed a demo to use Django servers to spawn and manage Flower servers
+        in separate background processes on demand.
+    - Investigated Flower server source code and applied customizations to save
+        intermediate states into database.
+    - Revamped the example Flower Android client to provide the team an SDK in
+        the Kotlin programming language for FL.
+    - Contributed to Flower by Pull Requests.
+- Developed demos to, respectively, use HTTP, MQTT, and gRPC to communicate
+    between Android clients and Python servers.
 - Investigated and tried potential on-device training options on Android such
     as ONNX, MNN, PyTorch Mobile, FedML, and TensorFlow Lite, and landed on the
     latter.
-- Developed separate demos to use HTTP, MQTT, and gRPC to communicate between
-    Android clients and Python servers.
-- Proposed and lead the use of [Flower][flower], a federated learning framework
-    in Python.
-    - Contributed to Flower by Pull Requests.
-    - Investigated Flower server source code and applied customizations to save
-        model parameters into database.
-    - Revamped the example Flower Android client to provide the team an SDK in
-        *Kotlin* for federated learning.
-    - Developed a demo to use Django servers to spawn and manage Flower servers
-        in separate background processes on demand.
-- Learned and practiced mobile development, federated learning, and back-end
-    development.
-    - Learned Android development.
-    - Learned to use the Kotlin programming language.
-    - Learned the ideas and practices of federated learning using FLower.
-    - Practiced back-end development using Django REST Framework.
+
+#### Knowledge and skills gained from FedCampus
+
+Deeply practiced mobile development, back-end development, and FL.
+
+- Gathered Android development experience: handled on-device training,
+    HTTP requests, SQLite3 database, and user interface using Kotlin.
+- Practiced back-end development: built JSON APIs using Django REST Framework.
+- Learn the ideas and practices of FL customizing Flower servers.
 
 ### Independent network research project (2023/04 - )
 
-The [parse_rpsl_policy][parse_rpsl_policy] project aims to find network routing
-anomalies.
-I am doing with it Professor Italo Cunha.
+This project aims to provide network administrators a tool to find network
+routing anomalies.
+Professor Italo Cunha is my supervisor.
+[The codebase on GitHub][parse_rpsl_policy] is named `parse_rpsl_policy`.
+
+#### Work summary for `parse_rpsl_policy`
+
 I parse Routing Policy Specification Language (RPSL) into efficient data
-structures in *Rust*.
+structures.
 Then, I match actual internet routes against them to find routing anomalies.
 
 - Studied Internet Engineering Task Force (IETF) RFC 4012 and 2622 for RPSL
     syntax and semantics.
-- Developed an RPSL lexer in Python with [PyParsing][pyparsing] to produce
-    abstract syntax tree (AST).
-- Further parsed the AST into efficient data structures in Rust.
-- Used *Rust* in Jupyter Notebook with [Evcxr][evcxr] to compare Border Gateway
-    Protocol (BGP) routes against RPSL policies interactively.
+- Developed an RPSL parser that produces recursive data structures in the Rust
+    programming language.
+    - Developed the lexer in Python with [PyParsing][pyparsing] to produce
+        abstract syntax tree (AST).
+    - Spawn Python lexer workers from Rust.
+        Controlled them by piping their Stdin and Stdout.
+    - Further parsed the AST into efficient data structures in Rust.
+- Developed a comprehensive Rust module to compare Border Gateway Protocol (BGP)
+    routes against RPSL policies.
+    Checked, especially, the filters and peerings of each autonomous system.
+
+#### Knowledge and skills gained from `parse_rpsl_policy`
+
+- Used Rust in Jupyter Notebook interactively with [Evcxr][evcxr].
+<!-- TODO: This is where we left off. -->
 - Practiced string processing and programming deeply nested data structures
-    efficiently in Python and *Rust*.
+    efficiently in Python and Rust.
     - Practiced using detailed docstrings to make up for the lack of a strong
         type system in Python.
     - Practiced parallel programming in *Rust*.
