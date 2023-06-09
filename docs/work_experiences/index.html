@@ -148,58 +148,80 @@
                     <main>
                         <h1 id="work-experiences"><a class="header" href="#work-experiences">Work Experiences</a></h1>
 <h2 id="work-at-dku"><a class="header" href="#work-at-dku">Work at DKU</a></h2>
-<!-- TODO: Go back to past resume version and merge content in. -->
 <h3 id="ra-for-federated-learning-research-project-202303---"><a class="header" href="#ra-for-federated-learning-research-project-202303---">RA for Federated Learning research project (2023/03 - )</a></h3>
-<p>The <a href="https://github.com/FedCampus"><em>FedCampus</em></a> project aims to develop a federated learning
-platform for mobile devices and use it to conduct experiments on DKU campus.
-For example, one of the applications is to monitor students' health information
-without directly collecting it.
+<p>The <a href="https://github.com/FedCampus"><em>FedCampus</em></a> team project aims to develop a federated machine
+learning (FL) platform for mobile devices.
+It also aims to use this platform to conduct privacy-related experiments on DKU
+campus.
 It is lead by Professor Bing Luo.</p>
+<p>As one of the example applications, we would monitor students' health
+information without directly collecting it.
+We would do on-device training with their health data,
+then upload and aggregate the model parameters on our server.</p>
+<h4 id="work-summary-for-fedcampus"><a class="header" href="#work-summary-for-fedcampus">Work summary for FedCampus</a></h4>
+<p>My job is to build the infrastructure to enable a FL deployment workflow.
+In this workflow, the platform users would be able to, easily,
+deploy machine learning models they designed for FL.</p>
 <ul>
+<li>Proposed and lead the adoption of <a href="https://flower.dev/">Flower</a>, an FL framework in Python.
+<ul>
+<li>Developed a demo to use Django servers to spawn and manage Flower servers
+in separate background processes on demand.</li>
+<li>Investigated Flower server source code and applied customizations to save
+intermediate states into database.</li>
+<li>Revamped the example Flower Android client to provide the team an SDK in
+the Kotlin programming language for FL.</li>
+<li>Contributed to Flower by Pull Requests.</li>
+</ul>
+</li>
+<li>Developed demos to, respectively, use HTTP, MQTT, and gRPC to communicate
+between Android clients and Python servers.</li>
 <li>Investigated and tried potential on-device training options on Android such
 as ONNX, MNN, PyTorch Mobile, FedML, and TensorFlow Lite, and landed on the
 latter.</li>
-<li>Developed separate demos to use HTTP, MQTT, and gRPC to communicate between
-Android clients and Python servers.</li>
-<li>Proposed and lead the use of <a href="https://flower.dev/">Flower</a>, a federated learning framework
-in Python.
-<ul>
-<li>Contributed to Flower by Pull Requests.</li>
-<li>Investigated Flower server source code and applied customizations to save
-model parameters into database.</li>
-<li>Revamped the example Flower Android client to provide the team an SDK in
-<em>Kotlin</em> for federated learning.</li>
-<li>Developed a demo to use Django servers to spawn and manage Flower servers
-in separate background processes on demand.</li>
 </ul>
-</li>
-<li>Learned and practiced mobile development, federated learning, and back-end
-development.
+<h4 id="knowledge-and-skills-gained-from-fedcampus"><a class="header" href="#knowledge-and-skills-gained-from-fedcampus">Knowledge and skills gained from FedCampus</a></h4>
+<p>Deeply practiced mobile development, back-end development, and FL.</p>
 <ul>
-<li>Learned Android development.</li>
-<li>Learned to use the Kotlin programming language.</li>
-<li>Learned the ideas and practices of federated learning using FLower.</li>
-<li>Practiced back-end development using Django REST Framework.</li>
-</ul>
-</li>
+<li>Gathered Android development experience: handled on-device training,
+HTTP requests, SQLite3 database, and user interface using Kotlin.</li>
+<li>Practiced back-end development: built JSON APIs using Django REST Framework.</li>
+<li>Learn the ideas and practices of FL customizing Flower servers.</li>
 </ul>
 <h3 id="independent-network-research-project-202304---"><a class="header" href="#independent-network-research-project-202304---">Independent network research project (2023/04 - )</a></h3>
-<p>The <a href="https://github.com/SichangHe/parse_rpsl_policy">parse_rpsl_policy</a> project aims to find network routing
-anomalies.
-I am doing with it Professor Italo Cunha.
-I parse Routing Policy Specification Language (RPSL) into efficient data
-structures in <em>Rust</em>.
+<p>This project aims to provide network administrators a tool to find network
+routing anomalies.
+Professor Italo Cunha is my supervisor.
+<a href="https://github.com/SichangHe/parse_rpsl_policy">The codebase on GitHub</a> is named <code>parse_rpsl_policy</code>.</p>
+<h4 id="work-summary-for-parse_rpsl_policy"><a class="header" href="#work-summary-for-parse_rpsl_policy">Work summary for <code>parse_rpsl_policy</code></a></h4>
+<p>I parse Routing Policy Specification Language (RPSL) into efficient data
+structures.
 Then, I match actual internet routes against them to find routing anomalies.</p>
 <ul>
 <li>Studied Internet Engineering Task Force (IETF) RFC 4012 and 2622 for RPSL
 syntax and semantics.</li>
-<li>Developed an RPSL lexer in Python with <a href="https://github.com/pyparsing/pyparsing/">PyParsing</a> to produce
+<li>Developed an RPSL parser that produces recursive data structures in the Rust
+programming language.
+<ul>
+<li>Developed the lexer in Python with <a href="https://github.com/pyparsing/pyparsing/">PyParsing</a> to produce
 abstract syntax tree (AST).</li>
+<li>Spawn Python lexer workers from Rust.
+Controlled them by piping their Stdin and Stdout.</li>
 <li>Further parsed the AST into efficient data structures in Rust.</li>
-<li>Used <em>Rust</em> in Jupyter Notebook with <a href="https://github.com/evcxr/evcxr">Evcxr</a> to compare Border Gateway
-Protocol (BGP) routes against RPSL policies interactively.</li>
+</ul>
+</li>
+<li>Developed a comprehensive Rust module to compare Border Gateway Protocol (BGP)
+routes against RPSL policies.
+Checked, especially, the filters and peerings of each autonomous system.</li>
+</ul>
+<h4 id="knowledge-and-skills-gained-from-parse_rpsl_policy"><a class="header" href="#knowledge-and-skills-gained-from-parse_rpsl_policy">Knowledge and skills gained from <code>parse_rpsl_policy</code></a></h4>
+<ul>
+<li>Used Rust in Jupyter Notebook interactively with <a href="https://github.com/evcxr/evcxr">Evcxr</a>.</li>
+</ul>
+<!-- TODO: This is where we left off. -->
+<ul>
 <li>Practiced string processing and programming deeply nested data structures
-efficiently in Python and <em>Rust</em>.
+efficiently in Python and Rust.
 <ul>
 <li>Practiced using detailed docstrings to make up for the lack of a strong
 type system in Python.</li>
