@@ -212,28 +212,43 @@ Controlled them by piping their Stdin and Stdout.</li>
 </li>
 <li>Developed a comprehensive Rust module to compare Border Gateway Protocol (BGP)
 routes against RPSL policies.
-Checked, especially, the filters and peerings of each autonomous system.</li>
+The comparison checks especially the filters and peerings of each autonomous
+system.</li>
+<li>Cached parsing result efficiently for extremely fast reloading by utilizing
+parallelism.
+Only 1sec to reload parsing result of the whole <a href="https://www.ripe.net/manage-ips-and-asns/db">RIPE Database</a>.</li>
 </ul>
 <h4 id="knowledge-and-skills-gained-from-parse_rpsl_policy"><a class="header" href="#knowledge-and-skills-gained-from-parse_rpsl_policy">Knowledge and skills gained from <code>parse_rpsl_policy</code></a></h4>
+<p>String processing in Python; programming deeply nested data structures, and
+high performance parallel programming in Rust.</p>
 <ul>
-<li>Used Rust in Jupyter Notebook interactively with <a href="https://github.com/evcxr/evcxr">Evcxr</a>.</li>
+<li>Practiced using Rust in Jupyter Notebook interactively with <a href="https://github.com/evcxr/evcxr">Evcxr</a>
+under its lifetime restrictions.</li>
+<li>Experienced string processing in Python using <a href="https://github.com/pyparsing/pyparsing/">PyParsing</a>.
+<ul>
+<li>Used detailed docstrings to make up for the lack of a strong type system
+in Python.</li>
+</ul>
+</li>
+<li>Designed custom types with clean programming interface to generate
+comparison reports.
+<ul>
+<li>Applied abstract algebra ideas to persist types across binary
+operations.</li>
+<li>Utilized the <code>?</code> operator in Rust for always correct early return.</li>
+</ul>
+</li>
+<li>Gained better understanding of StdIO locking when using Stdin and Stdout to
+dynamically pipe data between the Rust parser and the Python lexer.</li>
+<li>Gained hands-on experience on file system operation performance
+characteristics.
+<ul>
+<li>Split and serialized the parsing result into multiple JSON strings in
+parallel and saved them to disk sequentially for maximum speed.</li>
+</ul>
+</li>
 </ul>
 <!-- TODO: This is where we left off. -->
-<ul>
-<li>Practiced string processing and programming deeply nested data structures
-efficiently in Python and Rust.
-<ul>
-<li>Practiced using detailed docstrings to make up for the lack of a strong
-type system in Python.</li>
-<li>Practiced parallel programming in <em>Rust</em>.</li>
-<li>Experimented using Stdin and Stdout to dynamically pipe data between the
-<em>Rust</em> parser and the Python lexer.</li>
-<li>Designed custom <em>Rust</em> types using a little category theory to provide
-nice experience to generate match reports.<!-- TODO: Explain better. -->
-</li>
-</ul>
-</li>
-</ul>
 <h3 id="ra-for-search-engine-research-project-202112---202305"><a class="header" href="#ra-for-search-engine-research-project-202112---202305">RA for search engine research project (2021/12 - 2023/05)</a></h3>
 <p>The <em>SSO</em> project aims to produce a search engine to search among DKU sites
 and intranet.
