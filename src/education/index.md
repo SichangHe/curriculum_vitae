@@ -22,9 +22,15 @@
     - Binary search tree in MIPS assembly and ring buffer in C.
     - Fifth place in PizzaCalc length optimization competition (68 lines).
 - MATH 303—ODE and Dynamical Systems:
-    - Read a review paper on differential equations with 99 references.
-        Our group did poorly in the presentation talking about the paper.
+    I learned from the major failure of our final group presentation.
+    - Learned the importance of choosing approachable research starting points.
+        We chose an intricate review paper on differential equations with 99
+        references to reproduce.
+        We struggled to understand the paper because it depends recursively on
+        many other papers it references to.
     - Learned the necessity to start early in group works.
+        My group members were occupied by other affairs and I made the mistake
+        of waiting for them.
 - COMPSCI 201—Introduction to Programming and Data Structures:
     - First CS class. Got interested in CS following
         [the Coursera course][coursera].
