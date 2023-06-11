@@ -66,6 +66,7 @@ Then, I match actual internet routes against them to find routing anomalies.
     - Spawn Python lexer workers from Rust.
         Controlled them by piping their Stdin and Stdout.
     - Further parsed the AST into efficient data structures in Rust.
+        Parsed them in parallel using Rayon.
 - Developed a comprehensive Rust module to compare Border Gateway Protocol (BGP)
     routes against RPSL policies.
     The comparison checks especially the filters and peerings of each autonomous
@@ -96,14 +97,19 @@ high performance parallel programming in Rust.
     - Split and serialized the parsing result into multiple JSON strings in
         parallel and saved them to disk sequentially for maximum speed.
 
-<!-- TODO: This is where we left off. -->
 ### RA for search engine research project (2021/12 - 2023/05)
 
-The *SSO* project aims to produce a search engine to search among DKU sites
+The SSO project aims to produce a search engine to search among DKU sites
 and intranet.
 It is supervised by Professor Jiang Long.
 
-- Developed a web scraper in *Rust*.
+#### Work summary for SSO
+
+My main work was to gather source information for the search engine by scraping
+DKU intranet.
+I also helped improve our web server.
+
+- Developed a web scraper in the Rust programming language.
     - Sent asynchronous and parallel web requests using Tokio and Reqwest.
     - Developed rich features including saving documents and scraping rings of
         web pages outside of the whitelist.
@@ -121,16 +127,24 @@ It is supervised by Professor Jiang Long.
     - Practiced Git for version control and teamwork.
         - Handled large Git merge conflicts due to parallel development on the
             same files.
-- Became inactive in the project after it slowed down dramatically and the
-    project goal became vague under the quests for features.
-- Learned from the downfall of the project.
-    - Learned how a well-defined and well-scoped goal is crucial for any project
-        at any time.
-    - Experienced the importance of coding best practices for long-term
-        maintainability.
-    - Witnessed how hype and motivation of the members are essential for any
-        project.
 
+#### Experience gained from SSO
+
+The project slowed down dramatically and the project goal became vague in the
+quests for features.
+I learned much more from the downfall of SSO.
+
+- Learned how a well-defined and well-scoped goal is crucial for any project
+    at any time.
+- Witnessed how hype and motivation of the members are essential for any
+    project.
+- Experienced the importance of coding best practices for long-term
+    maintainability.
+- Saw the danger of proprietary research projects and the beauty of open source
+    in its immortality.
+    [Rewrote the scraper and released it as open source][scraper_project].
+
+<!-- TODO: This is where we left off. -->
 ### iGEM 2022 DKU team (2021/11 - 2022/10)
 
 Our team won a silver medal in the International Genetically Engineered Machine
@@ -203,4 +217,5 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [parse_rpsl_policy]: https://github.com/SichangHe/parse_rpsl_policy
 [pyparsing]: https://github.com/pyparsing/pyparsing/
 [ripe]: https://www.ripe.net/manage-ips-and-asns/db
+[scraper_project]: ../side_projects/index.html#author--maintain-recursive_scraper-202206---
 [vscode_git_intro]: https://www.youtube.com/watch?v=C-sAGuWM2JM
