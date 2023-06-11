@@ -237,7 +237,8 @@ programming language.
 abstract syntax tree (AST).</li>
 <li>Spawn Python lexer workers from Rust.
 Controlled them by piping their Stdin and Stdout.</li>
-<li>Further parsed the AST into efficient data structures in Rust.</li>
+<li>Further parsed the AST into efficient data structures in Rust.
+Parsed them in parallel using Rayon.</li>
 </ul>
 </li>
 <li>Developed a comprehensive Rust module to compare Border Gateway Protocol (BGP)
@@ -278,13 +279,16 @@ parallel and saved them to disk sequentially for maximum speed.</li>
 </ul>
 </li>
 </ul>
-<!-- TODO: This is where we left off. -->
 <h3 id="ra-for-search-engine-research-project-202112---202305"><a class="header" href="#ra-for-search-engine-research-project-202112---202305">RA for search engine research project (2021/12 - 2023/05)</a></h3>
-<p>The <em>SSO</em> project aims to produce a search engine to search among DKU sites
+<p>The SSO project aims to produce a search engine to search among DKU sites
 and intranet.
 It is supervised by Professor Jiang Long.</p>
+<h4 id="work-summary-for-sso"><a class="header" href="#work-summary-for-sso">Work summary for SSO</a></h4>
+<p>My main work was to gather source information for the search engine by scraping
+DKU intranet.
+I also helped improve our web server.</p>
 <ul>
-<li>Developed a web scraper in <em>Rust</em>.
+<li>Developed a web scraper in the Rust programming language.
 <ul>
 <li>Sent asynchronous and parallel web requests using Tokio and Reqwest.</li>
 <li>Developed rich features including saving documents and scraping rings of
@@ -311,19 +315,23 @@ same files.</li>
 </li>
 </ul>
 </li>
-<li>Became inactive in the project after it slowed down dramatically and the
-project goal became vague under the quests for features.</li>
-<li>Learned from the downfall of the project.
+</ul>
+<h4 id="experience-gained-from-sso"><a class="header" href="#experience-gained-from-sso">Experience gained from SSO</a></h4>
+<p>The project slowed down dramatically and the project goal became vague in the
+quests for features.
+I learned much more from the downfall of SSO.</p>
 <ul>
 <li>Learned how a well-defined and well-scoped goal is crucial for any project
 at any time.</li>
-<li>Experienced the importance of coding best practices for long-term
-maintainability.</li>
 <li>Witnessed how hype and motivation of the members are essential for any
 project.</li>
+<li>Experienced the importance of coding best practices for long-term
+maintainability.</li>
+<li>Saw the danger of proprietary research projects and the beauty of open source
+in its immortality.
+<a href="work_experiences/../side_projects/index.html#author--maintain-recursive_scraper-202206---">Rewrote the scraper and released it as open source</a>.</li>
 </ul>
-</li>
-</ul>
+<!-- TODO: This is where we left off. -->
 <h3 id="igem-2022-dku-team-202111---202210"><a class="header" href="#igem-2022-dku-team-202111---202210">iGEM 2022 DKU team (2021/11 - 2022/10)</a></h3>
 <p>Our team won a silver medal in the International Genetically Engineered Machine
 (iGEM) Biology competition.</p>
