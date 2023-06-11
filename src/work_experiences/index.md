@@ -118,17 +118,19 @@ I also helped improve our web server.
     - Fine-tuned the Regular Expression (regex) filter and blacklist for the
         best set of web pages.
 - Helped the team with search engine front end and back end development.
-    - Created a modern-looking search interface with Django, HTML, ECMAScript,
-        and Tailwindcss.
-    - Learned to use Django's Object-Relational Mapping (ORM) to manipulate the
-        database.
+    - Created a modern-looking search interface.
     - Improved HTML processing code in Python.
         Cleaned up noisy HTML tags using BeautifulSoup.
-    - Practiced Git for version control and teamwork.
-        - Handled large Git merge conflicts due to parallel development on the
-            same files.
 
-#### Experience gained from SSO
+#### Knowledge and experience gained from SSO
+
+- Gained real-world experience of asynchronous programming in Rust.
+- Learned to use Django views and Tailwindcss for the search interface.
+- Learned to use Django's Object-Relational Mapping (ORM) to manipulate the
+    database.
+- Practiced Git for version control and teamwork.
+    - Handled large Git merge conflicts due to parallel development on the
+        same files.
 
 The project slowed down dramatically and the project goal became vague in the
 quests for features.
@@ -150,9 +152,14 @@ I learned much more from the downfall of SSO.
 Our team won a silver medal in the International Genetically Engineered Machine
 (iGEM) Biology competition.
 
+#### Work summary for iGEM
+
+I joined as a modeling team member, but ended up working as a Wiki developer
+and IT support.
+
 - Developed [the team Wiki][igem_wiki], a static site.
     - Used [mdBook][mdBook] and [mdBook-KaTeX][mdbook-katex] to render Markdown
-        and LaTeX math expressions into static HTML.
+        with LaTeX math expressions into static HTML.
     - Used Tailwindcss to style the Wiki, and JavaScript for the animations.
     - Set up GitLab CI to build and deploy the Wiki to GitLab Pages
         automatically so non-technical members could preview their changes.
@@ -163,6 +170,12 @@ Our team won a silver medal in the International Genetically Engineered Machine
     - Filmed a [VS Code & Git introduction video for the team][vscode_git_intro].
 - Used protein modeling software to validate teammates' protein design:
     RoseTTAFold, Robetta, PyMOL.
+
+#### Knowledge and experience gained from iGEM
+
+- Learned web development basics with HTML, JavaScript, CSS, and Tailwindcss.
+- Hacked GitLab CI to work.
+    Experienced the difficulty of debugging remote systems.
 - Learned from working with non-technical Biology team members.
     - Learned how strongly ordinary people resist to exit their software comfort
         zones and learn new software.
