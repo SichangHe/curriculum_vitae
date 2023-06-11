@@ -447,10 +447,16 @@ in Rust.</li>
 </ul>
 </li>
 <li>MATH 303—ODE and Dynamical Systems:
+I learned from the major failure of our final group presentation.
 <ul>
-<li>Read a review paper on differential equations with 99 references.
-Our group did poorly in the presentation talking about the paper.</li>
-<li>Learned the necessity to start early in group works.</li>
+<li>Learned the importance of choosing approachable research starting points.
+We chose an intricate review paper on differential equations with 99
+references to reproduce.
+We struggled to understand the paper because it depends recursively on
+many other papers it references to.</li>
+<li>Learned the necessity to start early in group works.
+My group members were occupied by other affairs and I made the mistake
+of waiting for them.</li>
 </ul>
 </li>
 <li>COMPSCI 201—Introduction to Programming and Data Structures:
@@ -497,14 +503,15 @@ one in 2023.
 <div style="break-before: page; page-break-before: always;"></div><h1 id="side-projects"><a class="header" href="#side-projects">Side Projects</a></h1>
 <h2 id="happy-projects"><a class="header" href="#happy-projects">Happy projects</a></h2>
 <h3 id="maintain--develop-mdbook-katex-202211---"><a class="header" href="#maintain--develop-mdbook-katex-202211---">Maintain &amp; develop <a href="https://github.com/lzanini/mdbook-katex">mdBook-KaTeX</a> (2022/11 - )</a></h3>
-<p>mdBook-KaTeX is a preprocessor for <a href="https://github.com/rust-lang/mdBook">mdBook</a> in <em>Rust</em>.
+<p>mdBook-KaTeX is a preprocessor for <a href="https://github.com/rust-lang/mdBook">mdBook</a> in the Rust programming
+language.
 It pre-renders LaTeX math expressions to HTML using KaTeX.</p>
 <p><a href="https://crates.io/crates/mdbook-katex"><img src="https://img.shields.io/crates/v/mdbook-katex" alt="mdBook-KaTeX version" />
 <img src="https://img.shields.io/crates/d/mdbook-katex" alt="mdBook-KaTeX downloads" /></a></p>
 <ul>
 <li>Took over <a href="https://github.com/lzanini/mdbook-katex/issues/37">maintainership by publishing a fork</a>
 when the project was unmaintained.</li>
-<li>Resolved more than 18 GitHub issues opened by others by fixing the bugs.
+<li>Resolved more than 18 GitHub issues opened by others by fixing related bugs.
 For example:
 <ul>
 <li>Fixed persisting Markdown rendering bugs.
@@ -513,14 +520,14 @@ rendering in tables and headers</a>.
 Fixed by replacing newline characters.</li>
 <li>Fixed several error handling bugs.
 For example, fixed crashing on placeholder chapters.</li>
-<li>Worked around Windows platform support from upstream.
-Discovered an alternative, working, but slightly compromised dependency
-by communicating with upstream <code>katex_rs</code> developers.</li>
+<li>Worked around Windows platform support issues from upstream.
+Provided a slightly compromised Windows build using an alternative
+dependency after coordinating with upstream <code>katex_rs</code> developers.</li>
 <li>Fixed the GitHub CIs for MUSL Linux and Windows builds.
-Use cross compilation to provide full-feature builds.</li>
+Set up cross compilation to provide full-feature builds.</li>
 </ul>
 </li>
-<li>Improved speed by 10 times (on an M1 MacBook) by adopting parallelism and
+<li>Improved speed by over 10 times (on an M1 MacBook) by adopting parallelism and
 avoiding repeated rendering.</li>
 <li>Developed new features up to the point that mdBook-KaTeX is considered
 feature-complete. For example:
@@ -556,8 +563,8 @@ GitHub</a>.</li>
 <ul>
 <li>Over 1000 lines of Lua for my modal editor Neovim and my tiling window
 manager Yabai.</li>
-<li>Configuration for Fish shell, Starship, and Alacritty.</li>
-<li>Support my smooth terminal and keyboard workflow.</li>
+<li>Configuration for Fish shell, Starship, Alacritty, and Karabiner.</li>
+<li>Support my smooth terminal and keyboard driven workflow.</li>
 </ul>
 </li>
 <li>Learned new programming languages on <a href="https://exercism.org/profiles/SichangHe">Exercism</a>.</li>
@@ -575,12 +582,40 @@ Daily drove Visual Studio Code before switching to Neovim.</li>
 </ul>
 <h2 id="failed-projects"><a class="header" href="#failed-projects">Failed projects</a></h2>
 <h3 id="academic-forum"><a class="header" href="#academic-forum">Academic forum</a></h3>
-<!-- TODO -->
+<p>I proposed to build <a href="https://github.com/SichangHe/prev_DKU_signature_work">a generic academic forum for my Signature Work</a>.
+I planed to build a web server that would good fit academic discussions such as
+for discussions in classes.</p>
+<ul>
+<li>Carefully studied various web frameworks in Ruby, Rust, JavaScript, Python,
+and Elixir, and landed on Elixir Phoenix with Liveview.</li>
+<li>Studied Elixir and read <a href="https://www.oreilly.com/library/view/functional-web-development/9781680505436/"><em>Functional Web Development with Elixir, OTP, and
+Phoenix: Rethink the Modern Web App</em></a>.</li>
+</ul>
+<h4 id="reason-i-gave-up-on-the-academic-forum"><a class="header" href="#reason-i-gave-up-on-the-academic-forum">Reason I gave up on the academic forum</a></h4>
+<ul>
+<li>I could not find a mentor at DKU with the proper expertise in the field.</li>
+<li>I found <a href="https://github.com/discourse/discourse">Discourse</a>, which has all the functionality I would build.</li>
+<li>I decided to focus on the other two projects: <a href="side_projects/../work_experiences/index.html#ra-for-federated-learning-research-project-202303---">FedCampus</a> and
+<a href="side_projects/../work_experiences/index.html#independent-network-research-project-202304---"><code>parse_rpsl_policy</code></a>.</li>
+</ul>
 <h3 id="forum-using-ruby-on-rails-202206---202208"><a class="header" href="#forum-using-ruby-on-rails-202206---202208">Forum using Ruby on Rails (2022/06 - 2022/08)</a></h3>
-<p><a href="https://github.com/SichangHe/forum">Forum</a> using Ruby on Rails and Hotwire.</p>
+<p><a href="https://github.com/SichangHe/rails_forum">Forum</a> using Ruby on Rails and Hotwire.</p>
 <ul>
 <li>Deployed it on Heroku.</li>
 <li>Developed features such as infinitely nested comments and MathJax support.</li>
+</ul>
+<h4 id="reason-for-the-failure-of-the-rails-forum"><a class="header" href="#reason-for-the-failure-of-the-rails-forum">Reason for the failure of the Rails forum</a></h4>
+<p>I wanted to host this forum online as a community, as specified in
+<a href="https://sichanghe.github.io/rails_forum_doctrine/">the doctrine</a>, but I eventually decided that the benefits cannot
+justify the trouble.</p>
+<ul>
+<li>The &quot;magic&quot; and debugging complexity of the Rails project grew quadratically
+as I added features by requiring more dependencies.
+I later switched to prefer Elixir Phoenix instead of Ruby on Rails.</li>
+<li>I did not find the environment to support the idea of a community forum.
+For example, when <a href="https://github.com/SichangHe/dii">the project participated in DKU Innovation
+Incubator</a>,
+the judges believed that it cannot survive without creating paywalls.</li>
 </ul>
 
                     </main>
