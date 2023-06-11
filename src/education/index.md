@@ -7,7 +7,7 @@
     Here, Pseudo majors are counted by completing major requirement courses
     because DKU is a Liberal Arts university.
 - One semester at Duke University, Durham. Full grade.
-- Started writing [my 30-thousand-word notes hosted on GitHub][notes] in 
+- Started writing [my 30-thousand-word notes hosted on GitHub][notes] in
     Markdown with LaTeX using [mdBook][mdbook] and [mdBook-KaTeX][mdbook-katex].
 
 ### Significant courses at DKU
@@ -17,7 +17,7 @@
     - Asynchronous [CLI shell app][UDPRIP] using the actor model with channels,
         in Rust.
 - STATS 401—Data Acquisition and Visualization:
-    [Poster in D3.js & Svelte & TypeScript][STATS401_final_proj].
+    [Poster using D3.js & Svelte & TypeScript][STATS401_final_proj].
 - COMPSCI 205—Computer Organization and Programming, at Duke:
     - Binary search tree in MIPS assembly and ring buffer in C.
     - Fifth place in PizzaCalc length optimization competition (68 lines).
@@ -26,17 +26,16 @@
         Our group did poorly in the presentation talking about the paper.
     - Learned the necessity to start early in group works.
 - COMPSCI 201—Introduction to Programming and Data Structures:
-    - First CS class.
+    - First CS class. Got interested in CS following
+        [the Coursera course][coursera].
     - Presented about prime finding and sorting algorithms, flowchart,
         and debugger.
-    - Invited to be TA afterwards.
 - STATS 201—Probability, Random Variables and Stochastic Processes:
-    [PageRank DKU website][STATS210_final_proj].
-    - Scraped around 8000 webpages using Scrapy.
-    - Calculated PageRank as a Markov chain using NumPy.
-    - Found weird problems in DKU website such as infinite recursive URLs and
-        motivated to learn web development.
-    - Unsatisfied with Scrapy and decided to build my own web scraper.
+    [PageRank DKU website as a Markov chain using Scrapy and
+    Numpy][STATS210_final_proj].
+    - Motivated to learn web development by weird problems in DKU website such
+        as infinitely recursive URL links.
+    - Decided to build my own web scraper because I was unsatisfied with Scrapy.
 - Three entry courses for Physics, Chemistry, Biology:
     Learned the physical limitation to study natural science at DKU.
     Determined to study the quantitative reasoning division.
@@ -55,6 +54,7 @@
 - Chemistry competition team (2018 - 2019)
 - Biology competition team (2017 - 2019)
 
+[coursera]: https://www.coursera.org/learn/cs-programming-java/
 [CS311]: https://github.com/SichangHe/CS311
 [mdBook]: https://github.com/rust-lang/mdBook
 [mdbook-katex]: https://github.com/lzanini/mdbook-katex

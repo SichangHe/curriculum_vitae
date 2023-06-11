@@ -146,7 +146,6 @@ I learned much more from the downfall of SSO.
     in its immortality.
     [Rewrote the scraper and released it as open source][scraper_project].
 
-<!-- TODO: This is where we left off. -->
 ### iGEM 2022 DKU team (2021/11 - 2022/10)
 
 Our team won a silver medal in the International Genetically Engineered Machine
