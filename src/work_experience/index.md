@@ -1,6 +1,6 @@
-# Work Experiences
+# Work Experience
 
-## Work at DKU
+## Research experience
 
 ### RA for Federated Learning research project (2023/03 - )
 
@@ -181,6 +181,8 @@ and IT support.
     - Realized that Git is too complicated for most non-technical teams.
     - Understood that unicast is the only effective team communication.
 
+## Teaching experience
+
 ### TA for COMPSCI 201 (2021/11 - 2022/03)
 
 I accepted Professor Jiang Long's invitation to be a teaching assistant for
@@ -205,7 +207,7 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 - Obtained a [CRLA certificate][crla] after tutoring for two semesters.
 - Tutored MATH 201—Multivariate Calculus, MATH 105—Calculus, and COMPSCI 201.
 
-### Other work at DKU
+## Other work
 
 - Intersections editor and translator (2021/06 - 2021/08)
     - Lead by Professor Austin Woerner.
