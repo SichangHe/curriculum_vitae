@@ -1,10 +1,13 @@
 # Education
 
-## Duke Kunshan University (DKU) (2020 - )
+## Duke Kunshan University (DKU) & Duke University Dual Degree (2020 - )
 
-- Data Science major, Pseudo Computer Science major,
-    Pseudo Applied Mathematics major.
-    Here, Pseudo majors are counted by completing major requirement courses
+B.S. in Data Science (by DKU).
+
+B.S. in Interdisciplinary Studies (Data Science, by Duke).
+
+- Pseudo majors: Computer Science & Applied Mathematics.
+    Counted by major requirement courses
     because DKU is a Liberal Arts university.
 - One semester at Duke University, Durham. Full grade.
 - Started writing [my 30-thousand-word notes hosted on GitHub][notes] in
