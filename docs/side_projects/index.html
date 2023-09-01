@@ -158,14 +158,13 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.</p>
 <li>Took over <a href="https://github.com/lzanini/mdbook-katex/issues/37">maintainership by publishing a fork</a>
 when the project was unmaintained.</li>
 <li>Resolved more than 18 GitHub issues opened by others by fixing related bugs.
-For example:
 <ul>
-<li>Fixed persisting Markdown rendering bugs.
-For example, KaTeX outputs newline characters, <a href="https://github.com/lzanini/mdbook-katex/issues/3">which broke Markdown
-rendering in tables and headers</a>.
-Fixed by replacing newline characters.</li>
-<li>Fixed several error handling bugs.
-For example, fixed crashing on placeholder chapters.</li>
+<li>Fixed persisting Markdown rendering bugs.<!-- For example, KaTeX outputs newline characters, [which broke Markdown
+  rendering in tables and headers][katex-break-table].
+  Fixed by replacing newline characters. -->
+</li>
+<li>Fixed several error handling bugs.<!-- For example, fixed crashing on placeholder chapters. -->
+</li>
 <li>Worked around Windows platform support issues from upstream.
 Provided a slightly compromised Windows build using an alternative
 dependency after coordinating with upstream <code>katex_rs</code> developers.</li>
@@ -176,13 +175,12 @@ Set up cross compilation to provide full-feature builds.</li>
 <li>Improved speed by over 10 times (on an M1 MacBook) by adopting parallelism and
 avoiding repeated rendering.</li>
 <li>Developed new features up to the point that mdBook-KaTeX is considered
-feature-complete. For example:
+feature-complete.
 <ul>
-<li>Adopted feature to preserve fenced code blocks according to CommonMark
-specification.
-Accomplished by hand-writing a finite-state machine to scan through
-Markdown code.</li>
-<li>Added other features such as options to include math expressions source,
+<li>Preserved fenced code blocks according to CommonMark specification.<!-- Accomplished by hand-writing a finite-state machine to scan through
+  Markdown code. -->
+</li>
+<li>Added support to include math expressions source,
 enable MathML for accessibility, and use custom delimiters.</li>
 </ul>
 </li>
