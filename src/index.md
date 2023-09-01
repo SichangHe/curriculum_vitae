@@ -7,7 +7,7 @@
 - Systems programmer, Software Engineering enthusiast,
 - Duke Kunshan University [pseudo triple major][dku] student,
 - Invested Rustacean, Pythonista, Polyglot programmer,
-- Open Source developer, Novice full-stack developer,
+- Open Source developer, full-stack developer,
 - A calm, straightforward, helpful, open-minded, curious, independent,
     and hardworking person.
 
@@ -16,14 +16,15 @@
 
 ## Research interests
 
-I enjoy building systems. Software Engineering is my main field of interest.
-I also like Programming Language, High-performance Computing, and Networking.
+Building software systems, Programming Language, High-performance Computing,
+Networking.
 
 ## Contact
 
 - DKU email: <sichang.he@dukekunshan.edu.cn>
 - Personal Gmail: <stevensichanghe@gmail.com>
 - GitHub: <https://github.com/SichangHe>
+- Home page: <https://sichanghe.github.io/>
 
 ---
 

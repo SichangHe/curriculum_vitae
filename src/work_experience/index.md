@@ -2,13 +2,14 @@
 
 ## Research experience
 
-### RA for Federated Learning research project (2023/03 - )
+### RA for Federated Learning project (2023/03 - )
+
+Supervisor: Dr. Bing Luo.
 
 The [*FedCampus*][fedcampus] team project aims to develop a federated machine
 learning (FL) platform for mobile devices.
 It also aims to use this platform to conduct privacy-related experiments on DKU
 campus.
-It is lead by Professor Bing Luo.
 
 As one of the example applications, we would monitor students' health
 information without directly collecting it.
@@ -46,12 +47,12 @@ Deeply practiced mobile development, back-end development, and FL.
 
 ### Independent network research project (2023/04 - )
 
-This project aims to provide network administrators a tool to find network
-routing anomalies.
-Professor Italo Cunha is my supervisor.
-[The codebase on GitHub][parse_rpsl_policy] is named `parse_rpsl_policy`.
+Supervisor: Dr. Italo Cunha.
 
-#### Work summary for `parse_rpsl_policy`
+The [Internet Route Verification][irv] (IRV) project aims to provide network
+administrators a tool to find network routing anomalies.
+
+#### Work summary for IRV
 
 I parse Routing Policy Specification Language (RPSL) into efficient data
 structures.
@@ -75,7 +76,7 @@ Then, I match actual internet routes against them to find routing anomalies.
     parallelism.
     Only 1sec to reload parsing result of the whole [RIPE Database][ripe].
 
-#### Knowledge and skills gained from `parse_rpsl_policy`
+#### Knowledge and skills gained from IRV
 
 String processing in Python; programming deeply nested data structures, and
 high performance parallel programming in Rust.
@@ -99,9 +100,10 @@ high performance parallel programming in Rust.
 
 ### RA for search engine research project (2021/12 - 2023/05)
 
+Supervisor: Dr. Jiang Long.
+
 The SSO project aims to produce a search engine to search among DKU sites
 and intranet.
-It is supervised by Professor Jiang Long.
 
 #### Work summary for SSO
 
@@ -233,7 +235,7 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [mdBook]: https://github.com/rust-lang/mdBook
 [mdbook-katex]: https://github.com/lzanini/mdbook-katex
 [onedrive_microsoft]: https://www.youtube.com/watch?v=mYPLp_gtHkM
-[parse_rpsl_policy]: https://github.com/SichangHe/parse_rpsl_policy
+[irv]: https://github.com/SichangHe/internet_route_verification
 [pyparsing]: https://github.com/pyparsing/pyparsing/
 [ripe]: https://www.ripe.net/manage-ips-and-asns/db
 [scraper_project]: ../side_projects/index.html#author--maintain-recursive_scraper-202206---
