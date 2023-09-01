@@ -14,13 +14,12 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.
 - Took over [maintainership by publishing a fork][mdbook-katex2]
     when the project was unmaintained.
 - Resolved more than 18 GitHub issues opened by others by fixing related bugs.
-    For example:
     - Fixed persisting Markdown rendering bugs.
-        For example, KaTeX outputs newline characters, [which broke Markdown
+        <!-- For example, KaTeX outputs newline characters, [which broke Markdown
         rendering in tables and headers][katex-break-table].
-        Fixed by replacing newline characters.
+        Fixed by replacing newline characters. -->
     - Fixed several error handling bugs.
-        For example, fixed crashing on placeholder chapters.
+        <!-- For example, fixed crashing on placeholder chapters. -->
     - Worked around Windows platform support issues from upstream.
         Provided a slightly compromised Windows build using an alternative
         dependency after coordinating with upstream `katex_rs` developers.
@@ -29,12 +28,11 @@ It pre-renders LaTeX math expressions to HTML using KaTeX.
 - Improved speed by over 10 times (on an M1 MacBook) by adopting parallelism and
     avoiding repeated rendering.
 - Developed new features up to the point that mdBook-KaTeX is considered
-    feature-complete. For example:
-    - Adopted feature to preserve fenced code blocks according to CommonMark
-        specification.
-        Accomplished by hand-writing a finite-state machine to scan through
-        Markdown code.
-    - Added other features such as options to include math expressions source,
+    feature-complete.
+    - Preserved fenced code blocks according to CommonMark specification.
+        <!-- Accomplished by hand-writing a finite-state machine to scan through
+        Markdown code. -->
+    - Added support to include math expressions source,
         enable MathML for accessibility, and use custom delimiters.
 - Deprecated the problematic `static-css` feature gradually and provided an
     alternative.
