@@ -47,54 +47,47 @@ Mobile development, backend development, and FL.
 
 Supervisor: Dr. Italo Cunha.
 
-The [Internet Route Verification][irv] (IRV) project aims to provide network
+Ran [Internet Route Verification][irv] (IRV), a project to provide network
 administrators a tool to find network routing anomalies.
 
 #### Work summary for IRV
 
-I parse Routing Policy Specification Language (RPSL) into efficient data
+Parsed Routing Policy Specification Language (RPSL) into efficient data
 structures.
-Then, I match actual internet routes against them to find routing anomalies.
+Matched actual internet routes against RPSL to find routing anomalies.
 
-- Studied Internet Engineering Task Force (IETF) RFC 4012 and 2622 for RPSL
-    syntax and semantics.
-- Developed an RPSL parser that produces recursive data structures in the Rust
-    programming language.
-    - Developed the lexer in Python with [PyParsing][pyparsing] to produce
-        abstract syntax tree (AST).
-    - Spawn Python lexer workers from Rust.
-        Controlled them by piping their Stdin and Stdout.
-    - Further parsed the AST into efficient data structures in Rust.
-        Parsed them in parallel using Rayon.
+<!-- - Studied Internet Engineering Task Force (IETF) RFC 4012 and 2622 for RPSL -->
+<!--     syntax and semantics. -->
+- Developed the lexer in Python with [PyParsing][pyparsing] to produce
+    abstract syntax tree (AST) and controlled them in Rust via pipes.
+- Developed a parser in Rust that instantly parses the AST in parallel and
+    produces efficient recursive intermediate representations.
 - Developed a comprehensive Rust module to compare Border Gateway Protocol (BGP)
-    routes against RPSL policies.
-    The comparison checks especially the filters and peerings of each autonomous
-    system.
-- Cached parsing result efficiently for extremely fast reloading by utilizing
+    routes against RPSL policies,
+    checking especially the filters and peerings of each autonomous system.
+<!-- - Cached parsing result efficiently for extremely fast reloading by utilizing
     parallelism.
-    Only 1sec to reload parsing result of the whole [RIPE Database][ripe].
+    Only 1sec to reload parsing result of the whole [RIPE Database][ripe]. -->
 
 #### Knowledge and skills gained from IRV
 
-String processing in Python; programming deeply nested data structures, and
-high performance parallel programming in Rust.
+High performance parallel programming in Rust, programming language parser,
+string processing.
 
-- Practiced using Rust in Jupyter Notebook interactively with [Evcxr][evcxr]
+- Used Rust in Jupyter Notebook and REPL interactively with [Evcxr][evcxr]
     under its lifetime restrictions.
-- Experienced string processing in Python using [PyParsing][pyparsing].
+<!-- - Experienced string processing in Python using [PyParsing][pyparsing].
     - Used detailed docstrings to make up for the lack of a strong type system
-        in Python.
+        in Python. -->
 - Designed custom types with clean programming interface to generate
-    comparison reports.
-    - Applied abstract algebra ideas to persist types across binary
-        operations.
-    - Utilized the `?` operator in Rust for always correct early return.
-- Gained better understanding of StdIO locking when using Stdin and Stdout to
+    comparison reports, applying abstract algebra ideas and utilizing the `?`
+    operator in Rust for guaranteed-correct early returns.
+- Gained better understanding of StdIO locking using Stdin and Stdout to
     dynamically pipe data between the Rust parser and the Python lexer.
 - Gained hands-on experience on file system operation performance
     characteristics.
-    - Split and serialized the parsing result into multiple JSON strings in
-        parallel and saved them to disk sequentially for maximum speed.
+    <!-- - Split and serialized the parsing result into multiple JSON strings in
+        parallel and saved them to disk sequentially for maximum speed. -->
 
 ### RA for search engine research project (2021/12 - 2023/05)
 
@@ -237,7 +230,6 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [onedrive_microsoft]: https://www.youtube.com/watch?v=mYPLp_gtHkM
 [irv]: https://github.com/SichangHe/internet_route_verification
 [pyparsing]: https://github.com/pyparsing/pyparsing/
-[ripe]: https://www.ripe.net/manage-ips-and-asns/db
 [scraper_project]: ../side_projects/index.html#author--maintain-recursive_scraper-202206---
 [tflite]: https://www.tensorflow.org/lite/
 [vscode_git_intro]: https://www.youtube.com/watch?v=C-sAGuWM2JM
