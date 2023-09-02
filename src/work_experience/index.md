@@ -6,44 +6,42 @@
 
 Supervisor: Dr. Bing Luo.
 
-The [*FedCampus*][fedcampus] team project aims to develop a federated machine
-learning (FL) platform for mobile devices.
-It also aims to use this platform to conduct privacy-related experiments on DKU
-campus.
-
-As one of the example applications, we would monitor students' health
-information without directly collecting it.
-We would do on-device training with their health data,
-then upload and aggregate the model parameters on our server.
+Lead our project, [*FedCampus*][fedcampus], to develop a federated machine
+learning (FL) platform for mobile devices,
+to enable FL experiments on DKU campus using health data from smartwatches.
 
 #### Work summary for FedCampus
 
-My job is to build the infrastructure to enable a FL deployment workflow.
-In this workflow, the platform users would be able to, easily,
-deploy machine learning models they designed for FL.
-
-- Proposed and lead the adoption of [Flower][flower], an FL framework in Python.
-    - Developed a demo to use Django servers to spawn and manage Flower servers
-        in separate background processes on demand.
-    - Investigated Flower server source code and applied customizations to save
-        intermediate states into database.
-    - Revamped the example Flower Android client to provide the team an SDK in
-        the Kotlin programming language for FL.
-    - Contributed to Flower by Pull Requests.
-- Developed demos to, respectively, use HTTP, MQTT, and gRPC to communicate
+- Developed [FedKit][fed_kit], an open source FL framework for mobile devices,
+    supporting on-demand training, model deployment from the backend,
+    model check-pointing, and Android on-device training.
+- Supervised and mentored two undergraduate student in the development of
+    *the FedCampus app*, a cross-platform mobile application to conduct FL
+    experiments using personal health data.
+- Investigated, proposed, and lead the adoption of core technologies including
+    [Flower][flower] for FL scheduling, [TensorFlow Lite][tflite] for Android
+    on-device training, and [Flutter][flutter] for rapid cross-platform app
+    development.
+- Revamped Flower's Android example and upstreamed the contribution.
+- Interviewed and recruited a UI programmer and a designer.
+<!-- - Leveraged Django REST Framework to spawn and manage Flower servers
+    in separate background processes on demand. -->
+<!-- - Investigated Flower server source code and applied customizations to save
+    intermediate states into database. -->
+<!-- - Demonstration using HTTP, MQTT, and gRPC to communicate
     between Android clients and Python servers.
 - Investigated and tried potential on-device training options on Android such
     as ONNX, MNN, PyTorch Mobile, FedML, and TensorFlow Lite, and landed on the
-    latter.
+    latter. -->
 
 #### Knowledge and skills gained from FedCampus
 
-Deeply practiced mobile development, back-end development, and FL.
+Mobile development, backend development, and FL.
 
-- Gathered Android development experience: handled on-device training,
-    HTTP requests, SQLite3 database, and user interface using Kotlin.
-- Practiced back-end development: built JSON APIs using Django REST Framework.
-- Learn the ideas and practices of FL customizing Flower servers.
+- Android development experience: on-device training,
+    HTTP communication, SQLite3 database, and user interface in Kotlin.
+- Backend development: JSON APIs and database management via Django ORM.
+- Ideas and implementations of FL.
 
 ### Independent network research project (2023/04 - )
 
@@ -229,7 +227,9 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [cs201_setup]: https://www.youtube.com/watch?v=yiL-ULPBkvE
 [evcxr]: https://github.com/evcxr/evcxr
 [fedcampus]: https://github.com/FedCampus
+[fed_kit]: https://github.com/FedCampus/FedKit
 [flower]: https://flower.dev/
+[flutter]: https://flutter.dev/
 [igem_wiki]: https://github.com/SichangHe/igem-2022-dku-backup
 [intersections]: https://sites.duke.edu/intersections/
 [mdBook]: https://github.com/rust-lang/mdBook
@@ -239,4 +239,5 @@ COMPSCI 201—Introduction to Programming and Data Structures.
 [pyparsing]: https://github.com/pyparsing/pyparsing/
 [ripe]: https://www.ripe.net/manage-ips-and-asns/db
 [scraper_project]: ../side_projects/index.html#author--maintain-recursive_scraper-202206---
+[tflite]: https://www.tensorflow.org/lite/
 [vscode_git_intro]: https://www.youtube.com/watch?v=C-sAGuWM2JM
