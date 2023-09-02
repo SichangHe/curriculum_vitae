@@ -150,43 +150,40 @@
 <h2 id="research-experience"><a class="header" href="#research-experience">Research experience</a></h2>
 <h3 id="ra-for-federated-learning-project-202303---"><a class="header" href="#ra-for-federated-learning-project-202303---">RA for Federated Learning project (2023/03 - )</a></h3>
 <p>Supervisor: Dr. Bing Luo.</p>
-<p>The <a href="https://github.com/FedCampus"><em>FedCampus</em></a> team project aims to develop a federated machine
-learning (FL) platform for mobile devices.
-It also aims to use this platform to conduct privacy-related experiments on DKU
-campus.</p>
-<p>As one of the example applications, we would monitor students' health
-information without directly collecting it.
-We would do on-device training with their health data,
-then upload and aggregate the model parameters on our server.</p>
+<p>Lead our project, <a href="https://github.com/FedCampus"><em>FedCampus</em></a>, to develop a federated machine
+learning (FL) platform for mobile devices,
+to enable FL experiments on DKU campus using health data from smartwatches.</p>
 <h4 id="work-summary-for-fedcampus"><a class="header" href="#work-summary-for-fedcampus">Work summary for FedCampus</a></h4>
-<p>My job is to build the infrastructure to enable a FL deployment workflow.
-In this workflow, the platform users would be able to, easily,
-deploy machine learning models they designed for FL.</p>
 <ul>
-<li>Proposed and lead the adoption of <a href="https://flower.dev/">Flower</a>, an FL framework in Python.
-<ul>
-<li>Developed a demo to use Django servers to spawn and manage Flower servers
-in separate background processes on demand.</li>
-<li>Investigated Flower server source code and applied customizations to save
-intermediate states into database.</li>
-<li>Revamped the example Flower Android client to provide the team an SDK in
-the Kotlin programming language for FL.</li>
-<li>Contributed to Flower by Pull Requests.</li>
+<li>Developed <a href="https://github.com/FedCampus/FedKit">FedKit</a>, an open source FL framework for mobile devices,
+supporting on-demand training, model deployment from the backend,
+model check-pointing, and Android on-device training.</li>
+<li>Supervised and mentored two undergraduate student in the development of
+<em>the FedCampus app</em>, a cross-platform mobile application to conduct FL
+experiments using personal health data.</li>
+<li>Investigated, proposed, and lead the adoption of core technologies including
+<a href="https://flower.dev/">Flower</a> for FL scheduling, <a href="https://www.tensorflow.org/lite/">TensorFlow Lite</a> for Android
+on-device training, and <a href="https://flutter.dev/">Flutter</a> for rapid cross-platform app
+development.</li>
+<li>Revamped Flower's Android example and upstreamed the contribution.</li>
+<li>Interviewed and recruited a UI programmer and a designer.</li>
 </ul>
-</li>
-<li>Developed demos to, respectively, use HTTP, MQTT, and gRPC to communicate
-between Android clients and Python servers.</li>
-<li>Investigated and tried potential on-device training options on Android such
-as ONNX, MNN, PyTorch Mobile, FedML, and TensorFlow Lite, and landed on the
-latter.</li>
-</ul>
+<!-- - Leveraged Django REST Framework to spawn and manage Flower servers
+    in separate background processes on demand. -->
+<!-- - Investigated Flower server source code and applied customizations to save
+    intermediate states into database. -->
+<!-- - Demonstration using HTTP, MQTT, and gRPC to communicate
+    between Android clients and Python servers.
+- Investigated and tried potential on-device training options on Android such
+    as ONNX, MNN, PyTorch Mobile, FedML, and TensorFlow Lite, and landed on the
+    latter. -->
 <h4 id="knowledge-and-skills-gained-from-fedcampus"><a class="header" href="#knowledge-and-skills-gained-from-fedcampus">Knowledge and skills gained from FedCampus</a></h4>
-<p>Deeply practiced mobile development, back-end development, and FL.</p>
+<p>Mobile development, backend development, and FL.</p>
 <ul>
-<li>Gathered Android development experience: handled on-device training,
-HTTP requests, SQLite3 database, and user interface using Kotlin.</li>
-<li>Practiced back-end development: built JSON APIs using Django REST Framework.</li>
-<li>Learn the ideas and practices of FL customizing Flower servers.</li>
+<li>Android development experience: on-device training,
+HTTP communication, SQLite3 database, and user interface in Kotlin.</li>
+<li>Backend development: JSON APIs and database management via Django ORM.</li>
+<li>Ideas and implementations of FL.</li>
 </ul>
 <h3 id="independent-network-research-project-202304---"><a class="header" href="#independent-network-research-project-202304---">Independent network research project (2023/04 - )</a></h3>
 <p>Supervisor: Dr. Italo Cunha.</p>
