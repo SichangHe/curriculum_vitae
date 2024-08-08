@@ -86,12 +86,12 @@
 \uhref{mailto:stevensichanghe@gmail.com}
 {\small stevensichanghe@gmail.com}\\[3pt]
 Incoming Ph.D. Student in Computer Science\hfill
-{\small\uhref{https://sichanghe.github.io/}{Website},
+{\small
     \uhref{https://github.com/SichangHe}{GitHub} \&
     \uhref{https://www.youtube.com/@sichanghe}{YouTube} @SichangHe
 }\\
 University of Southern California\hfill
-{\small 1176 W 37th St, Los Angeles, CA 90007, USA}
+{\small \uhref{https://sichanghe.github.io/}{Website}}
 
 \section{Education}
 \CVSubHeadingListStart
@@ -103,7 +103,7 @@ University of Southern California\hfill
 }
 \CVItemListStart
 \CVItem
-{Research focus: User-facing enhancements of the web.
+{Research focus: User-facing enhancements of the Web.
 }
 \CVItemListEnd
 
@@ -119,7 +119,14 @@ University of Southern California\hfill
 \CVItemListStart
 \CVItem
 {In addition to studies in Data Science,
-    completed many courses in Computer Science and Mathematics.
+    completed many courses in Computer Science and Mathematics,
+    effectively emulating a triple major.
+}
+\CVItem
+{Selected courses: Computer Architecture, Computer Network Architecture,
+    Numerical Analysis (A+);
+    Data Acquisition and Visualization, Intro Abstract Algebra,
+    Complex Analysis (A).
 }
 \CVItemListEnd
 \CVSubHeadingListEnd
@@ -140,17 +147,36 @@ University of Southern California\hfill
 {Supervisor: Dr. Italo Cunha}
 \CVItemListStart
 \CVItem
-{Designed and implemented an efficient and comprehensive parser to interpret
+{Designed and implemented an efficient and comprehensive parser for
     the Routing Policy Specification Language (RPSL),
     a language used in the Internet Route Registry to
     document public inter-domain routing policies,
     guide public peering, and aid routing issue troubleshooting.
+    \begin{itemize}
+        \item Studied and complied with RPSL semantics in RFCs,
+        covering over 99\% of all real-world RPSL use cases.
+        \item Optimized the parser to generate detailed verification reports
+        for tens of millions of routes within an hour.
+        \item Leveraged abstract algebra and Rust language features to
+        guarantee correct branching in report generation.
+    \end{itemize}
 }
 \CVItem
 {Employed the RPSL parser to verify observed inter-domain routes;
     analyzed verification reports and identified common RPSL usage patterns and
     usage mistakes.
+    \begin{itemize}
+        \item Provided tooling to verify routes against the RPSL,
+        helping improve inter-domain routing security.
+        \item Identified and implemented checks for 9 potential reasons why
+        routes fail to match the relevant RPSL.
+        % \item Obtained detailed statistics of RPSL usage pattern;
+        %     derived suggestions to improve RPSL usage.
+        \item Conducted interactive data analysis in Rust with the Rust Evcxr REPL.
+    \end{itemize}
 }
+% TODO: Interdomain routing (BGP, policies, RFCs), network datasets (PeeringDB, AS relationship, IRR, …)
+% TODO: Try to expand the networking/ lexing/ RPSL semantics.
 \CVItemListEnd
 
 \CVSubheading
@@ -166,12 +192,32 @@ University of Southern California\hfill
     iOS devices,
     enabling training shared ML models collaboratively without
     sharing private data on smartphones.
+    \begin{itemize}
+        \item Developed a pipeline to convert, train natively,
+        and aggregate the same ML models across Android and iOS.
+        \item Implemented cross-platform continuous model delivery and training,
+        enabling iterative FL design in production.
+        \item Contributed to the Flower FL framework:
+        revamped the Android example;
+        helped correct the iOS example.
+        \item Implemented on-device ML training with
+        the experimental TensorFlow Lite and
+        the proprietary Core ML.
+    \end{itemize}
 }
 \CVItem
 {Led and managed the systems development for the FedCampus Android/iOS app,
     leveraging personal health data from over 100 participants to
     conduct real-world FL and federated analytics experiments on
     DKU campus.
+    \begin{itemize}
+        \item Supervised and mentored four undergrads and
+        one M. Eng. student in mobile and web development.
+        \item Interviewed and recruited a UI programmer and a designer.
+        \item Investigated and led core technology adoption,
+        including Flower, Kotlin, and Flutter,
+        facilitating development.
+    \end{itemize}
 }
 \CVItemListEnd
 
@@ -203,8 +249,11 @@ University of Southern California\hfill
 {Instructor: Dr. Jiang Long}
 \CVItemListStart
 \CVItem
-{Hosted weekly lab sessions and office hours;
-    created development environment setup tutorials.
+{Hosted weekly lab sessions and office hours.}
+\CVItem
+{Created text-based tutorials and the first
+    \uhref{https://www.youtube.com/watch?v=yiL-ULPBkvE}
+    {video tutorial on development environment setup}.
 }
 \CVItemListEnd
 
@@ -261,8 +310,16 @@ University of Southern California\hfill
 \CVItemListStart
 \CVItem
 {\uhref{https://github.com/lzanini/mdbook-katex/issues/37}
-    {Took over maintainership by publishing a fork};
-    fixed 20+ issues; improved speed by 10$\times$.
+    {Took over maintainership by publishing a fork} when
+    it was unmaintained.
+}
+\CVItem
+{Fixed numerous bugs and developed new features,
+    resolving more than 20 GitHub issues others had opened.
+}
+\CVItem
+{Improved speed by over 10 times by adopting parallelism and
+    avoiding repeated rendering.
 }
 \CVItemListEnd
 
@@ -308,8 +365,15 @@ University of Southern California\hfill
     \end{itemize}
     \item \textbf{Computer Software}\vspace{-4pt}
     \begin{itemize}\small
+        % TODO: List other good stuff.
         \item Selected frameworks/libraries:
         Django, Phoenix Framework, Rayon, Tokio, PyParsing, Tailwindcss, D3.js.
+        \item Rich experience in setting up and computing on remote servers via
+        SSH, Tmux, and Neovim.
+        % TODO: Drop the following two and add better stuff.
+        \item Custom \uhref{https://github.com/SichangHe/.config}
+        {terminal and keyboard-centric development environment}
+        with Neovim, tiling window manager Yabai, etc.
         \item Operating systems installation and exploration:
         Windows 10 \& 11, Arch Linux, FreeBSD, QEMU/KVM, Hackintosh.
     \end{itemize}
