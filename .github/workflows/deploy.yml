@@ -22,7 +22,7 @@ jobs:
       - name: Move files in place for upload
         run: |
           mkdir _site
-          mv cv.pdf _site
+          mv cv.pdf _site/cv-sichang_he.pdf
           mv index.html _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
