@@ -38,7 +38,7 @@ jobs:
           git config --global user.email "sichanghe@users.noreply.github.com"
       - uses: docker://pandoc/core:latest
         with:
-          args: -s cv.tex --to markdown_strict -o cv.md
+          args: -s cv.tex -o cv.md
       - name: Push
         run: |
           git fetch
