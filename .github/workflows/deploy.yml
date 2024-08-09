@@ -16,7 +16,7 @@ jobs:
         with:
           root_file: cv.tex
       - name: Build HTML
-        uses: SichangHe/pdf2htmlEX-action@v0.0.1
+        uses: SichangHe/pdf2htmlEX-action@v0.0.2
         with:
           arguments: cv.pdf index.html
       - name: Move files in place for upload
