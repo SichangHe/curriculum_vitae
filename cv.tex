@@ -1,0 +1,381 @@
+% Based on https://github.com/fizixmastr
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=0.5in,bottom=1in,footskip=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{color}
+\definecolor{light}{rgb}{0.25, 0.25, 0.25}
+\def\light#1{{\color{light}#1}}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\light{Sichang He (Steven) - University of Southern California}}
+\fancyfoot[R]{\light{Page} \thepage{} \light{of \pageref{LastPage}}}
+\pagestyle{fancy}
+
+\usepackage[maxbibnames=99,refsection=section]{biblatex}
+\addbibresource{cv.bib}
+% Make my name bold: https://tex.stackexchange.com/a/327046/294006
+\newcommand*{\boldname}[3]{
+    \def\lastname{#1}
+    \def\firstname{#2}
+    \def\firstinit{#3}
+}
+\renewcommand{\mkbibnamegiven}[1]{
+    \ifboolexpr{
+        (
+            test {\ifdefequal{\firstname}{\namepartgiven}} or
+            test {\ifdefequal{\firstinit}{\namepartgiven}}
+        ) and test {\ifdefequal{\lastname}{\namepartfamily}}
+    }{\mkbibbold{#1}}{#1}
+}
+\renewcommand{\mkbibnamefamily}[1]{
+    \ifboolexpr{
+        (
+            test {\ifdefequal{\firstname}{\namepartgiven}} or
+            test {\ifdefequal{\firstinit}{\namepartgiven}}
+        ) and test {\ifdefequal{\lastname}{\namepartfamily}}
+    }{\mkbibbold{#1}}{#1}
+}
+\boldname{He}{Sichang}{S.}
+
+\setlength{\tabcolsep}{0cm}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule \vspace{-5pt}]
+
+% Ensure that .pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+\newcommand{\CVItem}[1]{
+  \item{\small
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\CVSubheadingFrame}[1]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        #1
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\CVSubheading}[4]{\CVSubheadingFrame
+    {\textbf{#1} & #2 \\
+        \small#3 & #4 \\
+    }}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\uhref}[2]{\href{#1}{\underline{#2}}}
+
+\begin{document}
+
+\noindent
+\textbf{\Huge Sichang He (Steven)}\hfill
+\uhref{mailto:stevensichanghe@gmail.com}
+{\small stevensichanghe@gmail.com}\\[3pt]
+Incoming Ph.D. Student in Computer Science\hfill
+{\small
+    \uhref{https://github.com/SichangHe}{GitHub} \&
+    \uhref{https://www.youtube.com/@sichanghe}{YouTube} @SichangHe
+}\\
+University of Southern California\hfill
+{\small \uhref{https://sichanghe.github.io/}{Website}}
+
+\section{Education}
+\CVSubHeadingListStart
+\CVSubheadingFrame
+{\textbf{University of Southern California (USC)}&
+    Aug. 2024 -- present.\quad Los Angeles, USA\\
+    \small Ph.D. student in Computer Science&
+    Advisor: Dr. Harsha V. Madhyastha\\
+}
+\CVItemListStart
+\CVItem
+{Research focus: User-facing enhancements of the Web.
+}
+\CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{Duke Kunshan University (DKU) \& Duke University Dual Degree}&
+    Aug. 2020 -- May 2024\\
+    \small B.S. in Data Science (by DKU) \&&
+    Kunshan, China \&\\
+    \small \uhref{https://github.com/SichangHe/sichanghe.github.io/files/15386186/duke_diploma.pdf}
+    {B.S. in Interdisciplinary Studies} (Subplan: Data Science, by Duke)&
+    Durham, NC
+}
+\CVItemListStart
+\CVItem
+{In addition to studies in Data Science,
+    completed many courses in Computer Science and Mathematics,
+    effectively emulating a triple major.
+}
+\CVItem
+{Selected courses: Computer Architecture, Computer Network Architecture,
+    Numerical Analysis (A+);
+    Data Acquisition and Visualization, Intro Abstract Algebra,
+    Complex Analysis (A).
+}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\begin{refsection}
+    \nocite{he2024fedkit}
+    \printbibliography[title=Conference Publication]
+\end{refsection}
+
+\section{Research Experience}
+\CVSubHeadingListStart
+\CVSubheading
+{Independent Researcher on \uhref
+    {https://github.com/SichangHe/internet_route_verification}
+    {Internet Route Verification}
+}{Apr. 2023 -- present}
+{Independent research, Federal University of Minas Gerais, Brazil (Remote)}
+{Supervisor: Dr. Italo Cunha}
+\CVItemListStart
+\CVItem
+{Designed and implemented an efficient and comprehensive parser for
+    the Routing Policy Specification Language (RPSL),
+    a language used in the Internet Route Registry to
+    document public inter-domain routing policies,
+    guide public peering, and aid routing issue troubleshooting.
+    \begin{itemize}
+        \item Studied and complied with RPSL semantics in RFCs,
+        covering over 99\% of all real-world RPSL use cases.
+        \item Optimized the parser to generate detailed verification reports
+        for tens of millions of routes within an hour.
+        \item Leveraged abstract algebra and Rust language features to
+        guarantee correct branching in report generation.
+    \end{itemize}
+}
+\CVItem
+{Employed the RPSL parser to verify observed inter-domain routes;
+    analyzed verification reports and identified common RPSL usage patterns and
+    usage mistakes.
+    \begin{itemize}
+        \item Provided tooling to verify routes against the RPSL,
+        helping improve inter-domain routing security.
+        \item Identified and implemented checks for 9 potential reasons why
+        routes fail to match the relevant RPSL.
+        % \item Obtained detailed statistics of RPSL usage pattern;
+        %     derived suggestions to improve RPSL usage.
+        \item Conducted interactive data analysis in Rust with the Rust Evcxr REPL.
+    \end{itemize}
+}
+% TODO: Interdomain routing (BGP, policies, RFCs), network datasets (PeeringDB, AS relationship, IRR, …)
+% TODO: Try to expand the networking/ lexing/ RPSL semantics.
+\CVItemListEnd
+
+\CVSubheading
+{Research Assistant for Mobile Federated Learning (FL) Project}
+{Mar. 2023 -- May. 2024}
+{\uhref{https://github.com/FedCampus}{The FedCampus Team},
+    EdgeIntelligence Lab, DKU
+}{Supervisor: Dr. Bing Luo}
+\CVItemListStart
+\CVItem
+{Authored \uhref{https://github.com/FedCampus/FedKit}{FedKit},
+    open-source SDKs to streamline real-world FL experiments across Android and
+    iOS devices,
+    enabling training shared ML models collaboratively without
+    sharing private data on smartphones.
+    \begin{itemize}
+        \item Developed a pipeline to convert, train natively,
+        and aggregate the same ML models across Android and iOS.
+        \item Implemented cross-platform continuous model delivery and training,
+        enabling iterative FL design in production.
+        \item Contributed to the Flower FL framework:
+        revamped the Android example;
+        helped correct the iOS example.
+        \item Implemented on-device ML training with
+        the experimental TensorFlow Lite and
+        the proprietary Core ML.
+    \end{itemize}
+}
+\CVItem
+{Led and managed the systems development for the FedCampus Android/iOS app,
+    leveraging personal health data from over 100 participants to
+    conduct real-world FL and federated analytics experiments on
+    DKU campus.
+    \begin{itemize}
+        \item Supervised and mentored four undergrads and
+        one M. Eng. student in mobile and web development.
+        \item Interviewed and recruited a UI programmer and a designer.
+        \item Investigated and led core technology adoption,
+        including Flower, Kotlin, and Flutter,
+        facilitating development.
+    \end{itemize}
+}
+\CVItemListEnd
+
+\CVSubheading
+{Research Assistant for Search Engine Research Project}{Dec. 2021 -- May 2023}
+{The Search So Team, DKU}{Supervisor: Dr. Jiang Long}
+\CVItemListStart
+\CVItem
+{Developed a feature-rich \uhref{https://github.com/SichangHe/scraper}
+    {open source web scraper} in async Rust to scrape DKU sites,
+    intranet, and Duke sites.
+}
+\CVItem
+{Improved backend HTML processing, frontend interface, and version control.
+}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\begin{refsection}
+    \nocite{luo2024fedcampus}
+    \printbibliography[title=Presentation]
+\end{refsection}
+
+\section{Teaching Experience}
+\CVSubHeadingListStart
+\CVSubheading
+{Teaching Assistant for COMPSCI 201, DKU}{Nov. 2021 -- Mar. 2022}
+{Introduction to Programming and Data Structures}
+{Instructor: Dr. Jiang Long}
+\CVItemListStart
+\CVItem
+{Hosted weekly lab sessions and office hours.}
+\CVItem
+{Created text-based tutorials and the first
+    \uhref{https://www.youtube.com/watch?v=yiL-ULPBkvE}
+    {video tutorial on development environment setup}.
+}
+\CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{Math \& CompSci. Tutor, Academic Resource Center, DKU}&
+    May 2021 -- May 2022
+}
+\CVItemListStart
+\CVItem
+{Tutored dozens of students in MATH 201 - Multivariate Calculus,
+    MATH 105 - Calculus,
+    and COMPSCI 201.
+}
+\CVItem
+{Obtained \uhref
+    {https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf}
+    {CRLA's International Tutor Training Program Certification,
+        Level I
+    }.}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\section{Awards}
+\begin{itemize}
+    \item \uhref{https://github.com/SichangHe/curriculum_vitae/files/15110729/scholar_athelete_award_DKU_running_club.pdf}
+    {Senior Scholar-Athlete Award} through the Running Club,
+    DKU Athletics (Apr. 2024)
+
+    \item Silver Medal, International Genetically Engineered Machine (iGEM)
+    2022 DKU Team (Oct. 2022)\\{\small
+    Developed \uhref{https://github.com/SichangHe/igem-2022-dku-backup}
+    {the team wiki} independently and
+    validated protein designs with modeling software.
+    }
+    \vspace{-4pt}
+    \item Dean's List (Spring 2021) \&
+    Dean's List with Distinction (Fall 2021, Fall 2022, Spring 2023),
+    DKU
+    \vspace{-4pt}
+    \item Chancellor's Scholarship \& UGRD Entrance Scholarship, DKU
+    (merit-based, Fall 2020 -- Spring 2024)
+    \vspace{-4pt}
+\end{itemize}
+
+\section{Side Projects}
+\CVSubHeadingListStart
+\CVSubheading
+{Open Source Developer \& Maintainer of
+    \uhref{https://github.com/lzanini/mdbook-katex}{mdBook-KaTeX}
+}{Nov. 2022 -- present}
+{Math expression preprocessor for mdBook written in Rust,
+    over 60,000+ downloads on crates.io
+}{GitHub}
+\CVItemListStart
+\CVItem
+{\uhref{https://github.com/lzanini/mdbook-katex/issues/37}
+    {Took over maintainership by publishing a fork} when
+    it was unmaintained.
+}
+\CVItem
+{Fixed numerous bugs and developed new features,
+    resolving more than 20 GitHub issues others had opened.
+}
+\CVItem
+{Improved speed by over 10 times by adopting parallelism and
+    avoiding repeated rendering.
+}
+\CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{Author of Open Source \uhref{https://github.com/SichangHe/rails_forum}
+        {Web Forum} Using Ruby on Rails}&
+    Jun. 2022 -- Aug. 2022
+}
+\CVItemListStart
+\CVItem
+{Featured infinitely nested comments;
+    deployed on Heroku.
+}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\section{Outreach}
+\begin{itemize}
+    \item Chinese Editor \& Translator at DKU Intersections Journal\hfill
+    Jun. 2021 -- Aug. 2021\\{\small
+    Co-translated three English articles into Chinese;
+    reviewed and edited multiple articles and
+    \uhref{https://sites.duke.edu/intersections/}{Intersections' website}.
+    }
+    \vspace{-4pt}
+    \item Active DKU Running Club and Badminton Club member\hfill
+    Fall 2020 -- Spring 2024
+    \vspace{-4pt}
+\end{itemize}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.5cm, label={}]
+    \item \textbf{Natural Language}\quad
+    Mandarin (native), Cantonese (fluent).\vspace{-4pt}
+    \item \textbf{Programming Language}\vspace{-4pt}
+    \begin{itemize}\small
+        \item Invested and proficient: Rust, Python, Elixir, JavaScript.
+        \item Used in projects:
+        Kotlin, Dart, Swift, Ruby, Java, Lua, TypeScript,
+        Svelte, HTML, CSS, C, SQL, Racket, \LaTeX{}.
+        \item Familiar: C++, Fish, Bash, Julia, Go, VimScript, Elisp,
+        Mathematica, MATLAB, Scala, R.\vspace{-4pt}
+    \end{itemize}
+    \item \textbf{Computer Software}\vspace{-4pt}
+    \begin{itemize}\small
+        % TODO: List other good stuff.
+        \item Selected frameworks/libraries:
+        Django, Phoenix Framework, Rayon, Tokio, PyParsing, Tailwindcss, D3.js.
+        \item Rich experience in setting up and computing on remote servers via
+        SSH, Tmux, and Neovim.
+        % TODO: Drop the following two and add better stuff.
+        \item Custom \uhref{https://github.com/SichangHe/.config}
+        {terminal and keyboard-centric development environment}
+        with Neovim, tiling window manager Yabai, etc.
+        \item Operating systems installation and exploration:
+        Windows 10 \& 11, Arch Linux, FreeBSD, QEMU/KVM, Hackintosh.
+    \end{itemize}
+\end{itemize}
+\end{document}
