@@ -1,49 +1,34 @@
+---
+bibliography:
+- cv.bib
+nocite:
+- "[@he2024fedkit]"
+- "[@luo2024fedcampus]"
+---
+
 **Sichang He (Steven)**
-[<u>stevensichanghe@gmail.com</u>](mailto:stevensichanghe@gmail.com)  
+[[stevensichanghe@gmail.com]{.underline}](mailto:stevensichanghe@gmail.com)\
 Incoming Ph.D. Student in Computer Science
-[<u>GitHub</u>](https://github.com/SichangHe) &
-[<u>YouTube</u>](https://www.youtube.com/@sichanghe) @SichangHe   
+[[GitHub]{.underline}](https://github.com/SichangHe) &
+[[YouTube]{.underline}](https://www.youtube.com/@sichanghe) \@SichangHe
+\
 University of Southern California
-[<u>Website</u>](https://sichanghe.github.io/)
+[[Website]{.underline}](https://sichanghe.github.io/)
 
 # Education
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>University of Southern California
-    (USC)</strong></td>
-    <td style="text-align: right;">Aug. 2024 – present.Los Angeles, USA</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;">Ph.D. student in Computer Science</td>
-    <td style="text-align: right;">Advisor: Dr. Harsha V. Madhyastha</td>
-    </tr>
-    </tbody>
-    </table>
+-   --------------------------------------------- ---------------------------------------
+      **University of Southern California (USC)**     Aug. 2024 -- present.Los Angeles, USA
+      Ph.D. student in Computer Science                   Advisor: Dr. Harsha V. Madhyastha
+      --------------------------------------------- ---------------------------------------
 
     -    Research focus: User-facing enhancements of the Web.
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Duke Kunshan University (DKU)
-    &amp; Duke University Dual Degree</strong></td>
-    <td style="text-align: right;">Aug. 2020 – May 2024</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;">B.S. in Data Science (by DKU) &amp;</td>
-    <td style="text-align: right;">Kunshan, China &amp;</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;"><a
-    href="https://github.com/SichangHe/sichanghe.github.io/files/15386186/duke_diploma.pdf"><u>B.S.
-    in Interdisciplinary Studies</u></a> (Subplan: Data Science, by
-    Duke)</td>
-    <td style="text-align: right;">Durham, NC</td>
-    </tr>
-    </tbody>
-    </table>
+-   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------
+      **Duke Kunshan University (DKU) & Duke University Dual Degree**                                                                                                          Aug. 2020 -- May 2024
+      B.S. in Data Science (by DKU) &                                                                                                                                               Kunshan, China &
+      [[B.S. in Interdisciplinary Studies]{.underline}](https://github.com/SichangHe/sichanghe.github.io/files/15386186/duke_diploma.pdf) (Subplan: Data Science, by Duke)                Durham, NC
+      ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------
 
     -    In addition to studies in Data Science, completed many courses
         in Computer Science and Mathematics, effectively emulating a
@@ -51,13 +36,13 @@ University of Southern California
 
     -   Selected courses with projects:
 
-        -   Computer Network Architecture (A+): async [<u>TCP server and
+        -   Computer Network Architecture (A+): async [[TCP server and
             client in Elixir and CLI REPL shell in
-            Rust</u>](https://github.com/SichangHe/CS311).
+            Rust]{.underline}](https://github.com/SichangHe/CS311).
 
-        -   Data Acquisition and Visualization (A): [<u>Poster using
+        -   Data Acquisition and Visualization (A): [[Poster using
             D3.js, Svelte, and
-            TypeScript</u>](https://github.com/SichangHe/STATS401_final_project).
+            TypeScript]{.underline}](https://github.com/SichangHe/STATS401_final_project).
 
         -   Computer Organization and Programming (A+, at Duke): Binary
             search tree in MIPS assembly and ring buffer in C; fifth
@@ -65,8 +50,8 @@ University of Southern California
             (68 lines).
 
         -   Probability, Random Variables and Stochastic Processes (A):
-            [<u>PageRank DKU
-            website</u>](https://github.com/SichangHe/STATS210_final_project)
+            [[PageRank DKU
+            website]{.underline}](https://github.com/SichangHe/STATS210_final_project)
             as a Markov chain.
 
         -   Numerical Analysis (A+); Intro Abstract Algebra (at Duke),
@@ -75,36 +60,22 @@ University of Southern California
     -    Achieved full grade on all five courses at Duke University in
         the Fall 2022 semester.
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Zhixin High School</strong></td>
-    <td style="text-align: right;">Aug. 2017 – Jun. 2020Guangzhou,
-    China</td>
-    </tr>
-    </tbody>
-    </table>
+-   ------------------------ ----------------------------------------
+      **Zhixin High School**     Aug. 2017 -- Jun. 2020Guangzhou, China
+      ------------------------ ----------------------------------------
 
     -    Chemistry Olympiad competition team; Biology Olympiad
         competition team.
 
+::: refsection
+:::
+
 # Research Experience
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Independent Researcher on <a
-    href="https://github.com/SichangHe/internet_route_verification"><u>Internet
-    Route Verification</u></a></strong></td>
-    <td style="text-align: right;">Apr. 2023 – present</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;">Independent research, Federal University
-    of Minas Gerais, Brazil (Remote)</td>
-    <td style="text-align: right;">Supervisor: Dr. Italo Cunha</td>
-    </tr>
-    </tbody>
-    </table>
+-   ------------------------------------------------------------------------------------------------------------------------------------- -----------------------------
+      **Independent Researcher on [[Internet Route Verification]{.underline}](https://github.com/SichangHe/internet_route_verification)**            Apr. 2023 -- present
+      Independent research, Federal University of Minas Gerais, Brazil (Remote)                                                               Supervisor: Dr. Italo Cunha
+      ------------------------------------------------------------------------------------------------------------------------------------- -----------------------------
 
     -   Designed and implemented an efficient and comprehensive parser
         for the Routing Policy Specification Language (RPSL), a language
@@ -134,23 +105,13 @@ University of Southern California
         -   Conducted interactive data analysis in Rust with the Rust
             Evcxr REPL.
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Research Assistant for Mobile
-    Federated Learning (FL) Project</strong></td>
-    <td style="text-align: right;">Mar. 2023 – May. 2024</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;"><a
-    href="https://github.com/FedCampus"><u>The FedCampus Team</u></a>,
-    EdgeIntelligence Lab, DKU</td>
-    <td style="text-align: right;">Supervisor: Dr. Bing Luo</td>
-    </tr>
-    </tbody>
-    </table>
+-   --------------------------------------------------------------------------------------------- --------------------------
+      **Research Assistant for Mobile Federated Learning (FL) Project**                                 Mar. 2023 -- May. 2024
+      [[The FedCampus Team]{.underline}](https://github.com/FedCampus), EdgeIntelligence Lab, DKU     Supervisor: Dr. Bing Luo
+      --------------------------------------------------------------------------------------------- --------------------------
 
-    -   Authored [<u>FedKit</u>](https://github.com/FedCampus/FedKit),
+    -   Authored
+        [[FedKit]{.underline}](https://github.com/FedCampus/FedKit),
         open-source SDKs to streamline real-world FL experiments across
         Android and iOS devices, enabling training shared ML models
         collaboratively without sharing private data on smartphones.
@@ -180,107 +141,73 @@ University of Southern California
         -   Investigated and led core technology adoption, including
             Flower, Kotlin, and Flutter, facilitating development.
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Research Assistant for Search
-    Engine Research Project</strong></td>
-    <td style="text-align: right;">Dec. 2021 – May 2023</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;">The Search So Team, DKU</td>
-    <td style="text-align: right;">Supervisor: Dr. Jiang Long</td>
-    </tr>
-    </tbody>
-    </table>
+-   ----------------------------------------------------------- ----------------------------
+      **Research Assistant for Search Engine Research Project**          Dec. 2021 -- May 2023
+      The Search So Team, DKU                                       Supervisor: Dr. Jiang Long
+      ----------------------------------------------------------- ----------------------------
 
-    -    Developed a feature-rich [<u>open source web
-        scraper</u>](https://github.com/SichangHe/scraper) in async Rust
-        to scrape DKU sites, intranet, and Duke sites.
+    -    Developed a feature-rich [[open source web
+        scraper]{.underline}](https://github.com/SichangHe/scraper) in
+        async Rust to scrape DKU sites, intranet, and Duke sites.
 
     -    Improved backend HTML processing, frontend interface, and
         version control.
 
+::: refsection
+:::
+
 # Teaching Experience
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Teaching Assistant for COMPSCI
-    201, DKU</strong></td>
-    <td style="text-align: right;">Nov. 2021 – Mar. 2022</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;">Introduction to Programming and Data
-    Structures</td>
-    <td style="text-align: right;">Instructor: Dr. Jiang Long</td>
-    </tr>
-    </tbody>
-    </table>
+-   ------------------------------------------------- ----------------------------
+      **Teaching Assistant for COMPSCI 201, DKU**             Nov. 2021 -- Mar. 2022
+      Introduction to Programming and Data Structures     Instructor: Dr. Jiang Long
+      ------------------------------------------------- ----------------------------
 
     -    Hosted weekly lab sessions and office hours.
 
-    -    Created text-based tutorials and the first [<u>video tutorial
-        on development environment
-        setup</u>](https://www.youtube.com/watch?v=yiL-ULPBkvE).
+    -    Created text-based tutorials and the first [[video tutorial on
+        development environment
+        setup]{.underline}](https://www.youtube.com/watch?v=yiL-ULPBkvE).
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Math &amp; CompSci. Tutor,
-    Academic Resource Center, DKU</strong></td>
-    <td style="text-align: right;">May 2021 – May 2022</td>
-    </tr>
-    </tbody>
-    </table>
+-   ---------------------------------------------------------- ----------------------
+      **Math & CompSci. Tutor, Academic Resource Center, DKU**     May 2021 -- May 2022
+      ---------------------------------------------------------- ----------------------
 
     -    Tutored dozens of students in MATH 201 - Multivariate Calculus,
         MATH 105 - Calculus, and COMPSCI 201.
 
-    -    Obtained [<u>CRLA’s International Tutor Training Program
+    -    Obtained [[CRLA's International Tutor Training Program
         Certification, Level I
-        </u>](https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf).
+        ]{.underline}](https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf).
 
 # Awards
 
--   [<u>Senior Scholar-Athlete
-    Award</u>](https://github.com/SichangHe/curriculum_vitae/files/15110729/scholar_athelete_award_DKU_running_club.pdf)
+-   [[Senior Scholar-Athlete
+    Award]{.underline}](https://github.com/SichangHe/curriculum_vitae/files/15110729/scholar_athelete_award_DKU_running_club.pdf)
     through the Running Club, DKU Athletics (Apr. 2024)
 
 -   Silver Medal, International Genetically Engineered Machine (iGEM)
-    2022 DKU Team (Oct. 2022)  
-    Developed [<u>the team
-    wiki</u>](https://github.com/SichangHe/igem-2022-dku-backup)
+    2022 DKU Team (Oct. 2022)\
+    Developed [[the team
+    wiki]{.underline}](https://github.com/SichangHe/igem-2022-dku-backup)
     independently; helped non-technical members adopt Git; validated
     protein designs with modeling software.
 
--   Dean’s List (Spring 2021) & Dean’s List with Distinction (Fall 2021,
+-   Dean's List (Spring 2021) & Dean's List with Distinction (Fall 2021,
     Fall 2022, Spring 2023), DKU
 
--   Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
-    (merit-based, Fall 2020 – Spring 2024)
+-   Chancellor's Scholarship & UGRD Entrance Scholarship, DKU
+    (merit-based, Fall 2020 -- Spring 2024)
 
 # Side Projects
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Open Source Developer &amp;
-    Maintainer of <a
-    href="https://github.com/lzanini/mdbook-katex"><u>mdBook-KaTeX</u></a></strong></td>
-    <td style="text-align: right;">Nov. 2022 – present</td>
-    </tr>
-    <tr>
-    <td style="text-align: left;">Math expression preprocessor for <a
-    href="https://github.com/rust-lang/mdBook"><u>mdBook</u></a> written in
-    Rust; over 60,000+ downloads on crates.io</td>
-    <td style="text-align: right;">GitHub</td>
-    </tr>
-    </tbody>
-    </table>
+-   --------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------
+      **Open Source Developer & Maintainer of [[mdBook-KaTeX]{.underline}](https://github.com/lzanini/mdbook-katex)**                                       Nov. 2022 -- present
+      Math expression preprocessor for [[mdBook]{.underline}](https://github.com/rust-lang/mdBook) written in Rust; over 60,000+ downloads on crates.io                   GitHub
+      --------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------
 
-    -    [<u>Took over maintainership by publishing a
-        fork</u>](https://github.com/lzanini/mdbook-katex/issues/37)
+    -    [[Took over maintainership by publishing a
+        fork]{.underline}](https://github.com/lzanini/mdbook-katex/issues/37)
         when it was unmaintained.
 
     -   Fixed numerous bugs and developed new features, resolving more
@@ -300,29 +227,22 @@ University of Southern California
     -    Deprecated the problematic static CSS feature gradually and
         provided an alternative.
 
--   <table>
-    <tbody>
-    <tr>
-    <td style="text-align: left;"><strong>Author of Open Source <a
-    href="https://github.com/SichangHe/rails_forum"><u>Web Forum</u></a>
-    Using Ruby on Rails</strong></td>
-    <td style="text-align: right;">Jun. 2022 – Aug. 2022</td>
-    </tr>
-    </tbody>
-    </table>
+-   ------------------------------------------------------------------------------------------------------------------- ------------------------
+      **Author of Open Source [[Web Forum]{.underline}](https://github.com/SichangHe/rails_forum) Using Ruby on Rails**     Jun. 2022 -- Aug. 2022
+      ------------------------------------------------------------------------------------------------------------------- ------------------------
 
     -    Featured infinitely nested comments; deployed on Heroku.
 
 # Outreach
 
--   Chinese Editor & Translator at DKU Intersections Journal Jun. 2021 –
-    Aug. 2021  
+-   Chinese Editor & Translator at DKU Intersections Journal Jun. 2021
+    -- Aug. 2021\
     Co-translated three English articles into Chinese; reviewed and
-    edited multiple articles and [<u>Intersections’
-    website</u>](https://sites.duke.edu/intersections/).
+    edited multiple articles and [[Intersections'
+    website]{.underline}](https://sites.duke.edu/intersections/).
 
--   Active DKU Running Club and Badminton Club member Fall 2020 – Spring
-    2024
+-   Active DKU Running Club and Badminton Club member Fall 2020 --
+    Spring 2024
 
 # Skills
 
@@ -346,9 +266,9 @@ University of Southern California
     -   Rich experience in setting up and computing on remote servers
         via SSH, Tmux, and Neovim.
 
-    -   Custom [<u>terminal and keyboard-centric development
-        environment</u>](https://github.com/SichangHe/.config) with
-        Neovim, tiling window manager Yabai, etc.
+    -   Custom [[terminal and keyboard-centric development
+        environment]{.underline}](https://github.com/SichangHe/.config)
+        with Neovim, tiling window manager Yabai, etc.
 
     -   Operating systems installation and exploration: Windows 10 & 11,
         Arch Linux, FreeBSD, QEMU/KVM, Hackintosh.
