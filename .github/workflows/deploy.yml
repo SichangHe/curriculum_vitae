@@ -19,6 +19,14 @@ jobs:
         uses: SichangHe/pdf2htmlEX-action@v0.0.2
         with:
           arguments: cv.pdf index.html
+      - name: Configure git
+        run: |
+          git config --global user.name "SichangHe"
+          git config --global user.email "sichanghe@users.noreply.github.com"
+      - name: Generate dummy Markdown version
+        uses: docker://pandoc/core:latest
+        with:
+          args: -s index.html --to plain -o cv.md
       - name: Move files in place for upload
         run: |
           mkdir _site
@@ -26,20 +34,7 @@ jobs:
           mv index.html _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-
-  dummy:
-    name: Create dummy Markdown version
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Configure git
-        run: |
-          git config --global user.name "SichangHe"
-          git config --global user.email "sichanghe@users.noreply.github.com"
-      - uses: docker://pandoc/core:latest
-        with:
-          args: -s cv.tex -o cv.md
-      - name: Push
+      - name: Push Markdown if changed
         run: |
           git fetch
           git switch artifacts
