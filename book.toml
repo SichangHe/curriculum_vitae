@@ -1,9 +1,0 @@
-[book]
-authors = ["Steven Hé (Sīchàng)"]
-language = "en"
-multilingual = false
-src = "src"
-title = "Steven Hé (Sīchàng)'s Unofficial Curriculum Vitae"
-
-[output.html]
-git-repository-url = "https://github.com/SichangHe/curriculum_vitae"

@@ -95,6 +95,7 @@ University of Southern California\hfill
 
 \section{Education}
 \CVSubHeadingListStart
+
 \CVSubheadingFrame
 {\textbf{University of Southern California (USC)}&
     Aug. 2024 -- present.\quad Los Angeles, USA\\
@@ -123,12 +124,46 @@ University of Southern California\hfill
     effectively emulating a triple major.
 }
 \CVItem
-{Selected courses: Computer Architecture, Computer Network Architecture,
-    Numerical Analysis (A+);
-    Data Acquisition and Visualization, Intro Abstract Algebra,
-    Complex Analysis (A).
+{Selected courses with projects:
+    \begin{itemize}
+        \item Computer Network Architecture (A+):
+        async \uhref{https://github.com/SichangHe/CS311}{TCP server and
+            client in
+            Elixir and CLI REPL shell in Rust}.
+
+        \item Data Acquisition and Visualization (A):
+        \uhref{https://github.com/SichangHe/STATS401_final_project}{Poster
+            using D3.js, Svelte, and TypeScript}.
+
+        \item Computer Organization and Programming (A+, at Duke):
+        Binary search tree in MIPS assembly and ring buffer in C;
+        fifth place in PizzaCalc assembly length optimization competition
+        (68 lines).
+
+        \item Probability, Random Variables and Stochastic Processes (A):
+        \uhref{https://github.com/SichangHe/STATS210_final_project}{PageRank
+            DKU website} as a Markov chain.
+
+        \item Numerical Analysis (A+); Intro Abstract Algebra (at Duke),
+        Complex Analysis (A).
+    \end{itemize}
+}
+\CVItem
+{Achieved full grade on all five courses at Duke University in
+    the Fall 2022 semester.
 }
 \CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{Zhixin High School}&
+    Aug. 2017 -- Jun. 2020\quad Guangzhou, China\\
+}
+\CVItemListStart
+\CVItem
+{Chemistry Olympiad competition team; Biology Olympiad competition team.
+}
+\CVItemListEnd
+
 \CVSubHeadingListEnd
 
 \begin{refsection}
@@ -285,7 +320,7 @@ University of Southern California\hfill
     \item Silver Medal, International Genetically Engineered Machine (iGEM)
     2022 DKU Team (Oct. 2022)\\{\small
     Developed \uhref{https://github.com/SichangHe/igem-2022-dku-backup}
-    {the team wiki} independently and
+    {the team wiki} independently; helped non-technical members adopt Git;
     validated protein designs with modeling software.
     }
     \vspace{-4pt}
@@ -304,7 +339,8 @@ University of Southern California\hfill
 {Open Source Developer \& Maintainer of
     \uhref{https://github.com/lzanini/mdbook-katex}{mdBook-KaTeX}
 }{Nov. 2022 -- present}
-{Math expression preprocessor for mdBook written in Rust,
+{Math expression preprocessor for
+    \uhref{https://github.com/rust-lang/mdBook}{mdBook} written in Rust;
     over 60,000+ downloads on crates.io
 }{GitHub}
 \CVItemListStart
@@ -316,10 +352,21 @@ University of Southern California\hfill
 \CVItem
 {Fixed numerous bugs and developed new features,
     resolving more than 20 GitHub issues others had opened.
+    \begin{itemize}
+        \item Fixed the GitHub CIs for MUSL Linux and Windows builds.
+        \item Fixed persisting CommonMark Markdown rendering bugs and
+        error handling bugs.
+        \item Added support to include math expressions source,
+        enable MathML for accessibility, and use custom delimiters.
+    \end{itemize}
 }
 \CVItem
 {Improved speed by over 10 times by adopting parallelism and
     avoiding repeated rendering.
+}
+\CVItem
+{Deprecated the problematic static CSS feature gradually and provided an
+    alternative.
 }
 \CVItemListEnd
 
