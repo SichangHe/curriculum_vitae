@@ -1,32 +1,44 @@
-name: CI
-on: [push, pull_request]
+name: 'Build PDF, convert to HTML, and deploy to GitHub Pages'
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
 
 jobs:
-  test:
-    name: Test
+  build:
+    name: Build PDF and convert to HTML
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-    - name: configure git
-      run: |
-        git config --global user.name "SichangHe"
-        git config --global user.email "sichanghe@users.noreply.github.com"
-    - name: pull mdbook build
-      run: git clone https://github.com/SichangHe/mdbook_binaries.git
-    - name: make bin
-      run: |
-        mv mdbook_binaries/bin bin
-        echo "$(pwd)/bin" >> $GITHUB_PATH
-    - name: Build
-      run: mdbook build
-    - name: push
-      run: |
-        git fetch
-        git switch gh-pages
-        rm -rf docs
-        mv book docs
-        git add docs
-        git commit --allow-empty -m "Deploy $GITHUB_SHA to gh-pages"
-        git push -f
+      - uses: actions/checkout@v4
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+      - name: Build HTML
+        uses: SichangHe/pdf2htmlEX-action@v0.0.1
+        with:
+          arguments: cv.pdf index.html
+      - name: Move files in place for upload
+        run: |
+          mkdir _site
+          mv cv.pdf _site
+          mv index.html _site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    name: Deploy the site to GitHub Pages
+    needs: build
+    if: github.event_name == 'push'
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
