@@ -12,7 +12,7 @@
 
 Sichang He (Steven) stevensichanghe@gmail.com
 
-Incoming Ph.D. Student in Computer Science GitHub & YouTube @SichangHe
+Ph.D. Student in Computer Science GitHub & YouTube @SichangHe
 
 University of Southern California Website
 
