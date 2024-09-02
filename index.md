@@ -68,7 +68,15 @@ team.
 
 Conference Publication
 
-[1] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
+[1] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
+Characterization and Veriﬁcation of
+
+Policies in Internet Routing Registries”. In: Proceedings of the 2024
+ACM Internet Measurement Conference.
+
+2024, to appear.
+
+[2] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
 
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
@@ -114,6 +122,10 @@ fail to match the relevant RPSL.
 
 ∗ Conducted interactive data analysis in Rust with the Rust Evcxr REPL.
 
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
+
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
 
@@ -124,10 +136,6 @@ experiments across Android and iOS devices,
 
 enabling training shared ML models collaboratively without sharing
 private data on smartphones.
-
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
 
 ∗ Developed a pipeline to convert, train natively, and aggregate the
 same ML models across Android and iOS.
@@ -212,6 +220,10 @@ Fall 2022, Spring 2023), DKU
 • Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
 (merit-based, Fall 2020 – Spring 2024)
 
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
+
 Side Projects
 
 Open Source Developer & Maintainer of mdBook-KaTeX Nov. 2022 – present
@@ -243,10 +255,6 @@ Author of Open Source Web Forum Using Ruby on Rails Jun. 2022 – Aug.
 2022
 
 – Featured inﬁnitely nested comments; deployed on Heroku.
-
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
 
 Outreach
 
@@ -289,8 +297,9 @@ Tokio, PyParsing, Tailwindcss, D3.js.
 – Rich experience in setting up and computing on remote servers via SSH,
 Tmux, and Neovim.
 
-– Custom terminal and keyboard-centric development environment with
-Neovim, tiling window manager Yabai, etc.
+– Custom terminal and keyboard-centric development environment
+
+with Neovim, tiling window manager Yabai, etc.
 
 – Operating systems installation and exploration: Windows 10 & 11, Arch
 Linux, FreeBSD, QEMU/KVM, Hackintosh.
