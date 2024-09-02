@@ -18,7 +18,7 @@ jobs:
       - name: Build HTML
         uses: SichangHe/pdf2htmlEX-action@v0.0.2
         with:
-          arguments: cv.pdf index.html
+          arguments: --decompose-ligature 1 cv.pdf index.html
       - name: Configure git
         run: |
           git config --global user.name "SichangHe"
