@@ -74,7 +74,10 @@ Characterization and Verification of
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
 ACM Internet Measurement Conference.
 
-2024, to appear.
+2024, to appear. url:
+https://github.com/SichangHe/internet%5C_route%5C_verification/releases/
+
+tag/imc-camera-ready.
 
 [2] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
@@ -84,6 +87,8 @@ Android and iOS”. In: IEEE INFOCOM
 
 2024-IEEE Conference on Computer Communications Workshops (INFOCOM
 WKSHPS). 2024, to appear.
+
+url: http://www.arxiv.org/pdf/2402.10464.
 
 Research Experience
 
@@ -118,14 +123,14 @@ common RPSL usage patterns and usage mistakes.
 ∗ Provided tooling to verify routes against the RPSL, helping improve
 inter-domain routing security.
 
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
+
 ∗ Identified and implemented checks for 9 potential reasons why routes
 fail to match the relevant RPSL.
 
 ∗ Conducted interactive data analysis in Rust with the Rust Evcxr REPL.
-
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
 
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
@@ -181,6 +186,9 @@ Presentation
 Platform for Smart Campus with
 
 Federated Learning and Analytics. Flower AI Summit, 2024. Mar. 2024.
+url: https://www.youtube.com/
+
+watch?v=K7yu2jvu%5C_t8.
 
 Teaching Experience
 
