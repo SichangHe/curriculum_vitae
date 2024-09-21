@@ -74,21 +74,21 @@ Characterization and Verification of
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
 ACM Internet Measurement Conference.
 
-2024, to appear. url:
-https://github.com/SichangHe/internet%5C_route%5C_verification/releases/
+Nov. 2024, to appear. url:
+https://github.com/SichangHe/internet_route_verification/releases/
 
 tag/imc-camera-ready.
 
 [2] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
-Daniel Nata Nugraha, and
+Daniel Nata Nugraha,
 
-Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
-Android and iOS”. In: IEEE INFOCOM
+and Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
+Android and iOS”. In: IEEE
 
-2024-IEEE Conference on Computer Communications Workshops (INFOCOM
-WKSHPS). 2024, to appear.
+INFOCOM 2024-IEEE Conference on Computer Communications Workshops
+(INFOCOM WKSHPS). May
 
-url: http://www.arxiv.org/pdf/2402.10464.
+2024, to appear. url: http://www.arxiv.org/pdf/2402.10464.
 
 Research Experience
 
@@ -188,7 +188,7 @@ Platform for Smart Campus with
 Federated Learning and Analytics. Flower AI Summit, 2024. Mar. 2024.
 url: https://www.youtube.com/
 
-watch?v=K7yu2jvu%5C_t8.
+watch?v=K7yu2jvu_t8.
 
 Teaching Experience
 
