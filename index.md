@@ -10,7 +10,7 @@
 
 []
 
-Sichang He (Steven) stevensichanghe@gmail.com
+Sichang He (Steven) sichangh@usc.edu
 
 Ph.D. Student in Computer Science GitHub & YouTube @SichangHe
 
@@ -23,7 +23,12 @@ Angeles, USA
 
 Ph.D. student in Computer Science Advisor: Dr. Harsha V. Madhyastha
 
-– Research focus: User-facing enhancements of the Web.
+– Research focus: User-facing measurements and enhancements of the Web.
+
+– Selected courses with projects:
+
+∗ Advanced Computer Networking (A+): JSphere: measure webpages’ browser
+API calls to classify JavaScript.
 
 Duke Kunshan University (DKU) & Duke University Dual Degree Aug. 2020 –
 May 2024
@@ -74,26 +79,32 @@ Characterization and Verification of
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
 ACM Internet Measurement Conference.
 
-Nov. 2024, to appear. url:
-https://github.com/SichangHe/internet_route_verification/releases/
+Nov. 2024. url:
+https://github.com/SichangHe/internet_route_verification/releases/tag/imc-
 
-tag/imc-camera-ready.
+camera-ready.
 
 [2] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
-Daniel Nata Nugraha,
+Daniel Nata Nugraha, and
 
-and Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
-Android and iOS”. In: IEEE
+Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
+Android and iOS”. In: IEEE INFOCOM
 
-INFOCOM 2024-IEEE Conference on Computer Communications Workshops
-(INFOCOM WKSHPS). May
+2024-IEEE Conference on Computer Communications Workshops (INFOCOM
+WKSHPS). May 2024. url:
 
-2024, to appear. url: http://www.arxiv.org/pdf/2402.10464.
+http://www.arxiv.org/pdf/2402.10464.
 
 Research Experience
 
-Independent Researcher on Internet Route Verification Apr. 2023 –
-present
+Research Assistant Aug. 2024 – present
+
+Networked Systems Lab, USC Advisor: Dr. Harsha V. Madhyastha
+
+– Surveyed systems research problems stemming from generative AI.
+
+Independent Researcher on Internet Route Verification Apr. 2023 – May
+2024
 
 Independent research, Federal University of Minas Gerais, Brazil
 (Remote) Supervisor: Dr. Italo Cunha
@@ -109,6 +120,10 @@ public peering, and aid routing issue troubleshooting.
 ∗ Studied and complied with RPSL semantics in RFCs, covering over 99% of
 all real-world RPSL use cases.
 
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
+
 ∗ Optimized the parser to generate detailed verification reports for
 tens of millions of routes within an hour.
 
@@ -122,10 +137,6 @@ common RPSL usage patterns and usage mistakes.
 
 ∗ Provided tooling to verify routes against the RPSL, helping improve
 inter-domain routing security.
-
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
 
 ∗ Identified and implemented checks for 9 potential reasons why routes
 fail to match the relevant RPSL.
