@@ -18,8 +18,8 @@ University of Southern California Website
 
 Education
 
-University of Southern California (USC) Aug. 2024 – present. Los
-Angeles, USA
+University of Southern California (USC) Aug. 2024 – present Los Angeles,
+USA
 
 Ph.D. student in Computer Science Advisor: Dr. Harsha V. Madhyastha
 
@@ -35,8 +35,9 @@ May 2024
 
 B.S. in Data Science (by DKU) & Kunshan, China &
 
-B.S. in Interdisciplinary Studies (Subplan: Data Science, by Duke)
-Durham, NC
+B.S. in Interdisciplinary Studies
+
+(Subplan: Data Science, by Duke) Durham, NC
 
 – In addition to studies in Data Science, completed many courses in
 Computer Science and Mathematics, effectively
@@ -56,9 +57,6 @@ tree in MIPS assembly and ring buffer
 
 in C; fifth place in PizzaCalc assembly length optimization competition
 (68 lines).
-
-∗ Probability, Random Variables and Stochastic Processes (A): PageRank
-DKU website as a Markov chain.
 
 ∗ Numerical Analysis (A+); Intro Abstract Algebra (at Duke), Complex
 Analysis (A).
@@ -101,7 +99,8 @@ Research Assistant Aug. 2024 – present
 
 Networked Systems Lab, USC Advisor: Dr. Harsha V. Madhyastha
 
-– Surveyed systems research problems stemming from generative AI.
+– Thoroughly surveyed systems research problems stemming from
+AI-generated text and images.
 
 Independent Researcher on Internet Route Verification Apr. 2023 – May
 2024
@@ -113,35 +112,30 @@ Independent research, Federal University of Minas Gerais, Brazil
 Routing Policy Specification Language
 
 (RPSL), a language used in the Internet Route Registry to document
-public inter-domain routing policies, guide
+public interdomain routing policies, guide
 
 public peering, and aid routing issue troubleshooting.
 
 ∗ Studied and complied with RPSL semantics in RFCs, covering over 99% of
 all real-world RPSL use cases.
 
+∗ Optimized the parser to interpret and verify hundreds of millions of
+routes per hour.
+
 Sichang He (Steven) - University of Southern California Page 1 of 3
 
 []
 
-∗ Optimized the parser to generate detailed verification reports for
-tens of millions of routes within an hour.
+– Employed the RPSL parser to verify observed interdomain routes;
+analyzed verification reports and identified com-
 
-∗ Leveraged abstract algebra and Rust language features to guarantee
-correct branching in report generation.
-
-– Employed the RPSL parser to verify observed inter-domain routes;
-analyzed verification reports and identified
-
-common RPSL usage patterns and usage mistakes.
+mon RPSL usage patterns and usage mistakes.
 
 ∗ Provided tooling to verify routes against the RPSL, helping improve
-inter-domain routing security.
+interdomain routing security.
 
 ∗ Identified and implemented checks for 9 potential reasons why routes
 fail to match the relevant RPSL.
-
-∗ Conducted interactive data analysis in Rust with the Rust Evcxr REPL.
 
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
@@ -154,17 +148,8 @@ experiments across Android and iOS devices,
 enabling training shared ML models collaboratively without sharing
 private data on smartphones.
 
-∗ Developed a pipeline to convert, train natively, and aggregate the
-same ML models across Android and iOS.
-
-∗ Implemented cross-platform continuous model delivery and training,
-enabling iterative FL design in production.
-
 ∗ Contributed to the Flower FL framework: revamped the Android example;
 helped correct the iOS example.
-
-∗ Implemented on-device ML training with the experimental TensorFlow
-Lite and the proprietary Core ML.
 
 – Led and managed the systems development for the FedCampus Android/iOS
 app, leveraging personal health data
@@ -174,8 +159,6 @@ analytics experiments on DKU campus.
 
 ∗ Supervised and mentored four undergrads and one M. Eng. student in
 mobile and web development.
-
-∗ Interviewed and recruited a UI programmer and a designer.
 
 ∗ Investigated and led core technology adoption, including Flower,
 Kotlin, and Flutter, facilitating development.
@@ -203,20 +186,13 @@ watch?v=K7yu2jvu_t8.
 
 Teaching Experience
 
-Teaching Assistant for COMPSCI 201, DKU Nov. 2021 – Mar. 2022
+Teaching Assistant, Introduction to Programming, DKU Nov. 2021 – Mar.
+2022
 
-Introduction to Programming and Data Structures Instructor: Dr. Jiang
-Long
-
-– Hosted weekly lab sessions and office hours.
-
-– Created text-based tutorials and the first video tutorial on
-development environment setup.
+– Hosted weekly lab sessions; created the course’s first video tutorial
+on development environment setup.
 
 Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
-
-– Tutored dozens of students in MATH 201 - Multivariate Calculus, MATH
-105 - Calculus, and COMPSCI 201.
 
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
@@ -240,15 +216,11 @@ Fall 2022, Spring 2023), DKU
 • Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
 (merit-based, Fall 2020 – Spring 2024)
 
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
-
 Side Projects
 
 Open Source Developer & Maintainer of mdBook-KaTeX Nov. 2022 – present
 
-Math expression preprocessor for mdBook written in Rust; over 60,000+
+Math expression preprocessor for mdBook written in Rust; over 90,000+
 downloads on crates.io GitHub
 
 – Took over maintainership by publishing a fork when it was
@@ -257,24 +229,17 @@ unmaintained.
 – Fixed numerous bugs and developed new features, resolving more than 20
 GitHub issues others had opened.
 
-∗ Fixed the GitHub CIs for MUSL Linux and Windows builds.
-
-∗ Fixed persisting CommonMark Markdown rendering bugs and error handling
-bugs.
-
-∗ Added support to include math expressions source, enable MathML for
-accessibility, and use custom delimiters.
-
 – Improved speed by over 10 times by adopting parallelism and avoiding
 repeated rendering.
-
-– Deprecated the problematic static CSS feature gradually and provided
-an alternative.
 
 Author of Open Source Web Forum Using Ruby on Rails Jun. 2022 – Aug.
 2022
 
 – Featured infinitely nested comments; deployed on Heroku.
+
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
 
 Outreach
 
@@ -283,9 +248,6 @@ Aug. 2021
 
 Co-translated three English articles into Chinese; reviewed and edited
 multiple articles and Intersections’ website.
-
-• Active DKU Running Club and Badminton Club member Fall 2020 – Spring
-2024
 
 Skills
 
@@ -306,23 +268,16 @@ E
 
 X.
 
-– Familiar: C++, Fish, Bash, Julia, Go, VimScript, Elisp, Mathematica,
-MATLAB, Scala, R.
+– Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
+Mathematica, MATLAB, Scala, R.
 
 Computer Software
 
-– Selected frameworks/libraries: Django, Phoenix Framework, Rayon,
-Tokio, PyParsing, Tailwindcss, D3.js.
+– Selected frameworks/libraries: Playwright, Django, Phoenix Framework,
+Tokio, Tailwindcss, D3.js.
 
-– Rich experience in setting up and computing on remote servers via SSH,
-Tmux, and Neovim.
-
-– Custom terminal and keyboard-centric development environment
-
-with Neovim, tiling window manager Yabai, etc.
-
-– Operating systems installation and exploration: Windows 10 & 11, Arch
-Linux, FreeBSD, QEMU/KVM, Hackintosh.
+– Selected development experience: SSH, Tmux, Neovim, Docker,
+Kubernetes, Evcxr, Arch Linux, Hackintosh.
 
 Sichang He (Steven) - University of Southern California Page 3 of 3
 
