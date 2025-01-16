@@ -106,7 +106,7 @@ Independent Researcher on Internet Route Verification Apr. 2023 – May
 2024
 
 Independent research, Federal University of Minas Gerais, Brazil
-(Remote) Supervisor: Dr. Italo Cunha
+(Remote) Advisor: Dr. Italo Cunha
 
 – Designed and implemented an efficient and comprehensive parser for the
 Routing Policy Specification Language
@@ -140,7 +140,7 @@ fail to match the relevant RPSL.
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
 
-The FedCampus Team, EdgeIntelligence Lab, DKU Supervisor: Dr. Bing Luo
+The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Dr. Bing Luo
 
 – Authored FedKit, open-source SDKs to streamline real-world FL
 experiments across Android and iOS devices,
@@ -166,7 +166,7 @@ Kotlin, and Flutter, facilitating development.
 Research Assistant for Search Engine Research Project Dec. 2021 – May
 2023
 
-The Search So Team, DKU Supervisor: Dr. Jiang Long
+The Search So Team, DKU Advisor: Dr. Jiang Long
 
 – Developed a feature-rich open source web scraper in async Rust to
 scrape DKU sites, intranet, and Duke sites.
