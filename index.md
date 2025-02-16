@@ -113,7 +113,7 @@ Independent research, Federal University of Minas Gerais, Brazil
 – Designed and implemented an efficient and comprehensive parser for the
 Routing Policy Specification Language
 
-(RPSL), a language used in the Internet Route Registry to document
+(RPSL), a language used in the Internet Routing Registry to document
 public interdomain routing policies, guide
 
 public peering, and aid routing issue troubleshooting.
