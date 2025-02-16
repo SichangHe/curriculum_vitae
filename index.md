@@ -144,7 +144,9 @@ routes fail to match the relevant RPSL.
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
 
-The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Dr. Bing Luo
+The FedCampus Team
+
+, EdgeIntelligence Lab, DKU Advisor: Dr. Bing Luo
 
 – Authored FedKit, open-source SDKs to streamline real-world FL
 experiments across Android and iOS devices,
@@ -222,19 +224,22 @@ Fall 2022, Spring 2023), DKU
 
 Side Projects
 
-Open Source Developer & Maintainer of mdBook-KaTeX Nov. 2022 – present
+Open Source Developer & Maintainer of Rust Crates Nov. 2022 – present
 
-Math expression preprocessor for mdBook written in Rust; over 90,000+
-downloads on crates.io GitHub
+– mdBook-KaTeX, a math expression preprocessor for mdBook with over
+90,000+ downloads on crates.io.
 
-– Took over maintainership by publishing a fork when it was
+∗ Took over maintainership by publishing a fork when it was
 unmaintained.
 
-– Fixed numerous bugs and developed new features, resolving more than 20
+∗ Fixed numerous bugs and developed new features, resolving more than 20
 GitHub issues others had opened.
 
-– Improved speed by over 10 times by adopting parallelism and avoiding
+∗ Improved speed by over 10 times by adopting parallelism and avoiding
 repeated rendering.
+
+– mdBook Language Server for instantaneous live previews. Diff-friendly
+plain-text and Markdown formatters.
 
 Author of Open Source Web Forum Using Ruby on Rails Jun. 2022 – Aug.
 2022
