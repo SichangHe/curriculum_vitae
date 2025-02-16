@@ -35,9 +35,8 @@ May 2024
 
 B.S. in Data Science (by DKU) & Kunshan, China &
 
-B.S. in Interdisciplinary Studies
-
-(Subplan: Data Science, by Duke) Durham, NC
+B.S. in Interdisciplinary Studies (Subplan: Data Science, by Duke)
+Durham, NC
 
 – In addition to studies in Data Science, completed many courses in
 Computer Science and Mathematics, effectively
@@ -99,8 +98,11 @@ Research Assistant Aug. 2024 – present
 
 Networked Systems Lab, USC Advisor: Dr. Harsha V. Madhyastha
 
-– Thoroughly surveyed systems research problems stemming from
-AI-generated text and images.
+– Surveyed usage, weakness, and extensions of the Coalition for Content
+Provenance and Authenticity (C2PA).
+
+– Detect, understand, and respond to AI-generated contents on the Web,
+their characteristics, cause, and effects.
 
 Independent Researcher on Internet Route Verification Apr. 2023 – May
 2024
@@ -119,12 +121,14 @@ public peering, and aid routing issue troubleshooting.
 ∗ Studied and complied with RPSL semantics in RFCs, covering over 99% of
 all real-world RPSL use cases.
 
-∗ Optimized the parser to interpret and verify hundreds of millions of
-routes per hour.
-
 Sichang He (Steven) - University of Southern California Page 1 of 3
 
 []
+
+∗ Optimized the parser to interpret and verify hundreds of millions of
+routes per hour.
+
+∗ Found RPSL usage varied widely among autonomous systems (ASes).
 
 – Employed the RPSL parser to verify observed interdomain routes;
 analyzed verification reports and identified com-
@@ -134,8 +138,8 @@ mon RPSL usage patterns and usage mistakes.
 ∗ Provided tooling to verify routes against the RPSL, helping improve
 interdomain routing security.
 
-∗ Identified and implemented checks for 9 potential reasons why routes
-fail to match the relevant RPSL.
+∗ Identified and implemented checks for 6 major explanations to why
+routes fail to match the relevant RPSL.
 
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
