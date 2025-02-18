@@ -1,0 +1,80 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[margin=1in,bottom=1.5in,footskip=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{color}
+\definecolor{light}{rgb}{0.25, 0.25, 0.25}
+\def\light#1{{\color{light}#1}}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\light Sichang He (Steven) -- University of Southern California}
+\fancyfoot[R]{\href{mailto:sichangh@usc.edu}{\light sichangh@usc.edu}}
+\pagestyle{fancy}
+
+\usepackage[maxbibnames=99,refsection=section]{biblatex}
+
+\setlength{\parindent}{0pt}  % No indentation
+\setlength{\parskip}{1em}    % Double paragraph spacing
+
+\begin{document}
+
+Hello Cloudflare Research Team,
+\\
+
+I am a first-year CS PhD student aspiring to measure and
+enhance user-facing aspects of the Web. When I first met Vasileios,
+I shared my ongoing research on the Coalition for Content Provenance and
+Authenticity (C2PA), which we believed was a promising direction to
+combat generative AI on challenges like deepfake.
+To my great surprise, Vasileios later told me that
+Cloudflare is exploring the area around C2PA.
+I was thrilled to learn about this internship opportunity,
+a perfect alignment with my research interests that
+fits my technical background.
+
+When I first met Vasileios at the Internet Measurement Conference,
+I was presenting my paper on RPSLyzer.
+In interdomain routing, operators of
+autonomous systems often document their routing policies to
+help coordinate routing, engineer traffic, and troubleshoot routes, in
+a language called the Routing Policy Specification Language (RPSL).
+These documentations help avoid misconfiguration and attacks that
+could cause Internet outage for millions of users.
+However, the complete semantics of the RPSL is complicated and
+there lacked an accessible comprehensive tool to analyze these policies.
+I developed RPSLyzer to fill this gap.
+RPSLyzer correctly interprets 99.99\% of RPSL policies, and can check if
+BGP routes comply with these policies.
+After optimizing RPSLyzer with parallel Rust, I was able to
+check 779 millions routes against the policies of
+78,701 autonomous systems within 3 hours, revealing RPSL usage patterns and
+common mistakes.
+Developing RPSLyzer made me realize I can improve the Internet for
+end users through research; this inspiration motivated me to pursue a PhD.
+
+Now, this same inspiration motivates me to join Cloudflare's endeavor to
+combat challenges brought by generative AI.
+Generative AI can potentially flood the Web with
+high-quality fake content, which can influence democracy, mislead the public, and
+erode trust.
+C2PA shows promise in combating this threat, yet its success would depend on
+large-scale adoption and answers to various attack vectors.
+With Cloudflare's planet scale, outstanding openness in research collaboration, and
+a mission to build a better Internet, you are uniquely suitable to
+tackle these challenges.
+Integrating C2PA into Cloudflare Image was an encouraging step, and
+what Vasileios shared with me about your ongoing research in
+temper-proof,
+hard-to-remove watermarking is towards addressing the metadata removal attack.
+I would be thrilled to contribute to these efforts at Cloudflare to
+defend trust on the Web.
+\\
+
+Thank you for your consideration!\\
+Sichang He (Steven)
+
+\end{document}
