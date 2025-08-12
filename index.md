@@ -1,12 +1,12 @@
 
 
--   Education
--   Research Experience
--   Teaching Experience
--   Awards
--   Side Projects
--   Outreach
--   Skills
+- Education
+- Research Experience
+- Teaching Experience
+- Awards
+- Side Projects
+- Outreach
+- Skills
 
 []
 
@@ -14,7 +14,8 @@ Sichang He (Steven) sichangh@usc.edu
 
 Ph.D. Student in Computer Science GitHub & YouTube @SichangHe
 
-University of Southern California Website
+Networked Systems Lab, University of Southern California
+sichanghe.github.io
 
 Education
 
@@ -68,9 +69,17 @@ Zhixin High School Aug. 2017 – Jun. 2020 Guangzhou, China
 – Chemistry Olympiad competition team; Biology Olympiad competition
 team.
 
-Conference Publication
+Publications
 
-[1] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
+[1] Sichang “Steven” He, Ramesh Govindan, and Madhyastha V. Harsha. “Did
+I Just Browse A Website
+
+Written by LLMs?” In: Proceedings of the 2025 ACM Internet Measurement
+Conference Student Workshop.
+
+Oct. 2025. url: https://arxiv.org/abs/2507.13933.
+
+[2] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
 Characterization and Verification of
 
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
@@ -81,7 +90,7 @@ https://github.com/SichangHe/internet_route_verification/releases/tag/imc-
 
 camera-ready.
 
-[2] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
+[3] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
 
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
@@ -110,6 +119,10 @@ Independent Researcher on Internet Route Verification Apr. 2023 – May
 Independent research, Federal University of Minas Gerais, Brazil
 (Remote) Advisor: Dr. Italo Cunha
 
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
+
 – Designed and implemented an efficient and comprehensive parser for the
 Routing Policy Specification Language
 
@@ -120,10 +133,6 @@ public peering, and aid routing issue troubleshooting.
 
 ∗ Studied and complied with RPSL semantics in RFCs, covering over 99% of
 all real-world RPSL use cases.
-
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
 
 ∗ Optimized the parser to interpret and verify hundreds of millions of
 routes per hour.
@@ -144,9 +153,7 @@ routes fail to match the relevant RPSL.
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
 
-The FedCampus Team
-
-, EdgeIntelligence Lab, DKU Advisor: Dr. Bing Luo
+The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Dr. Bing Luo
 
 – Authored FedKit, open-source SDKs to streamline real-world FL
 experiments across Android and iOS devices,
@@ -222,6 +229,10 @@ Fall 2022, Spring 2023), DKU
 • Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
 (merit-based, Fall 2020 – Spring 2024)
 
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
+
 Side Projects
 
 Open Source Developer & Maintainer of Rust Crates Nov. 2022 – present
@@ -245,10 +256,6 @@ Author of Open Source Web Forum Using Ruby on Rails Jun. 2022 – Aug.
 2022
 
 – Featured infinitely nested comments; deployed on Heroku.
-
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
 
 Outreach
 
