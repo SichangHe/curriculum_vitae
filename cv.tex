@@ -18,31 +18,39 @@
 \fancyfoot[R]{\light{Page} \thepage{} \light{of \pageref{LastPage}}}
 \pagestyle{fancy}
 
-\usepackage[maxbibnames=99,refsection=section]{biblatex}
+\usepackage[
+    maxbibnames=99, % Show all authors.
+    sorting=ydnt, % Reverse chronological.
+    refsection=section
+]{biblatex}
 \addbibresource{cv.bib}
 % Make my name bold: https://tex.stackexchange.com/a/327046/294006
-\newcommand*{\boldname}[3]{
+\newcommand*{\boldname}[4]{
     \def\lastname{#1}
     \def\firstname{#2}
     \def\firstinit{#3}
+    \def\altfirstname{#4}
 }
 \renewcommand{\mkbibnamegiven}[1]{
     \ifboolexpr{
         (
             test {\ifdefequal{\firstname}{\namepartgiven}} or
+            test {\ifstrequal{\altfirstname}{\namepartgiven}} or
             test {\ifdefequal{\firstinit}{\namepartgiven}}
         ) and test {\ifdefequal{\lastname}{\namepartfamily}}
     }{\mkbibbold{#1}}{#1}
 }
 \renewcommand{\mkbibnamefamily}[1]{
+    \typeout{DEBUG: \string\namepartgiven = [\namepartgiven]}%
     \ifboolexpr{
         (
             test {\ifdefequal{\firstname}{\namepartgiven}} or
+            test {\ifstrequal{\altfirstname}{\namepartgiven}} or
             test {\ifdefequal{\firstinit}{\namepartgiven}}
         ) and test {\ifdefequal{\lastname}{\namepartfamily}}
     }{\mkbibbold{#1}}{#1}
 }
-\boldname{He}{Sichang}{S.}
+\boldname{He}{Sichang}{Sichang\bibnamedelima ``Steven''}{S.}
 
 \setlength{\tabcolsep}{0cm}
 
@@ -87,8 +95,8 @@ Ph.D. Student in Computer Science\hfill
     \uhref{https://github.com/SichangHe}{GitHub} \&
     \uhref{https://www.youtube.com/@sichanghe}{YouTube} @SichangHe
 }\\
-University of Southern California\hfill
-{\small \uhref{https://sichanghe.github.io/}{Website}}
+Networked Systems Lab, University of Southern California\hfill
+{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}
 
 \section{Education}
 \CVSubHeadingListStart
@@ -168,9 +176,10 @@ University of Southern California\hfill
 \CVSubHeadingListEnd
 
 \begin{refsection}
+    \nocite{he2025browse}
     \nocite{he2024rpslyzer}
     \nocite{he2024fedkit}
-    \printbibliography[title=Conference Publication]
+    \printbibliography[title=Publications]
 \end{refsection}
 
 \section{Research Experience}
