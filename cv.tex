@@ -91,13 +91,14 @@
 \textbf{\Huge Sichang He (Steven)}\hfill
 \uhref{mailto:sichangh@usc.edu}
 {\small sichangh@usc.edu}\\[3pt]
-Ph.D. Student in Computer Science\hfill
+2nd-Year Ph.D. Student in Computer Science\hfill
 {\small
     \uhref{https://github.com/SichangHe}{GitHub} \&
-    \uhref{https://www.youtube.com/@sichanghe}{YouTube} @SichangHe
+    \uhref{https://www.youtube.com/@sichanghe}{YouTube} \&
+    \uhref{https://sichanghe.github.io/}{Website}
 }\\
 Networked Systems Lab, University of Southern California\hfill
-{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}
+{\small 1176 W 37th St, Apt A, Los Angeles, CA 90007}
 
 \section{Education}
 \CVSubHeadingListStart
@@ -112,14 +113,6 @@ Networked Systems Lab, University of Southern California\hfill
 \CVItem
 {Research focus: User-facing measurements and enhancements of the Web.
 }
-\CVItem
-{Selected courses with projects:
-    \begin{itemize}
-        \item Advanced Computer Networking (A+):
-        \uhref{https://github.com/SichangHe/JSphere}{JSphere}:
-        measure webpages' browser API calls to classify JavaScript.
-    \end{itemize}
-}
 \CVItemListEnd
 
 \CVSubheadingFrame
@@ -131,53 +124,10 @@ Networked Systems Lab, University of Southern California\hfill
     {B.S. in Interdisciplinary Studies} (Subplan: Data Science, by Duke)&
     Durham, NC
 }
-\CVItemListStart
-\CVItem
-{In addition to studies in Data Science,
-    completed many courses in Computer Science and Mathematics,
-    effectively emulating a triple major.
-}
-\CVItem
-{Selected courses with projects:
-    \begin{itemize}
-        \item Computer Network Architecture (A+):
-        async \uhref{https://github.com/SichangHe/CS311}{TCP server and
-            client in
-            Elixir and CLI REPL shell in Rust}.
-
-        \item Data Acquisition and Visualization (A):
-        \uhref{https://github.com/SichangHe/STATS401_final_project}{Poster
-            using D3.js, Svelte, and TypeScript}.
-
-        \item Computer Organization and Programming (A+, at Duke):
-        Binary search tree in MIPS assembly and ring buffer in C;
-        fifth place in PizzaCalc assembly length optimization competition
-        (68 lines).
-
-        \item Numerical Analysis (A+); Intro Abstract Algebra (at Duke),
-        Complex Analysis (A).
-    \end{itemize}
-}
-\CVItem
-{Achieved full grade on all five courses at Duke University in
-    the Fall 2022 semester.
-}
-\CVItemListEnd
-
-\CVSubheadingFrame
-{\textbf{Zhixin High School}&
-    Aug. 2017 -- Jun. 2020\quad Guangzhou, China\\
-}
-\CVItemListStart
-\CVItem
-{Chemistry Olympiad competition team; Biology Olympiad competition team.
-}
-\CVItemListEnd
 
 \CVSubHeadingListEnd
 
 \begin{refsection}
-    \nocite{he2025browse}
     \nocite{he2024rpslyzer}
     \nocite{he2024fedkit}
     \printbibliography[title=Publications]
@@ -190,6 +140,10 @@ Networked Systems Lab, University of Southern California\hfill
 {Networked Systems Lab, USC}
 {Advisor: Dr. Harsha V. Madhyastha}
 \CVItemListStart
+\CVItem
+{\uhref{https://github.com/SichangHe/JSphere}{JSphere}:
+        measure webpages' browser API calls to classify JavaScript.
+}
 \CVItem
 {Surveyed usage, weakness, and extensions of the Coalition for
     Content Provenance and Authenticity (C2PA).
@@ -214,24 +168,11 @@ Networked Systems Lab, University of Southern California\hfill
     a language used in the Internet Routing Registry to
     document public interdomain routing policies,
     guide public peering, and aid routing issue troubleshooting.
-    \begin{itemize}
-        \item Studied and complied with RPSL semantics in RFCs,
-        covering over 99\% of all real-world RPSL use cases.
-        \item Optimized the parser to interpret and verify hundreds of
-        millions of routes per hour.
-        \item Found RPSL usage varied widely among autonomous systems (ASes).
-    \end{itemize}
 }
 \CVItem
 {Employed the RPSL parser to verify observed interdomain routes;
     analyzed verification reports and identified common RPSL usage patterns and
     usage mistakes.
-    \begin{itemize}
-        \item Provided tooling to verify routes against the RPSL,
-        helping improve interdomain routing security.
-        \item Identified and implemented checks for 6 major explanations to
-        why routes fail to match the relevant RPSL.
-    \end{itemize}
 }
 % TODO: Interdomain routing (BGP, policies, RFCs), network datasets (PeeringDB, AS relationship, IRR, …)
 % TODO: Try to expand the networking/ lexing/ RPSL semantics.
@@ -243,53 +184,8 @@ Networked Systems Lab, University of Southern California\hfill
 {\uhref{https://github.com/FedCampus}{The FedCampus Team},
     EdgeIntelligence Lab, DKU
 }{Advisor: Dr. Bing Luo}
-\CVItemListStart
-\CVItem
-{Authored \uhref{https://github.com/FedCampus/FedKit}{FedKit},
-    open-source SDKs to streamline real-world FL experiments across Android and
-    iOS devices,
-    enabling training shared ML models collaboratively without
-    sharing private data on smartphones.
-    \begin{itemize}
-        \item Contributed to the Flower FL framework:
-        revamped the Android example;
-        helped correct the iOS example.
-    \end{itemize}
-}
-\CVItem
-{Led and managed the systems development for the FedCampus Android/iOS app,
-    leveraging personal health data from over 100 participants to
-    conduct real-world FL and federated analytics experiments on
-    DKU campus.
-    \begin{itemize}
-        \item Supervised and mentored four undergrads and
-        one M. Eng. student in mobile and web development.
-        \item Investigated and led core technology adoption,
-        including Flower, Kotlin, and Flutter,
-        facilitating development.
-    \end{itemize}
-}
-\CVItemListEnd
 
-\CVSubheading
-{Research Assistant for Search Engine Research Project}{Dec. 2021 -- May 2023}
-{The Search So Team, DKU}{Advisor: Dr. Jiang Long}
-\CVItemListStart
-\CVItem
-{Developed a feature-rich \uhref{https://github.com/SichangHe/scraper}
-    {open source web scraper} in async Rust to scrape DKU sites,
-    intranet, and Duke sites.
-}
-\CVItem
-{Improved backend HTML processing, frontend interface, and version control.
-}
-\CVItemListEnd
 \CVSubHeadingListEnd
-
-\begin{refsection}
-    \nocite{luo2024fedcampus}
-    \printbibliography[title=Presentation]
-\end{refsection}
 
 \section{Teaching Experience}
 \CVSubHeadingListStart
@@ -297,13 +193,6 @@ Networked Systems Lab, University of Southern California\hfill
 {\textbf{Teaching Assistant, Introduction to Programming, DKU}&
     Nov. 2021 -- Mar. 2022
 }
-\CVItemListStart
-\CVItem
-{Hosted weekly lab sessions; created the course's first
-    \uhref{https://www.youtube.com/watch?v=yiL-ULPBkvE}{video tutorial on
-        development environment setup}.
-}
-\CVItemListEnd
 
 \CVSubheadingFrame
 {\textbf{Math \& CompSci. Tutor, Academic Resource Center, DKU}&
@@ -324,13 +213,9 @@ Networked Systems Lab, University of Southern California\hfill
     \item \uhref{https://github.com/SichangHe/curriculum_vitae/files/15110729/scholar_athelete_award_DKU_running_club.pdf}
     {Senior Scholar-Athlete Award} through the Running Club,
     DKU Athletics (Apr. 2024)
-
+    \vspace{-4pt}
     \item Silver Medal, International Genetically Engineered Machine (iGEM)
-    2022 DKU Team (Oct. 2022)\\{\small
-    Developed \uhref{https://github.com/SichangHe/igem-2022-dku-backup}
-    {the team wiki} independently; helped non-technical members adopt Git;
-    validated protein designs with modeling software.
-    }
+    2022 DKU Team (Oct. 2022)
     \vspace{-4pt}
     \item Dean's List (Spring 2021) \&
     Dean's List with Distinction (Fall 2021, Fall 2022, Spring 2023),
@@ -341,81 +226,4 @@ Networked Systems Lab, University of Southern California\hfill
     \vspace{-4pt}
 \end{itemize}
 
-\section{Side Projects}
-\CVSubHeadingListStart
-\CVSubheadingFrame
-{\textbf{Open Source Developer \& Maintainer of Rust Crates}&
-    Nov. 2022 -- present
-}
-\CVItemListStart
-\CVItem
-{\uhref{https://github.com/lzanini/mdbook-katex}{mdBook-KaTeX}, a math expression preprocessor for
-    \uhref{https://github.com/rust-lang/mdBook}{mdBook} with
-    over 90,000+ downloads on crates.io.
-    \begin{itemize}
-        \item \uhref{https://github.com/lzanini/mdbook-KaTeX/issues/37}
-        {Took over maintainership by publishing a fork} when
-        it was unmaintained.
-
-        \item Fixed numerous bugs and developed new features,
-        resolving more than 20 GitHub issues others had opened.
-
-        \item Improved speed by over 10 times by adopting parallelism and
-        avoiding repeated rendering.
-
-    \end{itemize}
-}
-\CVItem
-{\uhref{https://github.com/SichangHe/mdbook_ls}{mdBook Language Server} for
-    instantaneous live previews.
-    Diff-friendly \uhref{https://github.com/SichangHe/fmtt}{plain-text} and
-    \uhref{https://github.com/SichangHe/fmtm}{Markdown formatters}.
-}
-\CVItemListEnd
-
-\CVSubheadingFrame
-{\textbf{Author of Open Source \uhref{https://github.com/SichangHe/rails_forum}
-        {Web Forum} Using Ruby on Rails}&
-    Jun. 2022 -- Aug. 2022
-}
-\CVItemListStart
-\CVItem
-{Featured infinitely nested comments;
-    deployed on Heroku.
-}
-\CVItemListEnd
-\CVSubHeadingListEnd
-
-\section{Outreach}
-\begin{itemize}
-    \item Chinese Editor \& Translator at DKU Intersections Journal\hfill
-    Jun. 2021 -- Aug. 2021\\{\small
-    Co-translated three English articles into Chinese;
-    reviewed and edited multiple articles and
-    \uhref{https://sites.duke.edu/intersections/}{Intersections' website}.
-    }
-    \vspace{-4pt}
-\end{itemize}
-
-\section{Skills}
-\begin{itemize}[leftmargin=0.5cm, label={}]
-    \item \textbf{Natural Language}\quad
-    Mandarin (native), Cantonese (fluent).\vspace{-4pt}
-    \item \textbf{Programming Language}\vspace{-4pt}
-    \begin{itemize}\small
-        \item Invested and proficient: Rust, Python, Elixir, JavaScript.
-        \item Used in projects:
-        Kotlin, Dart, Swift, Ruby, Java, Lua, TypeScript,
-        Svelte, HTML, CSS, C, SQL, Racket, \LaTeX{}.
-        \item Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
-        Mathematica, MATLAB, Scala, R.\vspace{-4pt}
-    \end{itemize}
-    \item \textbf{Computer Software}\vspace{-4pt}
-    \begin{itemize}\small
-        \item Selected frameworks/libraries: Playwright, Django,
-        Phoenix Framework, Tokio, Tailwindcss, D3.js.
-        \item Selected development experience: SSH, Tmux, Neovim, Docker,
-        Kubernetes, Evcxr, Arch Linux, Hackintosh.
-    \end{itemize}
-\end{itemize}
 \end{document}
