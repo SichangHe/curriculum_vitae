@@ -71,15 +71,24 @@ team.
 
 Publications
 
-[1] Sichang “Steven” He, Ramesh Govindan, and Madhyastha V. Harsha. “Did
-I Just Browse A Website
+[1] Sichang Steven He, Ramesh Govindan, and Madhyastha V. Harsha. “Did I
+Just Browse A Website
 
 Written by LLMs?” In: Proceedings of the 2025 ACM Internet Measurement
 Conference Student Workshop.
 
-Oct. 2025. url: https://arxiv.org/abs/2507.13933.
+Oct. 2025.
 
-[2] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
+[2] Sichang Steven He, Ramesh Govindan, and Madhyastha V. Harsha.
+“Poster: Did I Just Browse A
+
+Website Written by LLMs?” In: Proceedings of the 2025 ACM Internet
+Measurement Conference. Oct. 2025.
+
+url:
+https://github.com/SichangHe/DeGenTWeb_docs/releases/tag/cam-ready-imc2025.
+
+[3] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
 Characterization and Verification of
 
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
@@ -90,7 +99,7 @@ https://github.com/SichangHe/internet_route_verification/releases/tag/imc-
 
 camera-ready.
 
-[3] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
+[4] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
 
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
@@ -100,6 +109,10 @@ Android and iOS”. In: IEEE INFOCOM
 WKSHPS). May 2024. url:
 
 http://www.arxiv.org/pdf/2402.10464.
+
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
 
 Research Experience
 
@@ -118,10 +131,6 @@ Independent Researcher on Internet Route Verification Apr. 2023 – May
 
 Independent research, Federal University of Minas Gerais, Brazil
 (Remote) Advisor: Dr. Italo Cunha
-
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
 
 – Designed and implemented an efficient and comprehensive parser for the
 Routing Policy Specification Language
@@ -210,7 +219,16 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
 
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
+
 Awards
+
+• ACM Internet Measurement Conference (IMC) Travel Grant (Sep. 2025)
+
+• ACM Internet Measurement Conference (IMC) Student Travel Grant (Aug.
+2024)
 
 • Senior Scholar-Athlete Award through the Running Club, DKU Athletics
 (Apr. 2024)
@@ -229,16 +247,12 @@ Fall 2022, Spring 2023), DKU
 • Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
 (merit-based, Fall 2020 – Spring 2024)
 
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
-
 Side Projects
 
 Open Source Developer & Maintainer of Rust Crates Nov. 2022 – present
 
 – mdBook-KaTeX, a math expression preprocessor for mdBook with over
-90,000+ downloads on crates.io.
+160k+ downloads on crates.io.
 
 ∗ Took over maintainership by publishing a fork when it was
 unmaintained.
@@ -282,15 +296,17 @@ T
 
 E
 
-X.
+X,
+
+PL/pgSQL.
 
 – Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
 Mathematica, MATLAB, Scala, R.
 
 Computer Software
 
-– Selected frameworks/libraries: Playwright, Django, Phoenix Framework,
-Tokio, Tailwindcss, D3.js.
+– Selected frameworks/libraries: SQLite, Playwright, Django, Phoenix
+Framework, Tokio, Tailwindcss, D3.js.
 
 – Selected development experience: SSH, Tmux, Neovim, Docker,
 Kubernetes, Evcxr, Arch Linux, Hackintosh.
