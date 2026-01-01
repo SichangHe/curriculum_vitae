@@ -31,6 +31,9 @@ Ph.D. student in Computer Science Advisor: Dr. Harsha V. Madhyastha
 ∗ Advanced Computer Networking (A+): JSphere: measure webpages’ browser
 API calls to classify JavaScript.
 
+∗ Advanced NLP (A): Reproduced an EMNLP LLM detection paper and
+challenged its generalizability.
+
 Duke Kunshan University (DKU) & Duke University Dual Degree Aug. 2020 –
 May 2024
 
