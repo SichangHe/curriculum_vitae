@@ -74,35 +74,29 @@ team.
 
 Publications
 
-[1] Sichang Steven He, Ramesh Govindan, and Madhyastha V. Harsha. “Did I
-Just Browse A Website
-
-Written by LLMs?” In: Proceedings of the 2025 ACM Internet Measurement
-Conference Student Workshop.
-
-Oct. 2025.
-
-[2] Sichang Steven He, Ramesh Govindan, and Madhyastha V. Harsha.
+[1] Sichang Steven He, Ramesh Govindan, and Harsha V. Madhyastha.
 “Poster: Did I Just Browse A
 
 Website Written by LLMs?” In: Proceedings of the 2025 ACM Internet
-Measurement Conference. Oct. 2025.
+Measurement Conference and Student
 
-url:
-https://github.com/SichangHe/DeGenTWeb_docs/releases/tag/cam-ready-imc2025.
+Workshop (IMC, Dual Submission). Oct. 2025. url:
+https://github.com/SichangHe/DeGenTWeb_docs/
 
-[3] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
+releases/tag/cam-ready-imc2025.
+
+[2] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
 Characterization and Verification of
 
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
-ACM Internet Measurement Conference.
+ACM Internet Measurement Conference
 
-Nov. 2024. url:
-https://github.com/SichangHe/internet_route_verification/releases/tag/imc-
+(IMC). Nov. 2024. url:
+https://github.com/SichangHe/internet_route_verification/releases/tag/
 
-camera-ready.
+imc-camera-ready.
 
-[4] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
+[3] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
 
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
@@ -112,10 +106,6 @@ Android and iOS”. In: IEEE INFOCOM
 WKSHPS). May 2024. url:
 
 http://www.arxiv.org/pdf/2402.10464.
-
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
 
 Research Experience
 
@@ -128,6 +118,10 @@ Provenance and Authenticity (C2PA).
 
 – Detect, understand, and respond to AI-generated contents on the Web,
 their characteristics, cause, and effects.
+
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
 
 Independent Researcher on Internet Route Verification Apr. 2023 – May
 2024
@@ -222,10 +216,6 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
 
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
-
 Awards
 
 • ACM Internet Measurement Conference (IMC) Travel Grant (Sep. 2025)
@@ -249,6 +239,10 @@ Fall 2022, Spring 2023), DKU
 
 • Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
 (merit-based, Fall 2020 – Spring 2024)
+
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
 
 Side Projects
 
