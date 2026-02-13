@@ -176,8 +176,8 @@ app, leveraging personal health data
 from over 100 participants to conduct real-world FL and federated
 analytics experiments on DKU campus.
 
-∗ Supervised and mentored four undergrads and one M. Eng. student in
-mobile and web development.
+∗ Supervised and mentored 4 undergrads and 1 M.Eng. student in mobile
+and web development.
 
 ∗ Investigated and led core technology adoption, including Flower,
 Kotlin, and Flutter, facilitating development.
