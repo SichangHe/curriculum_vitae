@@ -22,7 +22,7 @@ Education
 University of Southern California (USC) Aug. 2024 – present Los Angeles,
 USA
 
-Ph.D. student in Computer Science Advisor: Dr. Harsha V. Madhyastha
+Ph.D. student in Computer Science Advisor: Harsha V. Madhyastha
 
 – Research focus: User-facing measurements and enhancements of the Web.
 
@@ -74,7 +74,15 @@ team.
 
 Publications
 
-[1] Sichang Steven He, Ramesh Govindan, and Harsha V. Madhyastha.
+[1] Sichang Steven He, Calvin Ardi, Ramesh Govindan, and Harsha V.
+Madhyastha. “DeGenTWeb: A
+
+First Look at LLM-Dominant Websites”. In: under submission. 2026. url:
+https://github.com/SichangHe/
+
+DeGenTWeb_docs/releases/tag/preprint-imc2026.
+
+[2] Sichang Steven He, Ramesh Govindan, and Harsha V. Madhyastha.
 “Poster: Did I Just Browse A
 
 Website Written by LLMs?” In: Proceedings of the 2025 ACM Internet
@@ -85,7 +93,7 @@ https://github.com/SichangHe/DeGenTWeb_docs/
 
 releases/tag/cam-ready-imc2025.
 
-[2] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
+[3] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
 Characterization and Verification of
 
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
@@ -96,7 +104,7 @@ https://github.com/SichangHe/internet_route_verification/releases/tag/
 
 imc-camera-ready.
 
-[3] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
+[4] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
 
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
@@ -107,11 +115,15 @@ WKSHPS). May 2024. url:
 
 http://www.arxiv.org/pdf/2402.10464.
 
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
+
 Research Experience
 
 Research Assistant Aug. 2024 – present
 
-Networked Systems Lab, USC Advisor: Dr. Harsha V. Madhyastha
+Networked Systems Lab, USC Advisor: Harsha V. Madhyastha
 
 – Surveyed usage, weakness, and extensions of the Coalition for Content
 Provenance and Authenticity (C2PA).
@@ -119,15 +131,11 @@ Provenance and Authenticity (C2PA).
 – Detect, understand, and respond to AI-generated contents on the Web,
 their characteristics, cause, and effects.
 
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
-
 Independent Researcher on Internet Route Verification Apr. 2023 – May
 2024
 
 Independent research, Federal University of Minas Gerais, Brazil
-(Remote) Advisor: Dr. Italo Cunha
+(Remote) Advisor: Italo Cunha
 
 – Designed and implemented an efficient and comprehensive parser for the
 Routing Policy Specification Language
@@ -159,7 +167,7 @@ routes fail to match the relevant RPSL.
 Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 – May. 2024
 
-The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Dr. Bing Luo
+The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Bing Luo
 
 – Authored FedKit, open-source SDKs to streamline real-world FL
 experiments across Android and iOS devices,
@@ -185,7 +193,7 @@ Kotlin, and Flutter, facilitating development.
 Research Assistant for Search Engine Research Project Dec. 2021 – May
 2023
 
-The Search So Team, DKU Advisor: Dr. Jiang Long
+The Search So Team, DKU Advisor: Jiang Long
 
 – Developed a feature-rich open source web scraper in async Rust to
 scrape DKU sites, intranet, and Duke sites.
@@ -216,6 +224,10 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
 
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
+
 Awards
 
 • ACM Internet Measurement Conference (IMC) Travel Grant (Sep. 2025)
@@ -239,10 +251,6 @@ Fall 2022, Spring 2023), DKU
 
 • Chancellor’s Scholarship & UGRD Entrance Scholarship, DKU
 (merit-based, Fall 2020 – Spring 2024)
-
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
 
 Side Projects
 
