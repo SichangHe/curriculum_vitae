@@ -91,10 +91,9 @@ Daniel Nata Nugraha, and
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
 Android and iOS”. In: IEEE INFOCOM
 
-2024-IEEE Conference on Computer Communications Workshops (INFOCOM
-WKSHPS). May 2024.
+Demo. Video. May 2024.
 
-Under Review
+In Progress
 
 [1] Sichang Steven He, Calvin Ardi, Ramesh Govindan, and Harsha V.
 Madhyastha. “DeGenTWeb: A
