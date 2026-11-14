@@ -24,6 +24,10 @@
     refsection=section
 ]{biblatex}
 \addbibresource{cv.bib}
+% Link each title to its URL instead of printing the URL.
+\ExecuteBibliographyOptions{url=false,doi=false,eprint=false}
+\DeclareFieldFormat{title}{\iffieldundef{url}{\mkbibemph{#1}}{\uhref{\strfield{url}}{\mkbibemph{#1}}}}
+\DeclareFieldFormat[inproceedings,misc,article]{title}{\iffieldundef{url}{\mkbibquote{#1}}{\uhref{\strfield{url}}{\mkbibquote{#1}}}}
 % Make my name bold: https://tex.stackexchange.com/a/327046/294006
 \newcommand*{\boldname}[4]{
     \def\lastname{#1}
@@ -96,8 +100,10 @@ Ph.D. Student in Computer Science\hfill
     \uhref{https://github.com/SichangHe}{GitHub} \&
     \uhref{https://www.youtube.com/@sichanghe}{YouTube} @SichangHe
 }\\
-Networked Systems Lab, University of Southern California\hfill
-{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}
+Networked Systems Lab (NSL), University of Southern California\hfill
+{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}\\[4pt]
+{\small Interested in systems problems of the web that impact ordinary
+    people. Built large-scale Internet measurements.}
 
 \section{Education}
 \CVSubHeadingListStart
@@ -105,13 +111,10 @@ Networked Systems Lab, University of Southern California\hfill
 \CVSubheadingFrame
 {\textbf{University of Southern California (USC)}&
     Aug. 2024 -- present\quad Los Angeles, USA\\
-    \small Ph.D. student in Computer Science&
+    \small Ph.D. student in Computer Science (CS)&
     Advisor: Harsha V. Madhyastha\\
 }
 \CVItemListStart
-\CVItem
-{Research focus: User-facing measurements and enhancements of the Web.
-}
 \CVItem
 {Selected courses with projects:
     \begin{itemize}
@@ -139,12 +142,10 @@ Networked Systems Lab, University of Southern California\hfill
 }
 \CVItemListStart
 \CVItem
-{In addition to studies in Data Science,
-    completed many courses in Computer Science and Mathematics,
-    effectively emulating a triple major.
+{Completed most required courses for CS and Mathematics majors.
 }
 \CVItem
-{Selected courses with projects:
+{Select courses with projects:
     \begin{itemize}
         \item Computer Network Architecture (A+):
         async \uhref{https://github.com/SichangHe/CS311}{TCP server and
@@ -164,10 +165,6 @@ Networked Systems Lab, University of Southern California\hfill
         Complex Analysis (A).
     \end{itemize}
 }
-\CVItem
-{Achieved full grade on all five courses at Duke University in
-    the Fall 2022 semester.
-}
 \CVItemListEnd
 
 \CVSubheadingFrame
@@ -183,11 +180,15 @@ Networked Systems Lab, University of Southern California\hfill
 \CVSubHeadingListEnd
 
 \begin{refsection}
-    \nocite{he2026degentweb}
     \nocite{he2025poster}
     \nocite{he2024rpslyzer}
     \nocite{he2024fedkit}
     \printbibliography[title=Publications]
+\end{refsection}
+
+\begin{refsection}
+    \nocite{he2026degentweb}
+    \printbibliography[title=Under Review]
 \end{refsection}
 
 \section{Research Experience}
@@ -198,17 +199,43 @@ Networked Systems Lab, University of Southern California\hfill
 {Advisor: Harsha V. Madhyastha}
 \CVItemListStart
 \CVItem
-{Surveyed usage, weakness, and extensions of the Coalition for
-    Content Provenance and Authenticity (C2PA).
+{Built DeGenTWeb, a site-level detector for websites whose textual content is dominated by
+    LLMs.
+    \begin{itemize}
+        \item Achieved an ultra low P90 false positive rate of 0.12\% on 6k baseline sites.
+        \item Flagged 21\% of 117k Common Crawl sites and 14\% of 18k sites from Bing
+        search results.
+        \item Identified clear financial incentives for websites dominated by LLM texts.
+    \end{itemize}
 }
 \CVItem
-{Detect, understand, and respond to AI-generated contents on the Web,
-    their characteristics, cause, and effects.
+{Surveyed usage, weakness, and extensions of the Coalition for
+    Content Provenance and Authenticity (C2PA).
 }
 \CVItemListEnd
 
 \CVSubheading
-{Independent Researcher on \uhref
+{Agentic Formal Verification for Rust}{Jun. 2026 -- Oct. 2026}
+{Midas Intelligence Inc., San Francisco (Remote)}{}
+\CVItemListStart
+\CVItem
+{Conceived the company's software story: develop reliable software at
+    speed, via agents, Rust, and
+    \uhref{https://github.com/verus-lang/verus}{Verus}.
+}
+\CVItem
+{Created \uhref{https://github.com/midas-intelligence/midas-lex}{Midas Lex},
+    a tool that guides agents to write Verus specifications and proofs.
+}
+\CVItem
+{Found bugs in popular open source Rust projects like
+    \uhref{https://github.com/uutils/coreutils/issues/13703}{uutils coreutils}.
+    Built benchmarks of unsolved Verus tasks.
+}
+\CVItemListEnd
+
+\CVSubheading
+{\uhref
     {https://github.com/SichangHe/internet_route_verification}
     {Internet Route Verification}
 }{Apr. 2023 -- May 2024}
@@ -222,11 +249,12 @@ Networked Systems Lab, University of Southern California\hfill
     document public interdomain routing policies,
     guide public peering, and aid routing issue troubleshooting.
     \begin{itemize}
-        \item Studied and complied with RPSL semantics in RFCs,
-        covering over 99\% of all real-world RPSL use cases.
-        \item Optimized the parser to interpret and verify hundreds of
-        millions of routes per hour.
-        \item Found RPSL usage varied widely among autonomous systems (ASes).
+        \item Parses and interprets 99.99\% of real-world RPSL policies,
+        following the RPSL semantics in the RFCs.
+        \item Parses all 13 IRRs (6.9\,GiB) in under five minutes on an Apple M1;
+        verified 779 million BGP routes in 2\,h\,49\,m with under 2\,GiB of RAM on a server.
+        \item Characterized the policies of 78,701 autonomous systems (ASes);
+        53.2\% of ASes declare no policies at all.
     \end{itemize}
 }
 \CVItem
@@ -254,7 +282,7 @@ Networked Systems Lab, University of Southern California\hfill
 \CVItem
 {Authored \uhref{https://github.com/FedCampus/FedKit}{FedKit},
     open-source SDKs to streamline real-world FL experiments across Android and
-    iOS devices,
+    iOS devices (async Kotlin coroutines and Swift async/await),
     enabling training shared ML models collaboratively without
     sharing private data on smartphones.
     \begin{itemize}
@@ -296,7 +324,7 @@ Networked Systems Lab, University of Southern California\hfill
 
 \begin{refsection}
     \nocite{luo2024fedcampus}
-    \printbibliography[title=Presentation]
+    \printbibliography[title=Presentations]
 \end{refsection}
 
 \section{Teaching Experience}
@@ -354,46 +382,35 @@ Networked Systems Lab, University of Southern California\hfill
 \section{Side Projects}
 \CVSubHeadingListStart
 \CVSubheadingFrame
-{\textbf{Open Source Developer \& Maintainer of Rust Crates}&
+{\textbf{Open Source Developer \& Maintainer of Rust Libraries}&
     Nov. 2022 -- present
 }
 \CVItemListStart
 \CVItem
 {\uhref{https://github.com/lzanini/mdbook-katex}{mdBook-KaTeX}, a math expression preprocessor for
     \uhref{https://github.com/rust-lang/mdBook}{mdBook} with
-    over 160k+ downloads on crates.io.
-    \begin{itemize}
-        \item \uhref{https://github.com/lzanini/mdbook-KaTeX/issues/37}
-        {Took over maintainership by publishing a fork} when
-        it was unmaintained.
-
-        \item Fixed numerous bugs and developed new features,
-        resolving more than 20 GitHub issues others had opened.
-
-        \item Improved speed by over 10 times by adopting parallelism and
-        avoiding repeated rendering.
-
-    \end{itemize}
+    over 200k downloads on crates.io.
+    \uhref{https://github.com/lzanini/mdbook-KaTeX/issues/37}{Took over
+    maintainership} when it was unmaintained.
+    Resolved 20 old issues, added featuers, improved speed 10$\times$.
 }
 \CVItem
-{\uhref{https://github.com/SichangHe/mdbook_ls}{mdBook Language Server} for
-    instantaneous live previews.
-    Diff-friendly \uhref{https://github.com/SichangHe/fmtt}{plain-text} and
-    \uhref{https://github.com/SichangHe/fmtm}{Markdown formatters}.
+{Contributed to
+    \uhref{https://github.com/rust-lang/mdBook}{mdBook},
+    \uhref{https://github.com/cargo-bins/cargo-binstall}{cargo-binstall},
+    \uhref{https://github.com/Byron/pulldown-cmark-to-cmark}{pulldown-cmark-to-cmark},
+    and others.
+}
+\CVItem
+{
+\uhref{https://sichangheagentvoicechat.github.io/}{Voice control} for 
+    \uhref{https://github.com/SichangHe/agent_manager}{a agent manager},
+    \uhref{https://github.com/SichangHe/tokio_gen_server}{Elixir-style async Rust},
+    \uhref{https://github.com/SichangHe/rust_build_eval}{efficient Rust environment},
+    \uhref{https://github.com/SichangHe/TeamTypeV}{collaborative editor}.
 }
 \CVItemListEnd
 
-\CVSubheadingFrame
-{\textbf{Author of Open Source \uhref{https://github.com/SichangHe/rails_forum}
-        {Web Forum} Using Ruby on Rails}&
-    Jun. 2022 -- Aug. 2022
-}
-\CVItemListStart
-\CVItem
-{Featured infinitely nested comments;
-    deployed on Heroku.
-}
-\CVItemListEnd
 \CVSubHeadingListEnd
 
 \section{Outreach}
@@ -420,6 +437,9 @@ Networked Systems Lab, University of Southern California\hfill
         \item Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
         Mathematica, MATLAB, Scala, R.\vspace{-4pt}
     \end{itemize}
+    \item \textbf{Concurrency}\quad
+    Event-loop in Rust Tokio, JavaScript, Dart, Swift; Kotlin coroutines;
+    Elixir/OTP processes.\vspace{-4pt}
     \item \textbf{Computer Software}\vspace{-4pt}
     \begin{itemize}\small
         \item Selected frameworks/libraries: SQLite, Playwright, Django,
