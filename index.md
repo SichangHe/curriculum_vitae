@@ -14,17 +14,18 @@ Sichang He (Steven) sichangh@usc.edu
 
 Ph.D. Student in Computer Science GitHub & YouTube @SichangHe
 
-Networked Systems Lab, University of Southern California
+Networked Systems Lab (NSL), University of Southern California
 sichanghe.github.io
+
+Interested in systems problems of the web that impact ordinary people.
+Built large-scale Internet measurements.
 
 Education
 
 University of Southern California (USC) Aug. 2024 – present Los Angeles,
 USA
 
-Ph.D. student in Computer Science Advisor: Harsha V. Madhyastha
-
-– Research focus: User-facing measurements and enhancements of the Web.
+Ph.D. student in Computer Science (CS) Advisor: Harsha V. Madhyastha
 
 – Selected courses with projects:
 
@@ -42,12 +43,9 @@ B.S. in Data Science (by DKU) & Kunshan, China &
 B.S. in Interdisciplinary Studies (Subplan: Data Science, by Duke)
 Durham, NC
 
-– In addition to studies in Data Science, completed many courses in
-Computer Science and Mathematics, effectively
+– Completed most required courses for CS and Mathematics majors.
 
-emulating a triple major.
-
-– Selected courses with projects:
+– Select courses with projects:
 
 ∗ Computer Network Architecture (A+): async TCP server and client in
 Elixir and CLI REPL shell in Rust.
@@ -64,9 +62,6 @@ in C; fifth place in PizzaCalc assembly length optimization competition
 ∗ Numerical Analysis (A+); Intro Abstract Algebra (at Duke), Complex
 Analysis (A).
 
-– Achieved full grade on all five courses at Duke University in the Fall
-2022 semester.
-
 Zhixin High School Aug. 2017 – Jun. 2020 Guangzhou, China
 
 – Chemistry Olympiad competition team; Biology Olympiad competition
@@ -74,46 +69,37 @@ team.
 
 Publications
 
-[1] Sichang Steven He, Calvin Ardi, Ramesh Govindan, and Harsha V.
-Madhyastha. “DeGenTWeb: A
-
-First Look at LLM-Dominant Websites”. In: under submission. 2026. url:
-https://github.com/SichangHe/
-
-DeGenTWeb_docs/releases/tag/preprint-imc2026.
-
-[2] Sichang Steven He, Ramesh Govindan, and Harsha V. Madhyastha.
+[1] Sichang Steven He, Ramesh Govindan, and Harsha V. Madhyastha.
 “Poster: Did I Just Browse A
 
 Website Written by LLMs?” In: Proceedings of the 2025 ACM Internet
 Measurement Conference and Student
 
-Workshop (IMC, Dual Submission). Oct. 2025. url:
-https://github.com/SichangHe/DeGenTWeb_docs/
+Workshop (IMC, Dual Submission). Video. Oct. 2025.
 
-releases/tag/cam-ready-imc2025.
-
-[3] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
+[2] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
 Characterization and Verification of
 
 Policies in Internet Routing Registries”. In: Proceedings of the 2024
 ACM Internet Measurement Conference
 
-(IMC). Nov. 2024. url:
-https://github.com/SichangHe/internet_route_verification/releases/tag/
+(IMC). Video. Nov. 2024.
 
-imc-camera-ready.
-
-[4] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
+[3] Sichang He, Beilong Tang, Boyan Zhang, Jiaqi Shao, Xiaomin Ouyang,
 Daniel Nata Nugraha, and
 
 Bing Luo. “FedKit: Enabling Cross-Platform Federated Learning for
 Android and iOS”. In: IEEE INFOCOM
 
 2024-IEEE Conference on Computer Communications Workshops (INFOCOM
-WKSHPS). May 2024. url:
+WKSHPS). May 2024.
 
-http://www.arxiv.org/pdf/2402.10464.
+Under Review
+
+[1] Sichang Steven He, Calvin Ardi, Ramesh Govindan, and Harsha V.
+Madhyastha. “DeGenTWeb: A
+
+First Look at MGT-dominant Websites”. 2026.
 
 Sichang He (Steven) - University of Southern California Page 1 of 3
 
@@ -125,14 +111,35 @@ Research Assistant Aug. 2024 – present
 
 Networked Systems Lab, USC Advisor: Harsha V. Madhyastha
 
+– Built DeGenTWeb, a site-level detector for websites whose textual
+content is dominated by LLMs.
+
+∗ Achieved an ultra low P90 false positive rate of 0.12% on 6k baseline
+sites.
+
+∗ Flagged 21% of 117k Common Crawl sites and 14% of 18k sites from Bing
+search results.
+
+∗ Identified clear financial incentives for websites dominated by LLM
+texts.
+
 – Surveyed usage, weakness, and extensions of the Coalition for Content
 Provenance and Authenticity (C2PA).
 
-– Detect, understand, and respond to AI-generated contents on the Web,
-their characteristics, cause, and effects.
+Agentic Formal Verification for Rust Jun. 2026 – Oct. 2026
 
-Independent Researcher on Internet Route Verification Apr. 2023 – May
-2024
+Midas Intelligence Inc., San Francisco (Remote)
+
+– Conceived the company’s software story: develop reliable software at
+speed, via agents, Rust, and Verus.
+
+– Created Midas Lex, a tool that guides agents to write Verus
+specifications and proofs.
+
+– Found bugs in popular open source Rust projects like uutils coreutils.
+Built benchmarks of unsolved Verus tasks.
+
+Internet Route Verification Apr. 2023 – May 2024
 
 Independent research, Federal University of Minas Gerais, Brazil
 (Remote) Advisor: Italo Cunha
@@ -145,13 +152,16 @@ public interdomain routing policies, guide
 
 public peering, and aid routing issue troubleshooting.
 
-∗ Studied and complied with RPSL semantics in RFCs, covering over 99% of
-all real-world RPSL use cases.
+∗ Parses and interprets 99.99% of real-world RPSL policies, following
+the RPSL semantics in the RFCs.
 
-∗ Optimized the parser to interpret and verify hundreds of millions of
-routes per hour.
+∗ Parses all 13 IRRs (6.9 GiB) in under five minutes on an Apple M1;
+verified 779 million BGP routes in 2 h 49 m
 
-∗ Found RPSL usage varied widely among autonomous systems (ASes).
+with under 2 GiB of RAM on a server.
+
+∗ Characterized the policies of 78,701 autonomous systems (ASes); 53.2%
+of ASes declare no policies at all.
 
 – Employed the RPSL parser to verify observed interdomain routes;
 analyzed verification reports and identified com-
@@ -170,9 +180,11 @@ Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
 The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Bing Luo
 
 – Authored FedKit, open-source SDKs to streamline real-world FL
-experiments across Android and iOS devices,
+experiments across Android and iOS devices (async
 
-enabling training shared ML models collaboratively without sharing
+Kotlin coroutines and Swift async/await), enabling training shared ML
+models collaboratively without sharing
+
 private data on smartphones.
 
 ∗ Contributed to the Flower FL framework: revamped the Android example;
@@ -201,15 +213,16 @@ scrape DKU sites, intranet, and Duke sites.
 – Improved backend HTML processing, frontend interface, and version
 control.
 
-Presentation
+Presentations
 
-[1] Bing Luo and Sichang He. FedCampus: a Privacy-preserving Data
+[1] Bing Luo and Sichang He. “FedCampus: a Privacy-preserving Data
 Platform for Smart Campus with
 
-Federated Learning and Analytics. Flower AI Summit, 2024. Mar. 2024.
-url: https://www.youtube.com/
+Federated Learning and Analytics”. Flower AI Summit, 2024. Mar. 2024.
 
-watch?v=K7yu2jvu_t8.
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
 
 Teaching Experience
 
@@ -223,10 +236,6 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
-
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
 
 Awards
 
@@ -254,27 +263,19 @@ Fall 2022, Spring 2023), DKU
 
 Side Projects
 
-Open Source Developer & Maintainer of Rust Crates Nov. 2022 – present
+Open Source Developer & Maintainer of Rust Libraries Nov. 2022 – present
 
-– mdBook-KaTeX, a math expression preprocessor for mdBook with over
-160k+ downloads on crates.io.
+– mdBook-KaTeX, a math expression preprocessor for mdBook with over 200k
+downloads on crates.io. Took over
 
-∗ Took over maintainership by publishing a fork when it was
-unmaintained.
+maintainership when it was unmaintained. Resolved 20 old issues, added
+featuers, improved speed 10×.
 
-∗ Fixed numerous bugs and developed new features, resolving more than 20
-GitHub issues others had opened.
+– Contributed to mdBook, cargo-binstall, pulldown-cmark-to-cmark, and
+others.
 
-∗ Improved speed by over 10 times by adopting parallelism and avoiding
-repeated rendering.
-
-– mdBook Language Server for instantaneous live previews. Diff-friendly
-plain-text and Markdown formatters.
-
-Author of Open Source Web Forum Using Ruby on Rails Jun. 2022 – Aug.
-2022
-
-– Featured infinitely nested comments; deployed on Heroku.
+– Voice control for a agent manager, Elixir-style async Rust, efficient
+Rust environment, collaborative editor.
 
 Outreach
 
@@ -307,6 +308,9 @@ PL/pgSQL.
 
 – Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
 Mathematica, MATLAB, Scala, R.
+
+Concurrency Event-loop in Rust Tokio, JavaScript, Dart, Swift; Kotlin
+coroutines; Elixir/OTP processes.
 
 Computer Software
 
