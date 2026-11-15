@@ -10,15 +10,15 @@
 
 []
 
-Sichang He (Steven) sichangh@usc.edu
+Sichang “Steven” He sichangh@usc.edu
 
 Ph.D. Student in Computer Science GitHub & YouTube @SichangHe
 
 Networked Systems Lab (NSL), University of Southern California
 sichanghe.github.io
 
-Interested in systems problems of the web that impact ordinary people.
-Built large-scale Internet measurements.
+Interested in systems problems of the web that impact ordinary people. I
+built large-scale Internet measurements.
 
 Education
 
@@ -115,7 +115,7 @@ sites.
 ∗ Flagged 21% of 117k Common Crawl sites and 14% of 18k sites from Bing
 search results.
 
-Sichang He (Steven) - University of Southern California Page 1 of 3
+Sichang “Steven” He | University of Southern California Page 1 of 3
 
 []
 
@@ -212,7 +212,7 @@ scrape DKU sites, intranet, and Duke sites.
 – Improved backend HTML processing, frontend interface, and version
 control.
 
-Presentations
+Talks
 
 [1] Bing Luo and Sichang He. “FedCampus: a Privacy-preserving Data
 Platform for Smart Campus with
@@ -232,7 +232,7 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
 
-Sichang He (Steven) - University of Southern California Page 2 of 3
+Sichang “Steven” He | University of Southern California Page 2 of 3
 
 []
 
@@ -319,6 +319,6 @@ Framework, Tokio, Tailwindcss, D3.js.
 – Selected development experience: SSH, Tmux, Neovim, Docker,
 Kubernetes, Evcxr, Arch Linux, Hackintosh.
 
-Sichang He (Steven) - University of Southern California Page 3 of 3
+Sichang “Steven” He | University of Southern California Page 3 of 3
 
 []
