@@ -56,24 +56,27 @@
 }
 \boldname{He}{Sichang}{Sichang\bibnamedelima Steven}{S.}
 
-\setlength{\tabcolsep}{0cm}
+\setlength{\tabcolsep}{0em}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\titlerule \vspace{-5pt}]
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0em}{1.1em}{0.25em}
+\setlist[itemize]{
+  parsep=0em,
+  partopsep=0em
+}
 
 \newcommand{\CVItem}[1]{
   \item{\small
-    {#1 \vspace{-2pt}}
+    {#1}
   }
 }
 
 \newcommand{\CVSubheadingFrame}[1]{
-  \vspace{-2pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
         #1
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 \newcommand{\CVSubheading}[4]{\CVSubheadingFrame
@@ -81,10 +84,10 @@
         \small#3 & #4 \\
     }}
 
-\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=0.5cm, label={}]}
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=1.2em, label={}]}
 \newcommand{\CVSubHeadingListEnd}{\end{itemize}}
 \newcommand{\CVItemListStart}{\begin{itemize}}
-\newcommand{\CVItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\CVItemListEnd}{\end{itemize}}
 
 \definecolor{darkbluepurple}{rgb}{0.125, 0, 0.5}
 \newcommand{\uhref}[2]{\href{#1}{\textcolor{darkbluepurple}{#2}}}
@@ -94,14 +97,14 @@
 \noindent
 \textbf{\Huge Sichang He (Steven)}\hfill
 \uhref{mailto:sichangh@usc.edu}
-{\small sichangh@usc.edu}\\[3pt]
+{\small sichangh@usc.edu}\\[0.25em]
 Ph.D. Student in Computer Science\hfill
 {\small
     \uhref{https://github.com/SichangHe}{GitHub} \&
     \uhref{https://www.youtube.com/@sichanghe}{YouTube} @SichangHe
 }\\
 Networked Systems Lab (NSL), University of Southern California\hfill
-{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}\\[4pt]
+{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}\\[0.3em]
 {\small Interested in systems problems of the web that impact ordinary
     people. Built large-scale Internet measurements.}
 
@@ -369,14 +372,11 @@ Networked Systems Lab (NSL), University of Southern California\hfill
     {the team wiki} independently; helped non-technical members adopt Git;
     validated protein designs with modeling software.
     }
-    \vspace{-4pt}
     \item Dean's List (Spring 2021) \&
     Dean's List with Distinction (Fall 2021, Fall 2022, Spring 2023),
     DKU
-    \vspace{-4pt}
     \item Chancellor's Scholarship \& UGRD Entrance Scholarship, DKU
     (merit-based, Fall 2020 -- Spring 2024)
-    \vspace{-4pt}
 \end{itemize}
 
 \section{Side Projects}
@@ -421,26 +421,25 @@ Networked Systems Lab (NSL), University of Southern California\hfill
     reviewed and edited multiple articles and
     \uhref{https://sites.duke.edu/intersections/}{Intersections' website}.
     }
-    \vspace{-4pt}
 \end{itemize}
 
 \section{Skills}
 \begin{itemize}[leftmargin=0.5cm, label={}]
     \item \textbf{Natural Language}\quad
-    Mandarin (native), Cantonese (fluent).\vspace{-4pt}
-    \item \textbf{Programming Language}\vspace{-4pt}
+    Mandarin (native), Cantonese (fluent).
+    \item \textbf{Programming Language}
     \begin{itemize}\small
         \item Invested and proficient: Rust, Python, Elixir, JavaScript.
         \item Used in projects:
         Kotlin, Dart, Swift, Ruby, Java, Lua, TypeScript,
         Svelte, HTML, CSS, C, SQL, Racket, \LaTeX{}, PL/pgSQL.
         \item Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
-        Mathematica, MATLAB, Scala, R.\vspace{-4pt}
+        Mathematica, MATLAB, Scala, R.
     \end{itemize}
     \item \textbf{Concurrency}\quad
     Event-loop in Rust Tokio, JavaScript, Dart, Swift; Kotlin coroutines;
-    Elixir/OTP processes.\vspace{-4pt}
-    \item \textbf{Computer Software}\vspace{-4pt}
+    Elixir/OTP processes.
+    \item \textbf{Computer Software}
     \begin{itemize}\small
         \item Selected frameworks/libraries: SQLite, Playwright, Django,
         Phoenix Framework, Tokio, Tailwindcss, D3.js.
