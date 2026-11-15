@@ -10,11 +10,13 @@
 \definecolor{light}{rgb}{0.25, 0.25, 0.25}
 \def\light#1{{\color{light}#1}}
 
+\newcommand{\myname}{Sichang\bibnamedelima ``Steven'' He}
+
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\light{Sichang He (Steven) - University of Southern California}}
+\fancyfoot[L]{\light{\myname{} $\vert{}$ University of Southern California}}
 \fancyfoot[R]{\light{Page} \thepage{} \light{of \pageref{LastPage}}}
 \pagestyle{fancy}
 
@@ -95,7 +97,7 @@
 \begin{document}
 
 \noindent
-\textbf{\Huge Sichang He (Steven)}\hfill
+\textbf{\Huge \myname{}}\hfill
 \uhref{mailto:sichangh@usc.edu}
 {\small sichangh@usc.edu}\\[0.25em]
 Ph.D. Student in Computer Science\hfill
@@ -106,7 +108,7 @@ Ph.D. Student in Computer Science\hfill
 Networked Systems Lab (NSL), University of Southern California\hfill
 {\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}\\[0.3em]
 {\small Interested in systems problems of the web that impact ordinary
-    people. Built large-scale Internet measurements.}
+    people. I built large-scale Internet measurements.}
 
 \section{Education}
 \CVSubHeadingListStart
@@ -327,7 +329,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 
 \begin{refsection}
     \nocite{luo2024fedcampus}
-    \printbibliography[title=Presentations]
+    \printbibliography[title=Talks]
 \end{refsection}
 
 \section{Teaching Experience}
