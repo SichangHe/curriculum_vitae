@@ -100,10 +100,6 @@ Madhyastha. “DeGenTWeb: A
 
 First Look at MGT-dominant Websites”. 2026.
 
-Sichang He (Steven) - University of Southern California Page 1 of 3
-
-[]
-
 Research Experience
 
 Research Assistant Aug. 2024 – present
@@ -118,6 +114,10 @@ sites.
 
 ∗ Flagged 21% of 117k Common Crawl sites and 14% of 18k sites from Bing
 search results.
+
+Sichang He (Steven) - University of Southern California Page 1 of 3
+
+[]
 
 ∗ Identified clear financial incentives for websites dominated by LLM
 texts.
@@ -182,9 +182,9 @@ The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Bing Luo
 experiments across Android and iOS devices (async
 
 Kotlin coroutines and Swift async/await), enabling training shared ML
-models collaboratively without sharing
+models collaboratively without sharing private
 
-private data on smartphones.
+data on smartphones.
 
 ∗ Contributed to the Flower FL framework: revamped the Android example;
 helped correct the iOS example.
@@ -219,10 +219,6 @@ Platform for Smart Campus with
 
 Federated Learning and Analytics”. Flower AI Summit, 2024. Mar. 2024.
 
-Sichang He (Steven) - University of Southern California Page 2 of 3
-
-[]
-
 Teaching Experience
 
 Teaching Assistant, Introduction to Programming, DKU Nov. 2021 – Mar.
@@ -235,6 +231,10 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
+
+Sichang He (Steven) - University of Southern California Page 2 of 3
+
+[]
 
 Awards
 
