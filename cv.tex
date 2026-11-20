@@ -5,6 +5,17 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+% agent-added: Libertinus Serif (real small caps); Type 1, so the pdfLaTeX CI keeps working
+\usepackage[T1]{fontenc}
+\usepackage{libertinus-type1}
+% Libertinus's default word space is narrow; widen it by a third, to Computer Modern's width, at every size.
+\makeatletter\input{T1LibertinusSerif-TLF.fd}\makeatother
+\DeclareFontFamily{T1}{LibertinusSerif-TLF}{%
+    \fontdimen2\font=1.33\fontdimen2\font
+    \fontdimen3\font=1.33\fontdimen3\font}
+% Libertinus mangles the LaTeX logo; typeset it in Computer Modern.
+\let\origLaTeX\LaTeX
+\renewcommand{\LaTeX}{{\fontfamily{cmr}\selectfont\origLaTeX}}
 
 \usepackage{color}
 \definecolor{light}{rgb}{0.25, 0.25, 0.25}
@@ -16,7 +27,7 @@
 \usepackage{fancyhdr}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\light{\myname{} $\vert{}$ University of Southern California}}
+\fancyfoot[L]{\light{\myname{} \ $\vert{}$ \ University of Southern California}}
 \fancyfoot[R]{\light{Page} \thepage{} \light{of \pageref{LastPage}}}
 \pagestyle{fancy}
 
@@ -26,10 +37,11 @@
     refsection=section
 ]{biblatex}
 \addbibresource{cv.bib}
+\renewbibmacro{in:}{}% agent: drop "In:" before venues
 % Link each title to its URL instead of printing the URL.
 \ExecuteBibliographyOptions{url=false,doi=false,eprint=false}
 \DeclareFieldFormat{title}{\iffieldundef{url}{\mkbibemph{#1}}{\uhref{\strfield{url}}{\mkbibemph{#1}}}}
-\DeclareFieldFormat[inproceedings,misc,article]{title}{\iffieldundef{url}{\mkbibquote{#1}}{\uhref{\strfield{url}}{\mkbibquote{#1}}}}
+\DeclareFieldFormat[inproceedings,misc,article]{title}{\iffieldundef{url}{#1}{\uhref{\strfield{url}}{#1}}}
 % Make my name bold: https://tex.stackexchange.com/a/327046/294006
 \newcommand*{\boldname}[4]{
     \def\lastname{#1}
@@ -37,24 +49,23 @@
     \def\firstinit{#3}
     \def\altfirstname{#4}
 }
-\renewcommand{\mkbibnamegiven}[1]{
+\renewcommand{\mkbibnamegiven}[1]{% agent: % stops line ends adding spaces around names
     \ifboolexpr{
         (
             test {\ifdefequal{\firstname}{\namepartgiven}} or
             test {\ifstrequal{\altfirstname}{\namepartgiven}} or
             test {\ifdefequal{\firstinit}{\namepartgiven}}
         ) and test {\ifdefequal{\lastname}{\namepartfamily}}
-    }{\mkbibbold{#1}}{#1}
+    }{\mkbibbold{#1}}{#1}%
 }
-\renewcommand{\mkbibnamefamily}[1]{
-    \typeout{DEBUG: \string\namepartgiven = [\namepartgiven]}%
+\renewcommand{\mkbibnamefamily}[1]{%
     \ifboolexpr{
         (
             test {\ifdefequal{\firstname}{\namepartgiven}} or
             test {\ifstrequal{\altfirstname}{\namepartgiven}} or
             test {\ifdefequal{\firstinit}{\namepartgiven}}
         ) and test {\ifdefequal{\lastname}{\namepartfamily}}
-    }{\mkbibbold{#1}}{#1}
+    }{\mkbibbold{#1}}{#1}%
 }
 \boldname{He}{Sichang}{Sichang\bibnamedelima Steven}{S.}
 
@@ -67,6 +78,9 @@
   parsep=0em,
   partopsep=0em
 }
+% agent-added: • for items, – for sub-items (levels 2 and 3, since item lists sit inside the heading list)
+\setlist[itemize,2]{label=\textbullet}
+\setlist[itemize,3]{label=\raisebox{0.15ex}{\scriptsize\textopenbullet}}
 
 \newcommand{\CVItem}[1]{
   \item{\small
@@ -141,7 +155,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 \CVItem
 {Also work with \uhref{https://govindan.usc.edu/}{Ramesh Govindan}.}
 \CVItem
-{Selected courses with projects:
+{Select courses with projects:
     \begin{itemize}
         \item Advanced Computer Networking (A+):
         \uhref{https://github.com/SichangHe/JSphere}{JSphere}:
@@ -218,29 +232,27 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 
 \section{Research Experience}
 \CVSubHeadingListStart
-\CVSubheading
-{Research Assistant}{Aug. 2024 -- present}
-{\uhref{https://nsl.usc.edu/}{Networked Systems Lab}, USC}
+\CVSubheading {Research Assistant}{Aug.
+2024 -- present} {\uhref{https://nsl.usc.edu/}{Networked Systems Lab}, USC}
 {Advisor: \uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}}
 \CVItemListStart
-\CVItem
-{Rigorously measured how much of the web is now written by LLMs;
+\CVItem {Rigorously measured how much of the web is now written by LLMs;
     brought a transparent methodology and representative samples to
-    substantiate the folk wisdom surrounding the use of LLM on the web.
+    substantiate the folk wisdom surrounding the use of LLMs on the web.
     \begin{itemize}
         \item Built DeGenTWeb, a website-level detector for
         websites whose textual content is dominated by LLMs.
         \item Achieved an ultra low P90 false positive rate of 0.12\% on
         6k baseline websites (90k webpages).
         \item Flagged 21\% of 117k Common Crawl websites and 14\% of
-        18k sites from Bing search results.
-        \item Substantiated the claim that the use of LLM text grew with hard evidences.
+        18k websites from Bing search results.
+        \item Substantiated the claim that the use of LLM text grew with
+        hard evidence.
         \item Identified clear financial incentives for websites dominated by
-        LLM texts.
+        LLM texts, mainly ads and affiliate links.
     \end{itemize}
 }
-\CVItem
-{Surveyed usage, weakness, and extensions of the Coalition for
+\CVItem {Surveyed usage, weakness, and extensions of the Coalition for
     Content Provenance and Authenticity (C2PA).
 }
 \CVItemListEnd
@@ -289,7 +301,7 @@ the Routing Policy Specification Language (RPSL), and to check whether real,
 observed Border Gateway Protocol (BGP) routes follow them per IETF RFC 2622 and
 RFC 4012.
     \begin{itemize}
-        \item Efficient: parsed the entire IRR (7\,GB) in under 5min;
+        \item Efficient: parsed the entire IRR (7\,GB) in under 5\,min;
         checked 779M BGP routes under 3\,hr with 2\,GB of RAM.
         \item RPSLyzer correctly parses intricate RPSL constructs,
         including advanced set operations and a custom regex.
@@ -307,10 +319,10 @@ observed interdomain routes match routing policies with RPSLyzer;
         \item Found that 40\% of interconnections in
         observed BGP routes cannot be verified due to missing policies.
         \item Incorporated CAIDA AS relationship data to
-        improve verification coverage by 19\%.
+        improve verification coverage by 19 percentage points.
         \item Provided tooling to verify routes against the RPSL,
         helping improve interdomain routing security.
-        \item Identified and implemented checks for 6 major explanations to
+        \item Identified and implemented checks for 6 major explanations for
         why routes fail to match the relevant RPSL.
     \end{itemize}
 }
@@ -319,7 +331,7 @@ observed interdomain routes match routing policies with RPSLyzer;
 \CVItemListEnd
 
 \CVSubheading {Research Assistant, Mobile Federated Learning (FL)} {Mar.
-2023 -- May. 2024} {\uhref{https://github.com/FedCampus}{The FedCampus Team},
+2023 -- May 2024} {\uhref{https://github.com/FedCampus}{The FedCampus Team},
     EdgeIntelligence Lab, DKU
 }{Advisor: \uhref{https://luobing1008.github.io/}{Bing Luo}}
 \CVItemListStart
@@ -337,7 +349,7 @@ observed interdomain routes match routing policies with RPSLyzer;
 {Wrote the official
 \uhref{https://github.com/flwrlabs/flower/pull/2062}{Android Kotlin example for
 Flower}, the popular FL framework by Flower.ai,
-a Y-Combinator startup founded by Cambridge University professors.
+a Y Combinator startup founded by Cambridge University researchers.
 Consequently, got invited to speak at the Flower AI Summit.
     \begin{itemize}
         \item Helped correct the iOS example after finding that
@@ -352,7 +364,7 @@ Consequently, got invited to speak at the Flower AI Summit.
     federated analytics experiments on campus.
     \begin{itemize}
         \item Mentored the team, 4 undergrads and 1 M.Eng. student;
-        interviewed and recruited 2 of which.
+        interviewed and recruited 2 of whom.
         \item Investigated and led core technology adoption, including Flower,
         Kotlin, and Flutter.
     \end{itemize}
@@ -365,8 +377,8 @@ Consequently, got invited to speak at the Flower AI Summit.
 \CVItemListStart
 \CVItem
 {Developed a feature-rich \uhref{https://github.com/SichangHe/scraper}
-    {open source web scraper} in async Rust to scrape DKU sites,
-    intranet, and Duke sites.
+    {open source web scraper} in async Rust to scrape DKU and
+    Duke intranet sites.
 }
 \CVItem
 {Improved backend HTML processing, frontend interface, and version control.
@@ -402,10 +414,16 @@ Consequently, got invited to speak at the Flower AI Summit.
 {Obtained \uhref
     {https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf}
     {CRLA's International Tutor Training Program Certification,
-        Level I
+        Level I%
     }.}
 \CVItemListEnd
 \CVSubHeadingListEnd
+
+\section{Service}
+\begin{itemize}
+    \item Reviewer, IEEE Transactions on Network and Service Management
+    (TNSM), 2 manuscripts\hfill 2026
+\end{itemize}
 
 \section{Awards}
 \begin{itemize}
