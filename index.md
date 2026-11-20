@@ -22,10 +22,12 @@ built large-scale Internet measurements.
 
 Education
 
-University of Southern California (USC) Aug. 2024 – present Los Angeles,
-USA
+University of Southern California (USC) Aug. 2024 – 2029 (Est.) Los
+Angeles, CA
 
-Ph.D. student in Computer Science (CS) Advisor: Harsha V. Madhyastha
+Ph.D. in Computer Science (CS) Advisor: Harsha V. Madhyastha
+
+– Also work with Ramesh Govindan.
 
 – Selected courses with projects:
 
@@ -75,7 +77,7 @@ Publications
 Website Written by LLMs?” In: Proceedings of the 2025 ACM Internet
 Measurement Conference and Student
 
-Workshop (IMC, Dual Submission). Video. Oct. 2025.
+Workshop (IMC). Video. Oct. 2025.
 
 [2] Sichang He, Italo Cunha, and Ethan Katz-Bassett. “RPSLyzer:
 Characterization and Verification of
@@ -106,18 +108,27 @@ Research Assistant Aug. 2024 – present
 
 Networked Systems Lab, USC Advisor: Harsha V. Madhyastha
 
-– Built DeGenTWeb, a site-level detector for websites whose textual
-content is dominated by LLMs.
+– Rigorously measured how much of the web is now written by LLMs;
+brought a transparent methodology and
 
-∗ Achieved an ultra low P90 false positive rate of 0.12% on 6k baseline
-sites.
-
-∗ Flagged 21% of 117k Common Crawl sites and 14% of 18k sites from Bing
-search results.
+representative samples to substantiate the folk wisdom surrounding the
+use of LLM on the web.
 
 Sichang “Steven” He | University of Southern California Page 1 of 3
 
 []
+
+∗ Built DeGenTWeb, a website-level detector for websites whose textual
+content is dominated by LLMs.
+
+∗ Achieved an ultra low P90 false positive rate of 0.12% on 6k baseline
+websites (90k webpages).
+
+∗ Flagged 21% of 117k Common Crawl websites and 14% of 18k sites from
+Bing search results.
+
+∗ Substantiated the claim that the use of LLM text grew with hard
+evidences.
 
 ∗ Identified clear financial incentives for websites dominated by LLM
 texts.
@@ -125,12 +136,15 @@ texts.
 – Surveyed usage, weakness, and extensions of the Coalition for Content
 Provenance and Authenticity (C2PA).
 
-Agentic Formal Verification for Rust Jun. 2026 – Oct. 2026
+Agentic Formal Verification for Rust/Verus Jun. 2026 – Oct. 2026
 
-Midas Intelligence Inc., San Francisco (Remote)
+Midas Intelligence Inc. (math-for-AI startup), San Francisco (Remote)
 
-– Conceived the company’s software story: develop reliable software at
-speed, via agents, Rust, and Verus.
+– Invented the company’s software story: achieve both development
+velocity and reliability via agents and Verus.
+
+– Led and solely established the company’s software division. Reported
+directly to the president and the CEO.
 
 – Created Midas Lex, a tool that guides agents to write Verus
 specifications and proofs.
@@ -138,34 +152,50 @@ specifications and proofs.
 – Found bugs in popular open source Rust projects like uutils coreutils.
 Built benchmarks of unsolved Verus tasks.
 
-Internet Route Verification Apr. 2023 – May 2024
+Independent research, Internet Route Verification Apr. 2023 – May 2024
 
-Independent research, Federal University of Minas Gerais, Brazil
-(Remote) Advisor: Italo Cunha
+Federal University of Minas Gerais, Brazil (Remote) Advisor: Italo Cunha
 
-– Designed and implemented an efficient and comprehensive parser for the
-Routing Policy Specification Language
+– Conducted one of the most thorough examinations of public Internet
+interdomain routing policies in the Internet
 
-(RPSL), a language used in the Internet Routing Registry to document
-public interdomain routing policies, guide
+Routing Registry (IRR). The IRR underpins much of the Internet, is used
+to guide public peering, aid routing issue
 
-public peering, and aid routing issue troubleshooting.
+troubleshooting, and avoid routing misconfiguration and attacks that can
+cause global Internet outages.
 
-∗ Parses and interprets 99.99% of real-world RPSL policies, following
-the RPSL semantics in the RFCs.
+– Built RPSLyzer, the first operational interpreter to parse 99.99% of
+routing policies in the IRR in the Routing Policy
 
-∗ Parses all 13 IRRs (6.9 GiB) in under five minutes on an Apple M1;
-verified 779 million BGP routes in 2 h 49 m
+Specification Language (RPSL), and to check whether real, observed
+Border Gateway Protocol (BGP) routes follow
 
-with under 2 GiB of RAM on a server.
+them per IETF RFC 2622 and RFC 4012.
 
-∗ Characterized the policies of 78,701 autonomous systems (ASes); 53.2%
-of ASes declare no policies at all.
+∗ Efficient: parsed the entire IRR (7 GB) in under 5min; checked 779M
+BGP routes under 3 hr with 2 GB of RAM.
 
-– Employed the RPSL parser to verify observed interdomain routes;
-analyzed verification reports and identified com-
+∗ RPSLyzer correctly parses intricate RPSL constructs, including
+advanced set operations and a custom regex.
+
+∗ Completed all implementation alone, mainly using Rust.
+
+∗ Characterized the policies of 78,701 autonomous systems (ASes). Found
+a wide variation in RPSL usage: several
+
+ASes declare thousands of policies, while 53% declare none at all.
+
+– Checked and analyzed whether observed interdomain routes match routing
+policies with RPSLyzer; identified com-
 
 mon RPSL usage patterns and usage mistakes.
+
+∗ Found that 40% of interconnections in observed BGP routes cannot be
+verified due to missing policies.
+
+∗ Incorporated CAIDA AS relationship data to improve verification
+coverage by 19%.
 
 ∗ Provided tooling to verify routes against the RPSL, helping improve
 interdomain routing security.
@@ -173,36 +203,40 @@ interdomain routing security.
 ∗ Identified and implemented checks for 6 major explanations to why
 routes fail to match the relevant RPSL.
 
-Research Assistant for Mobile Federated Learning (FL) Project Mar. 2023
-– May. 2024
+Research Assistant, Mobile Federated Learning (FL) Mar. 2023 – May. 2024
 
 The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Bing Luo
 
-– Authored FedKit, open-source SDKs to streamline real-world FL
-experiments across Android and iOS devices (async
+– Authored the FedKit SDKs, the first practical way to conduct
+real-world FL experiments across Android and iOS
 
-Kotlin coroutines and Swift async/await), enabling training shared ML
-models collaboratively without sharing private
+devices, which enables training shared ML models collaboratively without
+sharing private data on phones.
 
-data on smartphones.
+∗ Streamlined research: automatically converted model formats and pushed
+models directly onto the phones.
 
-∗ Contributed to the Flower FL framework: revamped the Android example;
-helped correct the iOS example.
+– Wrote the official Android Kotlin example for Flower, the popular FL
+framework by Flower.ai, a Y-Combinator
 
-– Led and managed the systems development for the FedCampus Android/iOS
-app, leveraging personal health data
+startup founded by Cambridge University professors. Consequently, got
+invited to speak at the Flower AI Summit.
 
-from over 100 participants to conduct real-world FL and federated
-analytics experiments on DKU campus.
+∗ Helped correct the iOS example after finding that it was not training.
 
-∗ Supervised and mentored 4 undergrads and 1 M.Eng. student in mobile
-and web development.
+– Led a team of six to develop the FedCampus app, an Android & iOS app
+that leverages personal health data from
+
+over 100 participants to conduct real-world FL and federated analytics
+experiments on campus.
+
+∗ Mentored the team, 4 undergrads and 1 M.Eng. student; interviewed and
+recruited 2 of which.
 
 ∗ Investigated and led core technology adoption, including Flower,
-Kotlin, and Flutter, facilitating development.
+Kotlin, and Flutter.
 
-Research Assistant for Search Engine Research Project Dec. 2021 – May
-2023
+Research Assistant, Search Engine Research Dec. 2021 – May 2023
 
 The Search So Team, DKU Advisor: Jiang Long
 
@@ -211,6 +245,10 @@ scrape DKU sites, intranet, and Duke sites.
 
 – Improved backend HTML processing, frontend interface, and version
 control.
+
+Sichang “Steven” He | University of Southern California Page 2 of 3
+
+[]
 
 Talks
 
@@ -231,10 +269,6 @@ Math & CompSci. Tutor, Academic Resource Center, DKU May 2021 – May 2022
 
 – Obtained CRLA’s International Tutor Training Program Certification,
 Level I .
-
-Sichang “Steven” He | University of Southern California Page 2 of 3
-
-[]
 
 Awards
 
@@ -268,12 +302,12 @@ Open Source Developer & Maintainer of Rust Libraries Nov. 2022 – present
 downloads on crates.io. Took over
 
 maintainership when it was unmaintained. Resolved 20 old issues, added
-featuers, improved speed 10×.
+features, improved speed 10×.
 
 – Contributed to mdBook, cargo-binstall, pulldown-cmark-to-cmark, and
 others.
 
-– Voice control for a agent manager, Elixir-style async Rust, efficient
+– Voice control for an agent manager, Elixir-style async Rust, efficient
 Rust environment, collaborative editor.
 
 Outreach
@@ -305,19 +339,11 @@ X,
 
 PL/pgSQL.
 
-– Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
-Mathematica, MATLAB, Scala, R.
+– Familiar: C++, Bash, Julia, Go, Erlang, Gleam, Mathematica, MATLAB,
+Scala, R.
 
 Concurrency Event-loop in Rust Tokio, JavaScript, Dart, Swift; Kotlin
 coroutines; Elixir/OTP processes.
-
-Computer Software
-
-– Selected frameworks/libraries: SQLite, Playwright, Django, Phoenix
-Framework, Tokio, Tailwindcss, D3.js.
-
-– Selected development experience: SSH, Tmux, Neovim, Docker,
-Kubernetes, Evcxr, Arch Linux, Hackintosh.
 
 Sichang “Steven” He | University of Southern California Page 3 of 3
 
