@@ -94,6 +94,24 @@
 \definecolor{darkbluepurple}{rgb}{0.125, 0, 0.5}
 \newcommand{\uhref}[2]{\href{#1}{\textcolor{darkbluepurple}{#2}}}
 
+% 🤖 Agent edit commands, as in the DeGenTWeb paper (its docs/writing/agent_markup.md):
+% \agentadd{new text}, \agentdel{removed text}. Questions go to the human by message, not here.
+% A macro follows a word directly; the separating space goes inside it.
+% ===== Review mode switch (ONE line): inline = show agent edits; final = clean CV.
+% Set final before pushing: the deploy builds whatever this says.
+\def\reviewmode{inline}
+\definecolor{agentaddcolor}{RGB}{0,120,60}
+\definecolor{agentdelcolor}{RGB}{150,96,96}
+\def\reviewmodetmp{final}
+\ifx\reviewmode\reviewmodetmp
+    \protected\long\def\agentadd#1{#1}
+    \protected\long\def\agentdel#1{}
+\else
+    % {} stops \color from eating the leading space inside the argument
+    \protected\long\def\agentadd#1{{\color{agentaddcolor}{}#1}}
+    \protected\long\def\agentdel#1{{\color{agentdelcolor}{}#1}}
+\fi
+
 \begin{document}
 
 \noindent
@@ -115,11 +133,13 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 
 \CVSubheadingFrame
 {\textbf{University of Southern California (USC)}&
-    Aug. 2024 -- present\quad Los Angeles, USA\\
-    \small Ph.D. student in Computer Science (CS)&
-    Advisor: Harsha V. Madhyastha\\
+    Aug. 2024 -- 2029 (Est.)\quad Los Angeles, CA\\
+    \small Ph.D. in Computer Science (CS)&
+    Advisor: \uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}\\
 }
 \CVItemListStart
+\CVItem
+{Also work with \uhref{https://govindan.usc.edu/}{Ramesh Govindan}.}
 \CVItem
 {Selected courses with projects:
     \begin{itemize}
@@ -200,17 +220,23 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 \CVSubHeadingListStart
 \CVSubheading
 {Research Assistant}{Aug. 2024 -- present}
-{Networked Systems Lab, USC}
-{Advisor: Harsha V. Madhyastha}
+{\uhref{https://nsl.usc.edu/}{Networked Systems Lab}, USC}
+{Advisor: \uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}}
 \CVItemListStart
 \CVItem
-{Built DeGenTWeb, a site-level detector for websites whose textual content is dominated by
-    LLMs.
+{Rigorously measured how much of the web is now written by LLMs;
+    brought a transparent methodology and representative samples to
+    substantiate the folk wisdom surrounding the use of LLM on the web.
     \begin{itemize}
-        \item Achieved an ultra low P90 false positive rate of 0.12\% on 6k baseline sites.
-        \item Flagged 21\% of 117k Common Crawl sites and 14\% of 18k sites from Bing
-        search results.
-        \item Identified clear financial incentives for websites dominated by LLM texts.
+        \item Built DeGenTWeb, a website-level detector for
+        websites whose textual content is dominated by LLMs.
+        \item Achieved an ultra low P90 false positive rate of 0.12\% on
+        6k baseline websites (90k webpages).
+        \item Flagged 21\% of 117k Common Crawl websites and 14\% of
+        18k sites from Bing search results.
+        \item Substantiated the claim that the use of LLM text grew with hard evidences.
+        \item Identified clear financial incentives for websites dominated by
+        LLM texts.
     \end{itemize}
 }
 \CVItem
@@ -219,101 +245,122 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 }
 \CVItemListEnd
 
-\CVSubheading
-{Agentic Formal Verification for Rust}{Jun. 2026 -- Oct. 2026}
-{Midas Intelligence Inc., San Francisco (Remote)}{}
+\CVSubheading {Agentic Formal Verification for Rust/Verus}{Jun.
+2026 -- Oct. 2026}
+{\uhref{https://www.businesswire.com/news/home/20260205795947/en/CORRECTING-and-REPLACING-Backed-by-OpenAI-Tesla-and-SpaceX-Investors-Midas-Is-Building-Mathematical-Infrastructure-to-Secure-AI-Systems}{Midas
+Intelligence Inc.} (math-for-AI startup), San Francisco (Remote)}{}
 \CVItemListStart
-\CVItem
-{Conceived the company's software story: develop reliable software at
-    speed, via agents, Rust, and
+\CVItem {Invented the company's software story:
+achieve both development velocity and
+    reliability via agents and
     \uhref{https://github.com/verus-lang/verus}{Verus}.
+}
+\CVItem {Led and solely established the company's software division.
+    Reported directly to the president and the CEO.
 }
 \CVItem
 {Created \uhref{https://github.com/midas-intelligence/midas-lex}{Midas Lex},
     a tool that guides agents to write Verus specifications and proofs.
 }
-\CVItem
-{Found bugs in popular open source Rust projects like
+\CVItem {Found bugs in popular open source Rust projects like
     \uhref{https://github.com/uutils/coreutils/issues/13703}{uutils coreutils}.
     Built benchmarks of unsolved Verus tasks.
 }
 \CVItemListEnd
 
-\CVSubheading
-{\uhref
+\CVSubheading {Independent research, \uhref
     {https://github.com/SichangHe/internet_route_verification}
     {Internet Route Verification}
-}{Apr. 2023 -- May 2024}
-{Independent research, Federal University of Minas Gerais, Brazil (Remote)}
-{Advisor: Italo Cunha}
+}{Apr.
+2023 -- May 2024} {Federal University of Minas Gerais,
+Brazil (Remote)} {Advisor: \uhref{https://cunha.github.io/about/}{Italo Cunha}}
 \CVItemListStart
-\CVItem
-{Designed and implemented an efficient and comprehensive parser for
-    the Routing Policy Specification Language (RPSL),
-    a language used in the Internet Routing Registry to
-    document public interdomain routing policies,
-    guide public peering, and aid routing issue troubleshooting.
+\CVItem {Conducted one of the most thorough examinations of
+public Internet interdomain routing policies in
+the Internet Routing Registry (IRR).
+The IRR underpins much of the Internet, is used to
+    guide public peering, aid routing issue troubleshooting, and
+    avoid routing misconfiguration and attacks that
+    can cause global Internet outages.
+}
+\CVItem {Built RPSLyzer, the first operational interpreter to parse 99.99\% of
+routing policies in the IRR in
+the Routing Policy Specification Language (RPSL), and to check whether real,
+observed Border Gateway Protocol (BGP) routes follow them per IETF RFC 2622 and
+RFC 4012.
     \begin{itemize}
-        \item Parses and interprets 99.99\% of real-world RPSL policies,
-        following the RPSL semantics in the RFCs.
-        \item Parses all 13 IRRs (6.9\,GiB) in under five minutes on an Apple M1;
-        verified 779 million BGP routes in 2\,h\,49\,m with under 2\,GiB of RAM on a server.
-        \item Characterized the policies of 78,701 autonomous systems (ASes);
-        53.2\% of ASes declare no policies at all.
+        \item Efficient: parsed the entire IRR (7\,GB) in under 5min;
+        checked 779M BGP routes under 3\,hr with 2\,GB of RAM.
+        \item RPSLyzer correctly parses intricate RPSL constructs,
+        including advanced set operations and a custom regex.
+        \item Completed all implementation alone, mainly using Rust.
+        \item Characterized the policies of 78,701 autonomous systems (ASes).
+        Found a wide variation in RPSL usage: several ASes declare thousands of
+        policies, while 53\% declare none at all.
     \end{itemize}
 }
-\CVItem
-{Employed the RPSL parser to verify observed interdomain routes;
-    analyzed verification reports and identified common RPSL usage patterns and
-    usage mistakes.
+\CVItem {Checked and analyzed whether
+observed interdomain routes match routing policies with RPSLyzer;
+    identified common RPSL usage patterns and usage mistakes.
     \begin{itemize}
+        % TODO: Dataset description
+        \item Found that 40\% of interconnections in
+        observed BGP routes cannot be verified due to missing policies.
+        \item Incorporated CAIDA AS relationship data to
+        improve verification coverage by 19\%.
         \item Provided tooling to verify routes against the RPSL,
         helping improve interdomain routing security.
         \item Identified and implemented checks for 6 major explanations to
         why routes fail to match the relevant RPSL.
     \end{itemize}
 }
-% TODO: Interdomain routing (BGP, policies, RFCs), network datasets (PeeringDB, AS relationship, IRR, …)
+% TODO: network datasets (PeeringDB)
 % TODO: Try to expand the networking/ lexing/ RPSL semantics.
 \CVItemListEnd
 
-\CVSubheading
-{Research Assistant for Mobile Federated Learning (FL) Project}
-{Mar. 2023 -- May. 2024}
-{\uhref{https://github.com/FedCampus}{The FedCampus Team},
+\CVSubheading {Research Assistant, Mobile Federated Learning (FL)} {Mar.
+2023 -- May. 2024} {\uhref{https://github.com/FedCampus}{The FedCampus Team},
     EdgeIntelligence Lab, DKU
-}{Advisor: Bing Luo}
+}{Advisor: \uhref{https://luobing1008.github.io/}{Bing Luo}}
 \CVItemListStart
-\CVItem
-{Authored \uhref{https://github.com/FedCampus/FedKit}{FedKit},
-    open-source SDKs to streamline real-world FL experiments across Android and
-    iOS devices (async Kotlin coroutines and Swift async/await),
-    enabling training shared ML models collaboratively without
-    sharing private data on smartphones.
+\CVItem {Authored \uhref{https://github.com/FedCampus/FedKit}{the FedKit SDKs},
+    the first practical way to
+    conduct real-world FL experiments across Android and iOS devices, which
+    enables training shared ML models collaboratively without sharing private
+    data on phones.
     \begin{itemize}
-        \item Contributed to the Flower FL framework:
-        revamped the Android example;
-        helped correct the iOS example.
+    \item Streamlined research: automatically converted model formats and
+    pushed models directly onto the phones.
     \end{itemize}
 }
 \CVItem
-{Led and managed the systems development for
-    \uhref{https://github.com/FedCampus/FedCampus_Flutter}{the FedCampus
-    Android/iOS app}, leveraging personal health data from
-    over 100 participants to conduct real-world FL and
-    federated analytics experiments on DKU campus.
+{Wrote the official
+\uhref{https://github.com/flwrlabs/flower/pull/2062}{Android Kotlin example for
+Flower}, the popular FL framework by Flower.ai,
+a Y-Combinator startup founded by Cambridge University professors.
+Consequently, got invited to speak at the Flower AI Summit.
     \begin{itemize}
-        \item Supervised and mentored 4 undergrads and
-        1 M.Eng. student in mobile and web development.
-        \item Investigated and led core technology adoption,
-        including Flower, Kotlin, and Flutter,
-        facilitating development.
+        \item Helped correct the iOS example after finding that
+        \uhref{https://github.com/flwrlabs/flower/issues/2284}{it was not
+        training}.
+    \end{itemize}
+}
+\CVItem {Led a team of six to develop
+    \uhref{https://github.com/FedCampus/FedCampus_Flutter}{the FedCampus app},
+    an Android \& iOS app that leverages personal health data from
+    over 100 participants to conduct real-world FL and
+    federated analytics experiments on campus.
+    \begin{itemize}
+        \item Mentored the team, 4 undergrads and 1 M.Eng. student;
+        interviewed and recruited 2 of which.
+        \item Investigated and led core technology adoption, including Flower,
+        Kotlin, and Flutter.
     \end{itemize}
 }
 \CVItemListEnd
 
 \CVSubheading
-{Research Assistant for Search Engine Research Project}{Dec. 2021 -- May 2023}
+{Research Assistant, Search Engine Research}{Dec. 2021 -- May 2023}
 {The Search So Team, DKU}{Advisor: Jiang Long}
 \CVItemListStart
 \CVItem
@@ -394,7 +441,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
     over 200k downloads on crates.io.
     \uhref{https://github.com/lzanini/mdbook-KaTeX/issues/37}{Took over
     maintainership} when it was unmaintained.
-    Resolved 20 old issues, added featuers, improved speed 10$\times$.
+    Resolved 20 old issues, added features, improved speed 10$\times$.
 }
 \CVItem
 {Contributed to
@@ -406,7 +453,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 \CVItem
 {
 \uhref{https://sichangheagentvoicechat.github.io/}{Voice control} for 
-    \uhref{https://github.com/SichangHe/agent_manager}{a agent manager},
+    \uhref{https://github.com/SichangHe/agent_manager}{an agent manager},
     \uhref{https://github.com/SichangHe/tokio_gen_server}{Elixir-style async Rust},
     \uhref{https://github.com/SichangHe/rust_build_eval}{efficient Rust environment},
     \uhref{https://github.com/SichangHe/TeamTypeV}{collaborative editor}.
@@ -435,18 +482,11 @@ Networked Systems Lab (NSL), University of Southern California\hfill
         \item Used in projects:
         Kotlin, Dart, Swift, Ruby, Java, Lua, TypeScript,
         Svelte, HTML, CSS, C, SQL, Racket, \LaTeX{}, PL/pgSQL.
-        \item Familiar: C++, Fish, Bash, Julia, Go, Erlang, Gleam, VimScript, Elisp,
-        Mathematica, MATLAB, Scala, R.
+        \item Familiar: C++, Bash, Julia, Go, Erlang, Gleam, Mathematica,
+        MATLAB, Scala, R.
     \end{itemize}
     \item \textbf{Concurrency}\quad
     Event-loop in Rust Tokio, JavaScript, Dart, Swift; Kotlin coroutines;
     Elixir/OTP processes.
-    \item \textbf{Computer Software}
-    \begin{itemize}\small
-        \item Selected frameworks/libraries: SQLite, Playwright, Django,
-        Phoenix Framework, Tokio, Tailwindcss, D3.js.
-        \item Selected development experience: SSH, Tmux, Neovim, Docker,
-        Kubernetes, Evcxr, Arch Linux, Hackintosh.
-    \end{itemize}
 \end{itemize}
 \end{document}
