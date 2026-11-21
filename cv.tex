@@ -197,7 +197,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 
         \item Computer Organization and Programming (A+, at Duke):
         Binary search tree in MIPS assembly and ring buffer in C;
-        fifth place in PizzaCalc assembly length optimization competition
+        5th place in PizzaCalc assembly length optimization competition
         (68 lines).
 
         \item Numerical Analysis (A+); Intro Abstract Algebra (at Duke),
@@ -236,14 +236,16 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 2024 -- present} {\uhref{https://nsl.usc.edu/}{Networked Systems Lab}, USC}
 {Advisor: \uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}}
 \CVItemListStart
-\CVItem {Rigorously measured how much of the web is now written by LLMs;
-    brought a transparent methodology and representative samples to
-    substantiate the folk wisdom surrounding the use of LLMs on the web.
+\CVItem {\textbf{How much of the web is now written by LLMs?}
+    Single-handedly built the 1st rigorous measurement to answer it:
+    about 1 in 5 websites archived in early 2026 are mostly AI-written.
+    Substantiated the folk wisdom surrounding the use of
+    LLMs online with a large, representative sample of 135k websites.
     \begin{itemize}
-        \item Built DeGenTWeb, a website-level detector for
+        \item Built DeGenTWeb, an accurate and scalable detector for
         websites whose textual content is dominated by LLMs.
-        \item Achieved an ultra low P90 false positive rate of 0.12\% on
-        6k baseline websites (90k webpages).
+        \item Achieved an ultra low 90th-percentile false positive rate of
+        0.12\% on 6k baseline websites (90k webpages).
         \item Flagged 21\% of 117k Common Crawl websites and 14\% of
         18k websites from Bing search results.
         \item Substantiated the claim that the use of LLM text grew with
@@ -263,11 +265,10 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 Intelligence Inc.} (math-for-AI startup), San Francisco (Remote)}{}
 \CVItemListStart
 \CVItem {Invented the company's software story:
-achieve both development velocity and
-    reliability via agents and
+    achieve both development velocity and reliability via agents and
     \uhref{https://github.com/verus-lang/verus}{Verus}.
 }
-\CVItem {Led and solely established the company's software division.
+\CVItem {Led and single-handedly established the company's software division.
     Reported directly to the president and the CEO.
 }
 \CVItem
@@ -284,28 +285,29 @@ achieve both development velocity and
     {https://github.com/SichangHe/internet_route_verification}
     {Internet Route Verification}
 }{Apr.
-2023 -- May 2024} {Federal University of Minas Gerais,
-Brazil (Remote)} {Advisor: \uhref{https://cunha.github.io/about/}{Italo Cunha}}
+2023 -- May 2024} {Federal University of Minas Gerais, Brazil (Remote)}
+{Advisor: \uhref{https://cunha.github.io/about/}{Italo Cunha}}
 \CVItemListStart
-\CVItem {Conducted one of the most thorough examinations of
-public Internet interdomain routing policies in
-the Internet Routing Registry (IRR).
-The IRR underpins much of the Internet, is used to
-    guide public peering, aid routing issue troubleshooting, and
-    avoid routing misconfiguration and attacks that
-    can cause global Internet outages.
+\CVItem {\textbf{Does Internet traffic follow the rules that
+networks publicly declare?}
+    Conducted one of the most thorough checks,
+    covering all public routing policies in
+    the Internet Routing Registry (IRR).
+    The IRR underpins much of the Internet, is used to guide public peering,
+    help troubleshoot routing issue, and avoid routing misconfiguration and
+    attacks that can cause global Internet outages.
 }
-\CVItem {Built RPSLyzer, the first operational interpreter to parse 99.99\% of
-routing policies in the IRR in
-the Routing Policy Specification Language (RPSL), and to check whether real,
-observed Border Gateway Protocol (BGP) routes follow them per IETF RFC 2622 and
-RFC 4012.
+\CVItem {Single-handedly built RPSLyzer, the 1st operational interpreter to
+    parse 99.99\% of all 7\,GB of routing policies in the IRR in
+    the Routing Policy Specification Language (RPSL), and
+    the 1st thorough checker for whether real,
+    observed Border Gateway Protocol (BGP)
+    routes follow these policies per IETF RFC 2622 and RFC 4012.
     \begin{itemize}
-        \item Efficient: parsed the entire IRR (7\,GB) in under 5\,min;
-        checked 779M BGP routes under 3\,hr with 2\,GB of RAM.
+        \item Checked a massive sum of 779M BGP routes from 60 RIPE RIS and
+        RouteViews collectors, in 3\,hr with 2\,GB of RAM.
         \item RPSLyzer correctly parses intricate RPSL constructs,
         including advanced set operations and a custom regex.
-        \item Completed all implementation alone, mainly using Rust.
         \item Characterized the policies of 78,701 autonomous systems (ASes).
         Found a wide variation in RPSL usage: several ASes declare thousands of
         policies, while 53\% declare none at all.
@@ -315,7 +317,6 @@ RFC 4012.
 observed interdomain routes match routing policies with RPSLyzer;
     identified common RPSL usage patterns and usage mistakes.
     \begin{itemize}
-        % TODO: Dataset description
         \item Found that 40\% of interconnections in
         observed BGP routes cannot be verified due to missing policies.
         \item Incorporated CAIDA AS relationship data to
@@ -335,9 +336,10 @@ observed interdomain routes match routing policies with RPSLyzer;
     EdgeIntelligence Lab, DKU
 }{Advisor: \uhref{https://luobing1008.github.io/}{Bing Luo}}
 \CVItemListStart
-\CVItem {Authored \uhref{https://github.com/FedCampus/FedKit}{the FedKit SDKs},
-    the first practical way to
-    conduct real-world FL experiments across Android and iOS devices, which
+\CVItem {\textbf{Can phones train AI together without sharing private data?}
+    Authored \uhref{https://github.com/FedCampus/FedKit}{the FedKit SDKs},
+    the 1st practical way to do this through
+    real-world FL experiments across Android and iOS devices, which
     enables training shared ML models collaboratively without sharing private
     data on phones.
     \begin{itemize}
@@ -356,7 +358,7 @@ Consequently, got invited to speak at the Flower AI Summit.
         training}.
     \end{itemize}
 }
-\CVItem {Led a team of six to develop
+\CVItem {Led a team of 6 to develop
     \uhref{https://github.com/FedCampus/FedCampus_Flutter}{the FedCampus app},
     an Android \& iOS app that leverages personal health data from
     over 100 participants to conduct real-world FL and
@@ -435,7 +437,7 @@ Consequently, got invited to speak at the Flower AI Summit.
     \item Silver Medal, International Genetically Engineered Machine (iGEM)
     2022 DKU Team (Oct. 2022)\\{\small
     Developed \uhref{https://github.com/SichangHe/igem-2022-dku-backup}
-    {the team wiki} independently; helped non-technical members adopt Git;
+    {the team wiki} solely; helped non-technical members adopt Git;
     validated protein designs with modeling software.
     }
     \item Dean's List (Spring 2021) \&
