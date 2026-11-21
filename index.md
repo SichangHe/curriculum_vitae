@@ -69,7 +69,7 @@ TypeScript.
 Computer Organization and Programming (A+, at Duke): Binary search tree
 in MIPS assembly and ring buffer in C;
 
-fifth place in PizzaCalc assembly length optimization competition (68
+5th place in PizzaCalc assembly length optimization competition (68
 lines).
 
 ◦
@@ -117,25 +117,27 @@ Research Assistant Aug. 2024 – present
 
 Networked Systems Lab, USC Advisor: Harsha V. Madhyastha
 
-• Rigorously measured how much of the web is now written by LLMs;
-brought a transparent methodology and represen-
+• How much of the web is now written by LLMs? Single-handedly built the
+1st rigorous measurement to answer it:
 
-tative samples to substantiate the folk wisdom surrounding the use of
-LLMs on the web.
+about 1 in 5 websites archived in early 2026 are mostly AI-written.
+Substantiated the folk wisdom surrounding the use
 
-◦
-
-Built DeGenTWeb, a website-level detector for websites whose textual
-content is dominated by LLMs.
+of LLMs online with a large, representative sample of 135k websites.
 
 ◦
 
-Achieved an ultra low P90 false positive rate of 0.12% on 6k baseline
-websites (90k webpages).
+Built DeGenTWeb, an accurate and scalable detector for websites whose
+textual content is dominated by LLMs.
 
 Sichang “Steven” He | University of Southern California Page 1 of 3
 
 []
+
+◦
+
+Achieved an ultra low 90th-percentile false positive rate of 0.12% on 6k
+baseline websites (90k webpages).
 
 ◦
 
@@ -162,8 +164,8 @@ Midas Intelligence Inc. (math-for-AI startup), San Francisco (Remote)
 • Invented the company’s software story: achieve both development
 velocity and reliability via agents and Verus.
 
-• Led and solely established the company’s software division. Reported
-directly to the president and the CEO.
+• Led and single-handedly established the company’s software division.
+Reported directly to the president and the CEO.
 
 • Created Midas Lex, a tool that guides agents to write Verus
 specifications and proofs.
@@ -175,36 +177,35 @@ Independent research, Internet Route Verification Apr. 2023 – May 2024
 
 Federal University of Minas Gerais, Brazil (Remote) Advisor: Italo Cunha
 
-• Conducted one of the most thorough examinations of public Internet
-interdomain routing policies in the Internet Routing
+• Does Internet traffic follow the rules that networks publicly declare?
+Conducted one of the most thorough checks,
 
-Registry (IRR). The IRR underpins much of the Internet, is used to guide
-public peering, aid routing issue troubleshooting,
+covering all public routing policies in the Internet Routing Registry
+(IRR). The IRR underpins much of the Internet, is
 
-and avoid routing misconfiguration and attacks that can cause global
-Internet outages.
+used to guide public peering, help troubleshoot routing issue, and avoid
+routing misconfiguration and attacks that can
 
-• Built RPSLyzer, the first operational interpreter to parse 99.99% of
-routing policies in the IRR in the Routing Policy
+cause global Internet outages.
 
-Specification Language (RPSL), and to check whether real, observed
-Border Gateway Protocol (BGP) routes follow them
+• Single-handedly built RPSLyzer, the 1st operational interpreter to
+parse 99.99% of all 7 GB of routing policies in the IRR
 
-per IETF RFC 2622 and RFC 4012.
+in the Routing Policy Specification Language (RPSL), and the 1st
+thorough checker for whether real, observed Border
+
+Gateway Protocol (BGP) routes follow these policies per IETF RFC 2622
+and RFC 4012.
 
 ◦
 
-Efficient: parsed the entire IRR (7 GB) in under 5 min; checked 779M BGP
-routes under 3 hr with 2 GB of RAM.
+Checked a massive sum of 779M BGP routes from 60 RIPE RIS and RouteViews
+collectors, in 3 hr with 2 GB of RAM.
 
 ◦
 
 RPSLyzer correctly parses intricate RPSL constructs, including advanced
 set operations and a custom regex.
-
-◦
-
-Completed all implementation alone, mainly using Rust.
 
 ◦
 
@@ -242,11 +243,13 @@ Research Assistant, Mobile Federated Learning (FL) Mar. 2023 – May 2024
 
 The FedCampus Team, EdgeIntelligence Lab, DKU Advisor: Bing Luo
 
-• Authored the FedKit SDKs, the first practical way to conduct
-real-world FL experiments across Android and iOS devices,
+• Can phones train AI together without sharing private data? Authored
+the FedKit SDKs, the 1st practical way to
 
-which enables training shared ML models collaboratively without sharing
-private data on phones.
+do this through real-world FL experiments across Android and iOS
+devices, which enables training shared ML models
+
+collaboratively without sharing private data on phones.
 
 ◦
 
@@ -263,10 +266,10 @@ the Flower AI Summit.
 
 Helped correct the iOS example after finding that it was not training.
 
-• Led a team of six to develop the FedCampus app, an Android & iOS app
-that leverages personal health data from over
+• Led a team of 6 to develop the FedCampus app, an Android & iOS app
+that leverages personal health data from over 100
 
-100 participants to conduct real-world FL and federated analytics
+participants to conduct real-world FL and federated analytics
 experiments on campus.
 
 ◦
@@ -289,16 +292,16 @@ scrape DKU and Duke intranet sites.
 • Improved backend HTML processing, frontend interface, and version
 control.
 
+Sichang “Steven” He | University of Southern California Page 2 of 3
+
+[]
+
 Invited Talks
 
 [1] Bing Luo and Sichang He. FedCampus: a Privacy-preserving Data
 Platform for Smart Campus with Federated
 
 Learning and Analytics. Flower AI Summit. Mar. 2024.
-
-Sichang “Steven” He | University of Southern California Page 2 of 3
-
-[]
 
 Teaching Experience
 
@@ -331,10 +334,8 @@ Awards
 • Silver Medal, International Genetically Engineered Machine (iGEM) 2022
 DKU Team (Oct. 2022)
 
-Developed the team wiki independently; helped non-technical members
-adopt Git; validated protein designs with modeling
-
-software.
+Developed the team wiki solely; helped non-technical members adopt Git;
+validated protein designs with modeling software.
 
 • Dean’s List (Spring 2021) & Dean’s List with Distinction (Fall 2021,
 Fall 2022, Spring 2023), DKU
