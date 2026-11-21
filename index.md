@@ -254,10 +254,10 @@ Streamlined research: automatically converted model formats and pushed
 models directly onto the phones.
 
 • Wrote the official Android Kotlin example for Flower, the popular FL
-framework by Flower.ai, a Y Combinator startup
+framework by a Y Combinator startup founded by
 
-founded by Cambridge University researchers. Consequently, got invited
-to speak at the Flower AI Summit.
+Cambridge University researchers. Consequently, got invited to speak at
+the Flower AI Summit.
 
 ◦
 
@@ -289,7 +289,7 @@ scrape DKU and Duke intranet sites.
 • Improved backend HTML processing, frontend interface, and version
 control.
 
-Talks
+Invited Talks
 
 [1] Bing Luo and Sichang He. FedCampus: a Privacy-preserving Data
 Platform for Smart Campus with Federated
