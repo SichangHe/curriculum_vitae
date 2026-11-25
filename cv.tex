@@ -12,29 +12,20 @@
     WordSpace=1.33,Numbers=Lining]
 % agent-added: draw every digit 0-9 and % 10% larger (Libertinus digits are short), keeping bold/italic
 \def\digitscale{1.1}
-\newfontface\digitfont{LibertinusSerif-Regular.otf}[Scale=\digitscale]
-\newfontface\digitfontbf{LibertinusSerif-Bold.otf}[Scale=\digitscale]
-\newfontface\digitfontit{LibertinusSerif-Italic.otf}[Scale=\digitscale]
-\newfontface\digitfontbfit{LibertinusSerif-BoldItalic.otf}[Scale=\digitscale]
-\makeatletter
-\newif\ifdig@bf\newif\ifdig@it
-\def\dig@b{b}\def\dig@bx{bx}\def\dig@it{it}\def\dig@sl{sl}
-\def\digitsel{\edef\dig@s{\f@series}\edef\dig@h{\f@shape}%
-  \ifx\dig@s\dig@b\dig@bftrue\else\ifx\dig@s\dig@bx\dig@bftrue\else\dig@bffalse\fi\fi
-  \ifx\dig@h\dig@it\dig@ittrue\else\ifx\dig@h\dig@sl\dig@ittrue\else\dig@itfalse\fi\fi
-  \ifdig@bf\ifdig@it\digitfontbfit\else\digitfontbf\fi\else\ifdig@it\digitfontit\else\digitfont\fi\fi}
-\makeatother
+\newfontfamily\digitfont{LibertinusSerif}[Extension=.otf,UprightFont=*-Regular,
+    BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic,
+    Numbers=Lining,Scale=\digitscale]
 \XeTeXinterchartokenstate=1
 \newXeTeXintercharclass\DigitClass
 \count255=`0 \loop\XeTeXcharclass\count255=\DigitClass\ifnum\count255<`9 \advance\count255 by 1 \repeat
 \XeTeXcharclass`\%=\DigitClass
-\XeTeXinterchartoks 0 \DigitClass = {\begingroup\digitsel}
-\XeTeXinterchartoks 4095 \DigitClass = {\begingroup\digitsel}
+\XeTeXinterchartoks 0 \DigitClass = {\begingroup\digitfont}
+\XeTeXinterchartoks 4095 \DigitClass = {\begingroup\digitfont}
 \XeTeXinterchartoks \DigitClass 0 = {\endgroup}
 \XeTeXinterchartoks \DigitClass 4095 = {\endgroup}
-% Libertinus mangles the LaTeX logo; typeset it in Computer Modern.
+% Libertinus mangles the LaTeX logo; typeset it in Latin Modern (Computer Modern's XeLaTeX version).
 \let\origLaTeX\LaTeX
-\renewcommand{\LaTeX}{{\fontfamily{cmr}\selectfont\origLaTeX}}
+\renewcommand{\LaTeX}{{\fontfamily{lmr}\selectfont\origLaTeX}}
 
 \usepackage{relsize}
 \newcommand{\biG}[1]{{\relscale{1.1}#1}}
