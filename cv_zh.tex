@@ -1,0 +1,430 @@
+% build: latexmk -xelatex cv_zh.tex
+% Based on https://github.com/fizixmastr
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[margin=0.5in,bottom=1in,footskip=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[UTF8]{ctex}
+
+
+\usepackage{color}
+\definecolor{light}{rgb}{0.25, 0.25, 0.25}
+\def\light#1{{\color{light}#1}}
+
+\newcommand{\myname}{何思畅}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\light{\myname{} $\vert{}$ 南加州大学}}
+\fancyfoot[R]{\light{第 \thepage{} 页，共 \pageref{LastPage} 页}}
+\pagestyle{fancy}
+
+
+\setlength{\tabcolsep}{0em}
+
+% Sections formatting
+\titleformat{\section}{\bfseries\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0em}{1.1em}{0.25em}
+\setlist[itemize]{
+  parsep=0em,
+  partopsep=0em
+}
+% • 一级条目，◦ 二级条目
+\setlist[itemize,2]{label=\textbullet}
+\setlist[itemize,3]{label=\raisebox{0.15ex}{\scriptsize\textopenbullet}}
+
+\newcommand{\CVItem}[1]{
+  \item{\small
+    {#1}
+  }
+}
+
+\newcommand{\CVSubheadingFrame}[1]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        #1
+    \end{tabular*}
+}
+
+\newcommand{\CVSubheading}[4]{\CVSubheadingFrame
+    {\textbf{#1} & #2 \\
+        \small#3 & #4 \\
+    }}
+
+\newcommand{\CVSubHeadingListStart}{\begin{itemize}[leftmargin=1.2em, label={}]}
+\newcommand{\CVSubHeadingListEnd}{\end{itemize}}
+\newcommand{\CVItemListStart}{\begin{itemize}}
+\newcommand{\CVItemListEnd}{\end{itemize}}
+
+\definecolor{darkbluepurple}{rgb}{0.125, 0, 0.5}
+\newcommand{\uhref}[2]{\href{#1}{\textcolor{darkbluepurple}{#2}}}
+
+
+% Publication list: [1], [2], ... with hanging indent
+\newenvironment{CVRefs}{\begin{list}{}{\setlength{\leftmargin}{2.2em}\setlength{\labelwidth}{1.8em}%
+    \setlength{\labelsep}{0.4em}\setlength{\itemsep}{0.3em}\setlength{\parsep}{0em}\usecounter{enumi}%
+    \renewcommand{\makelabel}[1]{[\arabic{enumi}]\hfill}}\small}{\end{list}}
+\newcommand{\me}{\textbf{何思畅}}
+\begin{document}
+
+\noindent
+\textbf{\Huge \myname{}}\quad{\large Sichang ``Steven'' He}\hfill
+\uhref{mailto:sichangh@usc.edu}
+{\small sichangh@usc.edu}\\[0.25em]
+计算机科学博士生\hfill
+{\small
+    \uhref{https://github.com/SichangHe}{GitHub} 与
+    \uhref{https://www.youtube.com/@sichanghe}{YouTube}：@SichangHe
+}\\
+南加州大学网络系统实验室（NSL）\hfill
+{\small \uhref{https://sichanghe.github.io/}{sichanghe.github.io}}\\[0.3em]
+{\small 关注影响普通人的互联网系统问题。做过大规模互联网测量。}
+
+\section{教育经历}
+\CVSubHeadingListStart
+
+\CVSubheadingFrame
+{\textbf{南加州大学（USC）}&
+    2024年8月 -- 2029年（预计）\quad 美国加州洛杉矶\\
+    \small 计算机科学（CS）博士&
+    导师：\uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}\\
+}
+\CVItemListStart
+\CVItem
+{同时与 \uhref{https://govindan.usc.edu/}{Ramesh Govindan} 合作。}
+\CVItem
+{部分含项目的课程：
+    \begin{itemize}
+        \item 高级计算机网络（A+）：
+        \uhref{https://github.com/SichangHe/JSphere}{JSphere}：
+        测量网页对浏览器 API 的调用，以此对 JavaScript 分类。
+    \end{itemize}
+    \begin{itemize}
+        \item 高级自然语言处理（A）：
+            复现了\uhref{https://aclanthology.org/2024.emnlp-main.971/}{一篇
+            EMNLP 的大语言模型（LLM）文本检测论文}，并质疑其泛化性。
+    \end{itemize}
+}
+\CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{昆山杜克大学（DKU）与杜克大学双学位}&
+    2020年8月 -- 2024年5月\\
+    \small 数据科学理学学士（昆山杜克大学授予）与&
+    中国昆山与\\
+    \small \uhref{https://github.com/SichangHe/sichanghe.github.io/files/15386186/duke_diploma.pdf}
+    {跨学科研究理学学士}（方向：数据科学，杜克大学授予）&
+    美国北卡达勒姆
+}
+\CVItemListStart
+\CVItem
+{修完计算机科学和数学专业的大部分必修课。
+}
+\CVItem
+{部分含项目的课程：
+    \begin{itemize}
+        \item 计算机网络体系结构（A+）：
+        用 Elixir 写的异步 \uhref{https://github.com/SichangHe/CS311}{TCP
+            服务器和客户端，以及用 Rust 写的命令行 REPL shell}。
+
+        \item 数据采集与可视化（A）：
+        \uhref{https://github.com/SichangHe/STATS401_final_project}{用
+            D3.js、Svelte 和 TypeScript 制作的海报}。
+
+        \item 计算机组成与编程（A+，杜克大学）：
+        用 MIPS 汇编写二叉搜索树，用 C 写环形缓冲区；
+        PizzaCalc 汇编代码长度优化竞赛第 5 名（68 行）。
+
+        \item 数值分析（A+）；抽象代数导论（杜克大学）；
+        复分析（A）。
+    \end{itemize}
+}
+\CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{广州市执信中学}&
+    2017年8月 -- 2020年6月\quad 中国广州\\
+}
+\CVItemListStart
+\CVItem
+{化学奥赛竞赛队；生物奥赛竞赛队。
+}
+\CVItemListEnd
+
+\CVSubHeadingListEnd
+
+\section{发表论文}
+\begin{CVRefs}
+    \item \me、Ramesh Govindan、Harsha V. Madhyastha。
+    \uhref{https://github.com/SichangHe/DeGenTWeb_docs/releases/tag/cam-ready-imc2025}{Poster: Did I Just Browse A Website Written by LLMs?}
+    Proceedings of the 2025 ACM Internet Measurement Conference and Student Workshop (IMC)。
+    \uhref{https://www.youtube.com/watch?v=iZHWdpaSOGA}{视频}。2025年10月。
+    \item \me、Italo Cunha、Ethan Katz-Bassett。
+    \uhref{https://github.com/SichangHe/internet_route_verification/releases/tag/imc-camera-ready}{RPSLyzer: Characterization and Verification of Policies in Internet Routing Registries}。
+    Proceedings of the 2024 ACM Internet Measurement Conference (IMC)。
+    \uhref{https://youtu.be/xgMPSlQxaH4}{视频}。2024年11月。
+    \item \me、Beilong Tang、Boyan Zhang、Jiaqi Shao、Xiaomin Ouyang、
+    Daniel Nata Nugraha、Bing Luo。
+    \uhref{http://www.arxiv.org/pdf/2402.10464}{FedKit: Enabling Cross-Platform Federated Learning for Android and iOS}。
+    IEEE INFOCOM Demo。
+    \uhref{https://www.youtube.com/watch?v=TONTBkp_l6M}{视频}。2024年5月。
+\end{CVRefs}
+
+\section{在研论文}
+\begin{CVRefs}
+    \item \me、Calvin Ardi、Ramesh Govindan、Harsha V. Madhyastha。
+    \uhref{https://arxiv.org/abs/2605.00087}{DeGenTWeb: A First Look at MGT-dominant Websites}。
+    2026年。
+\end{CVRefs}
+
+\section{科研经历}
+\CVSubHeadingListStart
+\CVSubheading {研究助理}{2024年8月 -- 至今}
+{南加州大学\uhref{https://nsl.usc.edu/}{网络系统实验室}}
+{导师：\uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}}
+\CVItemListStart
+\CVItem {\textbf{如今网上有多少内容是 LLM 写的？}
+    独立完成了首个回答该问题的严谨测量：
+    2026 年初存档的网站中，约五分之一主要由 AI 写成。
+    用 13.5 万个网站的大规模代表性样本，
+    证实了关于网上 LLM 使用情况的坊间说法。
+    \begin{itemize}
+        \item 构建了 DeGenTWeb：一个准确、可扩展的检测器，
+        检测文本内容以 LLM 生成为主的网站。
+        \item 在 6 千个基线网站（9 万个网页）上，
+        第 90 百分位误报率低至 0.12\%。
+        \item 标记出 11.7 万个 Common Crawl 网站中的 21\%，
+        以及 Bing 搜索结果中 1.8 万个网站中的 14\%。
+        \item 用确凿证据证实了 LLM 文本的使用在增长。
+        \item 发现以 LLM 文本为主的网站有明显的盈利动机，
+        主要是广告和联盟推广链接。
+    \end{itemize}
+}
+\CVItem {调研了内容来源与真实性联盟（C2PA）标准的使用、弱点和扩展。
+}
+\CVItemListEnd
+
+\CVSubheading {Rust/Verus 的智能体形式化验证}{2026年6月 -- 2026年10月}
+{\uhref{https://www.businesswire.com/news/home/20260205795947/en/CORRECTING-and-REPLACING-Backed-by-OpenAI-Tesla-and-SpaceX-Investors-Midas-Is-Building-Mathematical-Infrastructure-to-Secure-AI-Systems}{Midas
+Intelligence Inc.}（面向 AI 的数学初创公司），旧金山（远程）}{}
+\CVItemListStart
+\CVItem {\textbf{提出了公司的软件路线：}
+    借助智能体和 \uhref{https://github.com/verus-lang/verus}{Verus}，
+    同时实现开发速度与可靠性。
+}
+\CVItem {领导并独自创建了公司的软件部门。直接向总裁和 CEO 汇报。
+}
+\CVItem
+{开发了 \uhref{https://github.com/midas-intelligence/midas-lex}{Midas Lex}：
+    引导智能体编写 Verus 规约和证明的工具。
+}
+\CVItem {在 \uhref{https://github.com/uutils/coreutils/issues/13703}{uutils coreutils}
+    等热门开源 Rust 项目中发现了 bug。
+    构建了未解决 Verus 任务的基准测试集。
+}
+\CVItemListEnd
+
+\CVSubheading {独立研究：\uhref
+    {https://github.com/SichangHe/internet_route_verification}
+    {互联网路由验证}
+}{2023年4月 -- 2024年5月} {巴西米纳斯吉拉斯联邦大学（远程）}
+{导师：\uhref{https://cunha.github.io/about/}{Italo Cunha}}
+\CVItemListStart
+\CVItem {\textbf{互联网流量是否遵守各网络公开声明的规则？}
+    完成了迄今最彻底的检查之一，
+    覆盖互联网路由注册库（IRR）中的全部公开路由策略。
+    IRR 支撑着互联网的很大一部分：用于指导公共对等互联、
+    帮助排查路由问题，并防范可能导致全球断网的路由配置错误和攻击。
+}
+\CVItem {独立构建了 RPSLyzer：首个能实际使用的解释器，
+    可解析 IRR 中全部 7\,GB 路由策略的 99.99\%
+    （以路由策略规范语言 RPSL 编写）；
+    也是首个按 IETF RFC 2622 和 RFC 4012
+    彻底检查真实观测到的边界网关协议（BGP）路由是否遵守这些策略的工具。
+    \begin{itemize}
+        \item 检查了来自 60 个 RIPE RIS 和 RouteViews 采集点的
+        共 7.79 亿条 BGP 路由，耗时 3 小时，内存 2\,GB。
+        \item RPSLyzer 能正确解析复杂的 RPSL 结构，
+        包括高级集合运算和一种自定义正则表达式。
+        \item 刻画了 78,701 个自治系统（AS）的策略。
+        发现 RPSL 用法差异很大：有几个 AS 声明了数千条策略，
+        而 53\% 一条都没有声明。
+    \end{itemize}
+}
+\CVItem {用 RPSLyzer 检查并分析了观测到的域间路由是否符合路由策略；
+    总结了常见的 RPSL 用法模式和用法错误。
+    \begin{itemize}
+        \item 发现观测到的 BGP 路由中，40\% 的互联因缺少策略而无法验证。
+        \item 引入 CAIDA 的 AS 关系数据，使验证覆盖率提高 19 个百分点。
+        \item 提供了按 RPSL 验证路由的工具，帮助提升域间路由安全。
+        \item 归纳并实现了对 6 种主要原因的检查，
+        解释路由为何不符合相关 RPSL。
+    \end{itemize}
+}
+\CVItemListEnd
+
+\CVSubheading {研究助理，移动端联邦学习（FL）}{2023年3月 -- 2024年5月}
+{\uhref{https://github.com/FedCampus}{FedCampus 团队}，昆山杜克大学边缘智能实验室}
+{导师：\uhref{https://luobing1008.github.io/}{罗冰}}
+\CVItemListStart
+\CVItem {\textbf{手机能否共同训练 AI，使用设备上的隐私数据，但从不上传这些数据？}
+    编写了 \uhref{https://github.com/FedCampus/FedKit}{FedKit SDK}：
+    首个可在安卓和 iOS 设备上开展真实联邦学习实验的实用方案，
+    让手机无需共享隐私数据即可协作训练共享的机器学习模型。
+    \begin{itemize}
+    \item 简化研究流程：自动转换模型格式，并把模型直接推送到手机上。
+    \end{itemize}
+}
+\CVItem {编写了 \uhref{https://github.com/flwrlabs/flower/pull/2062}{Flower
+    的官方安卓 Kotlin 示例}。Flower 是一个热门联邦学习框架，
+    出自剑桥大学研究者创办的 Y Combinator 初创公司。
+    因此受邀在 Flower AI Summit 上演讲。
+    \begin{itemize}
+        \item 发现 iOS 示例\uhref{https://github.com/flwrlabs/flower/issues/2284}{并没有在训练}，
+        并协助修正。
+    \end{itemize}
+}
+\CVItem {带领 6 人团队开发了
+    \uhref{https://github.com/FedCampus/FedCampus_Flutter}{FedCampus 应用}：
+    一款安卓与 iOS 应用，利用 100 多名参与者的个人健康数据，
+    在校园里开展真实的联邦学习和联邦分析实验。
+    \begin{itemize}
+        \item 指导团队成员（4 名本科生和 1 名工程硕士生），其中 2 人由我面试招募。
+        \item 调研并主导核心技术选型，包括 Flower、Kotlin 和 Flutter。
+    \end{itemize}
+}
+\CVItemListEnd
+
+\CVSubheading
+{研究助理，搜索引擎研究}{2021年12月 -- 2023年5月}
+{Search So 团队，昆山杜克大学}{导师：龙江}
+\CVItemListStart
+\CVItem
+{用异步 Rust 开发了一个功能丰富的\uhref{https://github.com/SichangHe/scraper}
+    {开源网页爬虫}，用于爬取昆山杜克大学和杜克大学的内网站点。
+}
+\CVItem
+{改进了后端 HTML 处理、前端界面和版本控制。
+}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\section{受邀报告}
+\begin{CVRefs}
+    \item 罗冰、\me。
+    \uhref{https://www.youtube.com/watch?v=K7yu2jvu_t8}{FedCampus: a Privacy-preserving Data Platform for Smart Campus with Federated Learning and Analytics}。
+    Flower AI Summit，2024年3月。
+\end{CVRefs}
+
+\section{教学经历}
+\CVSubHeadingListStart
+\CVSubheadingFrame
+{\textbf{助教，程序设计导论，昆山杜克大学}&
+    2021年11月 -- 2022年3月
+}
+\CVItemListStart
+\CVItem
+{每周主持实验课；为课程制作了第一个
+    \uhref{https://www.youtube.com/watch?v=yiL-ULPBkvE}{开发环境配置视频教程}。
+}
+\CVItemListEnd
+
+\CVSubheadingFrame
+{\textbf{数学与计算机辅导员，昆山杜克大学学术资源中心}&
+    2021年5月 -- 2022年5月
+}
+\CVItemListStart
+\CVItem
+{获得\uhref
+    {https://github.com/SichangHe/curriculum_vitae/files/11665403/CRLA_certificate.pdf}
+    {CRLA 国际辅导员培训项目一级认证}。}
+\CVItemListEnd
+\CVSubHeadingListEnd
+
+\section{学术服务}
+\begin{itemize}
+    \item 审稿人，IEEE Transactions on Network and Service Management
+    （TNSM），2 篇稿件\hfill 2026年
+\end{itemize}
+
+\section{奖项}
+\begin{itemize}
+    \item ACM 互联网测量会议（IMC）差旅资助（2025年9月）
+    \item ACM 互联网测量会议（IMC）学生差旅资助（2024年8月）
+    \item 通过跑步俱乐部获得昆山杜克大学体育部
+    \uhref{https://github.com/SichangHe/curriculum_vitae/files/15110729/scholar_athelete_award_DKU_running_club.pdf}
+    {高年级学者运动员奖}（2024年4月）
+
+    \item 国际基因工程机器大赛（iGEM）2022 银牌，昆山杜克大学队（2022年10月）\\{\small
+    独自开发了\uhref{https://github.com/SichangHe/igem-2022-dku-backup}
+    {团队 wiki}；帮助非技术成员上手 Git；用建模软件验证蛋白质设计。
+    }
+    \item 昆山杜克大学院长名单（2021年春）及
+    优异院长名单（2021年秋、2022年秋、2023年春）
+    \item 昆山杜克大学校长奖学金与本科入学奖学金
+    （按成绩评定，2020年秋 -- 2024年春）
+\end{itemize}
+
+\section{业余项目}
+\CVSubHeadingListStart
+\CVSubheadingFrame
+{\textbf{Rust 库的开源开发者与维护者}&
+    2022年11月 -- 至今
+}
+\CVItemListStart
+\CVItem
+{\uhref{https://github.com/lzanini/mdbook-katex}{mdBook-KaTeX}：
+    \uhref{https://github.com/rust-lang/mdBook}{mdBook} 的数学公式预处理器，
+    在 crates.io 上下载量超过 20 万。
+    在其无人维护时\uhref{https://github.com/lzanini/mdbook-KaTeX/issues/37}{接手维护}。
+    解决了 20 多个历史 issue，新增功能，速度提升 10 倍。
+}
+\CVItem
+{为 \uhref{https://github.com/rust-lang/mdBook}{mdBook}、
+    \uhref{https://github.com/cargo-bins/cargo-binstall}{cargo-binstall}、
+    \uhref{https://github.com/Byron/pulldown-cmark-to-cmark}{pulldown-cmark-to-cmark}
+    等项目贡献代码。
+}
+\CVItem
+{\uhref{https://github.com/SichangHe/agent_manager}{智能体管理器}的%
+    \uhref{https://sichangheagentvoicechat.github.io/}{语音控制}、
+    \uhref{https://github.com/SichangHe/tokio_gen_server}{Elixir 风格的异步 Rust}、
+    \uhref{https://github.com/SichangHe/rust_build_eval}{高效的 Rust 开发环境}、
+    \uhref{https://github.com/SichangHe/TeamTypeV}{协作编辑器}。
+}
+\CVItemListEnd
+
+\CVSubHeadingListEnd
+
+\section{社会服务}
+\begin{itemize}
+    \item 昆山杜克大学 Intersections 期刊中文编辑与译者\hfill
+    2021年6月 -- 2021年8月\\{\small
+    合译三篇英文文章为中文；
+    审阅编辑多篇文章及
+    \uhref{https://sites.duke.edu/intersections/}{Intersections 网站}。
+    }
+\end{itemize}
+
+\section{技能}
+\begin{itemize}[leftmargin=0.5cm, label={}]
+    \item \textbf{语言}\quad
+    普通话（母语）、粤语（流利）。
+    \item \textbf{编程语言}
+    \begin{itemize}\small
+        \item 深入投入且熟练：Rust、Python、Elixir、JavaScript。
+        \item 在项目中用过：
+        Kotlin、Dart、Swift、Ruby、Java、Lua、TypeScript、
+        Svelte、HTML、CSS、C、SQL、Racket、\LaTeX{}、PL/pgSQL。
+        \item 了解：C++、Bash、Julia、Go、Erlang、Gleam、Mathematica、
+        MATLAB、Scala、R。
+    \end{itemize}
+    \item \textbf{并发}\quad
+    Rust Tokio、JavaScript、Dart、Swift 中的事件循环；Kotlin 协程；
+    Elixir/OTP 进程。
+\end{itemize}
+\end{document}

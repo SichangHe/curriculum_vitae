@@ -5,17 +5,39 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-% agent-added: Libertinus Serif (real small caps); Type 1, so the pdfLaTeX CI keeps working
-\usepackage[T1]{fontenc}
-\usepackage{libertinus-type1}
-% Libertinus's default word space is narrow; widen it by a third, to Computer Modern's width, at every size.
-\makeatletter\input{T1LibertinusSerif-TLF.fd}\makeatother
-\DeclareFontFamily{T1}{LibertinusSerif-TLF}{%
-    \fontdimen2\font=1.33\fontdimen2\font
-    \fontdimen3\font=1.33\fontdimen3\font}
+% agent-added: Libertinus Serif via XeLaTeX (fontspec); word space widened by a third, to Computer Modern's width
+\usepackage{fontspec}
+\setmainfont{LibertinusSerif}[Extension=.otf,UprightFont=*-Regular,
+    BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic,
+    WordSpace=1.33,Numbers=Lining]
+% agent-added: draw every digit 0-9 10% larger (Libertinus digits are short), keeping bold/italic
+\def\digitscale{1.1}
+\newfontface\digitfont{LibertinusSerif-Regular.otf}[Scale=\digitscale]
+\newfontface\digitfontbf{LibertinusSerif-Bold.otf}[Scale=\digitscale]
+\newfontface\digitfontit{LibertinusSerif-Italic.otf}[Scale=\digitscale]
+\newfontface\digitfontbfit{LibertinusSerif-BoldItalic.otf}[Scale=\digitscale]
+\makeatletter
+\newif\ifdig@bf\newif\ifdig@it
+\def\dig@b{b}\def\dig@bx{bx}\def\dig@it{it}\def\dig@sl{sl}
+\def\digitsel{\edef\dig@s{\f@series}\edef\dig@h{\f@shape}%
+  \ifx\dig@s\dig@b\dig@bftrue\else\ifx\dig@s\dig@bx\dig@bftrue\else\dig@bffalse\fi\fi
+  \ifx\dig@h\dig@it\dig@ittrue\else\ifx\dig@h\dig@sl\dig@ittrue\else\dig@itfalse\fi\fi
+  \ifdig@bf\ifdig@it\digitfontbfit\else\digitfontbf\fi\else\ifdig@it\digitfontit\else\digitfont\fi\fi}
+\makeatother
+\XeTeXinterchartokenstate=1
+\newXeTeXintercharclass\DigitClass
+\count255=`0 \loop\XeTeXcharclass\count255=\DigitClass\ifnum\count255<`9 \advance\count255 by 1 \repeat
+\XeTeXinterchartoks 0 \DigitClass = {\begingroup\digitsel}
+\XeTeXinterchartoks 4095 \DigitClass = {\begingroup\digitsel}
+\XeTeXinterchartoks \DigitClass 0 = {\endgroup}
+\XeTeXinterchartoks \DigitClass 4095 = {\endgroup}
 % Libertinus mangles the LaTeX logo; typeset it in Computer Modern.
 \let\origLaTeX\LaTeX
 \renewcommand{\LaTeX}{{\fontfamily{cmr}\selectfont\origLaTeX}}
+
+\usepackage{relsize}
+\newcommand{\biG}[1]{{\relscale{1.1}#1}}
+\newcommand{\first}{1\textsuperscript{st}}
 
 \usepackage{color}
 \definecolor{light}{rgb}{0.25, 0.25, 0.25}
@@ -113,7 +135,7 @@
 % A macro follows a word directly; the separating space goes inside it.
 % ===== Review mode switch (ONE line): inline = show agent edits; final = clean CV.
 % Set final before pushing: the deploy builds whatever this says.
-\def\reviewmode{inline}
+\def\reviewmode{final}
 \definecolor{agentaddcolor}{RGB}{0,120,60}
 \definecolor{agentdelcolor}{RGB}{150,96,96}
 \def\reviewmodetmp{final}
@@ -237,7 +259,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 {Advisor: \uhref{https://www.harsha.usc.edu/}{Harsha V. Madhyastha}}
 \CVItemListStart
 \CVItem {\textbf{How much of the web is now written by LLMs?}
-    Single-handedly built the 1st rigorous measurement to answer it:
+    Single-handedly built the \first{} rigorous measurement to answer it:
     about 1 in 5 websites archived in early 2026 are mostly AI-written.
     Substantiated the folk wisdom surrounding the use of
     LLMs online with a large, representative sample of 135k websites.
@@ -264,7 +286,7 @@ Networked Systems Lab (NSL), University of Southern California\hfill
 {\uhref{https://www.businesswire.com/news/home/20260205795947/en/CORRECTING-and-REPLACING-Backed-by-OpenAI-Tesla-and-SpaceX-Investors-Midas-Is-Building-Mathematical-Infrastructure-to-Secure-AI-Systems}{Midas
 Intelligence Inc.} (math-for-AI startup), San Francisco (Remote)}{}
 \CVItemListStart
-\CVItem {Invented the company's software story:
+\CVItem {\textbf{Invented the company's software story:}
     achieve both development velocity and reliability via agents and
     \uhref{https://github.com/verus-lang/verus}{Verus}.
 }
@@ -297,10 +319,10 @@ networks publicly declare?}
     help troubleshoot routing issue, and avoid routing misconfiguration and
     attacks that can cause global Internet outages.
 }
-\CVItem {Single-handedly built RPSLyzer, the 1st operational interpreter to
+\CVItem {Single-handedly built RPSLyzer, the \first{} operational interpreter to
     parse 99.99\% of all 7\,GB of routing policies in the IRR in
     the Routing Policy Specification Language (RPSL), and
-    the 1st thorough checker for whether real,
+    the \first{} thorough checker for whether real,
     observed Border Gateway Protocol (BGP)
     routes follow these policies per IETF RFC 2622 and RFC 4012.
     \begin{itemize}
@@ -336,9 +358,10 @@ observed interdomain routes match routing policies with RPSLyzer;
     EdgeIntelligence Lab, DKU
 }{Advisor: \uhref{https://luobing1008.github.io/}{Bing Luo}}
 \CVItemListStart
-\CVItem {\textbf{Can phones train AI together without sharing private data?}
+\CVItem {\textbf{Can phones train AI together, use private on-device data but
+    never upload them?}
     Authored \uhref{https://github.com/FedCampus/FedKit}{the FedKit SDKs},
-    the 1st practical way to do this through
+    the \first{} practical way to do this through
     real-world FL experiments across Android and iOS devices, which
     enables training shared ML models collaboratively without sharing private
     data on phones.
@@ -460,7 +483,7 @@ Consequently, got invited to speak at the Flower AI Summit.
     over 200k downloads on crates.io.
     \uhref{https://github.com/lzanini/mdbook-KaTeX/issues/37}{Took over
     maintainership} when it was unmaintained.
-    Resolved 20 old issues, added features, improved speed 10$\times$.
+    Resolved 20+ old issues, added features, improved speed 10$\times$.
 }
 \CVItem
 {Contributed to
