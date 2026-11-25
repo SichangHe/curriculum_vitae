@@ -10,7 +10,7 @@
 \setmainfont{LibertinusSerif}[Extension=.otf,UprightFont=*-Regular,
     BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic,
     WordSpace=1.33,Numbers=Lining]
-% agent-added: draw every digit 0-9 10% larger (Libertinus digits are short), keeping bold/italic
+% agent-added: draw every digit 0-9 and % 10% larger (Libertinus digits are short), keeping bold/italic
 \def\digitscale{1.1}
 \newfontface\digitfont{LibertinusSerif-Regular.otf}[Scale=\digitscale]
 \newfontface\digitfontbf{LibertinusSerif-Bold.otf}[Scale=\digitscale]
@@ -27,6 +27,7 @@
 \XeTeXinterchartokenstate=1
 \newXeTeXintercharclass\DigitClass
 \count255=`0 \loop\XeTeXcharclass\count255=\DigitClass\ifnum\count255<`9 \advance\count255 by 1 \repeat
+\XeTeXcharclass`\%=\DigitClass
 \XeTeXinterchartoks 0 \DigitClass = {\begingroup\digitsel}
 \XeTeXinterchartoks 4095 \DigitClass = {\begingroup\digitsel}
 \XeTeXinterchartoks \DigitClass 0 = {\endgroup}
